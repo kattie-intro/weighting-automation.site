@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ru" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta charset="utf-8" />
+    <link rel="icon" href="images/scale.ico" type="image/x-icon" />
+	<link rel="stylesheet" type="text/css" href="styles/styles.css">
+	<title>Автоматизация взвешиваний</title>
+</head>
+<body>
+	<div class="wrapper">
+        <header>
+            <span class="navigation">
+                <nav>
+                    <a href="javascript:void(0)">First link</a>
+                    <a href="javascript:void(0)">Second</a>
+                    <a href="javascript:void(0)">Third link</a>
+                </nav>
+            </span>
+            <h1>Добро пожаловать</h1>
+        </header>
+		<div class="content">
+            <div id="sidebar" class="menu">
+                <ul>
+                    <li><a class="menu-item" onclick="onLinkClick(0)" href="javascript:void(0)">Пууууууууууункт 1</a></li>
+                    <li><a class="menu-item" onclick="onLinkClick(1)" href="javascript:void(0)">Пууууууункт 2</a></li>
+                    <li><a class="menu-item" onclick="onLinkClick(2)" href="javascript:void(0)">Пуункт 3</a></li>
+                    <li><a class="menu-item" onclick="onLinkClick(3)" href="javascript:void(0)">Пууууууууууу уууууункт 4</a></li>
+                    <li><a class="menu-item" onclick="onLinkClick(4)" href="javascript:void(0)">Пункт 5</a></li>
+                    <li><a class="menu-item" onclick="onLinkClick(5)" href="javascript:void(0)">Пууууункт 6</a></li>
+                 </ul>
+            </div>
+            <div id="menuHandler">
+                <span id="menuButton" onclick="toggleMenu()"></span>
+            </div>
+            <div id="content-handler">
+            </div>
+        </div>
+            
+		<div id="footer">
+    		<div class="instring">
+    			<a href="javascript:void(0)" class="instring-item">Пункт 1</a>
+    			<a href="javascript:void(0)" class="instring-item">Пункт 2</a>
+    			<a href="javascript:void(0)" class="instring-item">Пункт 3</a>
+    			<a href="javascript:void(0)" class="instring-item">Пункт 4</a>
+    			<a href="javascript:void(0)" class="instring-item">Пункт 5</a>
+    			<a href="javascript:void(0)" class="instring-item">Пункт 6</a>
+    		</div>
+		</div>
+	</div>
+
+	<script src="scripts/jquery-3.2.1.min.js"></script>
+    <script src="scripts/app.js"></script>
+    <script type="text/javascript">
+        var headerHeight = $('header').outerHeight();
+        var footerHeight = $("#footer").outerHeight();
+        setupContentHeight();
+
+        function toggleMenu() {
+            $("#menuButton").toggleClass("is-active");
+            $("#sidebar").toggleClass("is-active");
+            var height = headerHeight < window.pageYOffset ? footerHeight : headerHeight;
+            //$("#sidebar.is-active").css("height", "calc(100vh - 20px - " + height + "px)");
+        }
+        function hideMenu() {
+            $("#menuButton").removeClass("is-active");
+            $("#sidebar").removeClass("is-active");
+        }
+
+        window.addEventListener("resize", function() {
+            headerHeight = $('header').outerHeight();
+            footerHeight = $("#footer").outerHeight();
+            var height = headerHeight < window.pageYOffset ? footerHeight : headerHeight;
+            setupContentHeight();
+            //$("#sidebar.is-active").css("height", "calc(100vh - 20px - " + height + "px)");
+        });
+        window.addEventListener("scroll", function() {
+            if (headerHeight < window.pageYOffset) {
+                $("#sidebar").css("position", "fixed");
+                $("#menuHandler").css("position", "fixed");
+                $("#sidebar").css("top", 0);
+                $("#menuHandler").css("top", 0);
+                //$("#sidebar.is-active").css("height", "calc(100vh - 20px - " + footerHeight + "px)");
+            } else {
+                $("#sidebar").css("position", "absolute");
+                $("#menuHandler").css("position", "absolute");
+                $("#sidebar").css("top", "auto");
+                $("#menuHandler").css("top", "auto");
+                //$("#sidebar.is-active").css("height", "calc(100vh - 20px - " + headerHeight + "px)");
+            }
+        });
+        $("#content-handler").on("click", hideMenu);
+
+        var pageUrls = ["content/page1.html", "content/page2.html", "content/page3.html", "content/page4.html", "content/page5.html", "content/page6.html"]
+        function onLinkClick(index) {
+            console.log(index);
+            showContent(index);
+            hideMenu();
+        }
+        function showContent(index) {
+            weightapp.cashedGetHtml(pageUrls[index]).done(function(content) {
+                document.getElementById("content-handler").innerHTML = content;
+            });
+        }
+
+        function setupContentHeight() {
+            $(".content").css("min-height", "calc(100vh - 81px - " + headerHeight + "px)");
+        }
+
+
+        showContent(0);
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26430.16
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WeightingAuto", "WeightingAuto\WeightingAuto.csproj", "{F3080EDE-4374-4FAD-AC33-A608BDE19453}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WeightingAuto.Tests", "WeightingAuto.Tests\WeightingAuto.Tests.csproj", "{E838E9B7-94F0-448C-B460-4C3804624144}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F3080EDE-4374-4FAD-AC33-A608BDE19453}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F3080EDE-4374-4FAD-AC33-A608BDE19453}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F3080EDE-4374-4FAD-AC33-A608BDE19453}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F3080EDE-4374-4FAD-AC33-A608BDE19453}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E838E9B7-94F0-448C-B460-4C3804624144}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E838E9B7-94F0-448C-B460-4C3804624144}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E838E9B7-94F0-448C-B460-4C3804624144}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E838E9B7-94F0-448C-B460-4C3804624144}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
