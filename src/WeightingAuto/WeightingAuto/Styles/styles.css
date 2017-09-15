@@ -77,10 +77,6 @@ header,
     background-size: auto 100%;
 }
 
-#content-handler {
-    padding: 20px 40px;
-}
-
 
 
 
@@ -107,10 +103,12 @@ header nav {
     }
 }
 
-header a,
-#footer a,
-.menu a {
+header a {
     margin: 0 15px;
+}
+header a,
+#footer a, #footer li,
+.menu a {
     color: #ccc;
     text-decoration: none;
 }
@@ -167,20 +165,21 @@ ul.instring {
 
 
 
-
+.menu {
+    background: #333;
+    opacity: 0.8;
+    border-radius: 10px;
+    overflow: hidden; /*to prevent hover item bachkgound overlapping*/
+}
 
 
 #sidebar {
     float: left;
-    width: 15%;
+    width: 250px;
     margin: 10px;
-    background: #333;
     position: absolute;
     box-sizing: border-box;
     z-index: 99;
-    opacity: 0.8;
-    overflow: hidden; /*to prevent hover item bachkgound overlapping*/
-    border-radius: 10px;
 
     /*min-width: 200px;*/
     /*display: none;*/
@@ -216,8 +215,10 @@ ul.instring {
 
 #content-handler {
     /*float: right;*/
-    width: 85%;
-    margin-left: 15%;
+    padding: 20px;
+    padding-right: 40px;
+    width: calc(100vw - 290px);
+    margin-left: 270px;
     position: relative;
     box-sizing: border-box;
 }
