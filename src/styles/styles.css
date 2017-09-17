@@ -232,15 +232,17 @@ a.menu-item:active, a.nav-item:active {
     background: #222;
 }
 
-.js-item-content {
-    display: none;
+.js-item-wrapper {
     position: absolute;
     padding-bottom: 80px;
     bottom: 0;
     width: 200px;
-    left: -40px; /* (200px - 120px) / 2 */
-    /*width: calc((100vw / 6) - 20px);
-    left: calc(((100vw / 6) - 20px - 120px) / -2);*/
+    left: -40px;
+}
+
+.js-item-content {
+    display: none;
+    width: 100%;
 }
 .js-item-content .menu-item {
     font-size: medium;
@@ -331,6 +333,10 @@ li.js-item-container:hover .js-item-content {
     .js-item-content .menu-item {
         font-size: 1.3em;
     }
+    .js-item-wrapper {
+        width: calc((100vw / 6) + 50px);
+        left: calc(((100vw / 6) + 50px - 120px) / -2);
+    }
     #sidebar.is-active {
         display: block;
     }
@@ -339,11 +345,25 @@ li.js-item-container:hover .js-item-content {
         position: absolute;
         /*position: fixed;*/
     }
-    .js-item-content {
-        width: calc((100vw / 6) + 70px);
-        left: calc(((100vw / 6) + 70px - 120px) / -2);
+    #footer {
+        padding: 0 5%;
     }
 }
+
+@media screen and (max-width: 1024px) and (orientation:portrait) {
+    /* no vertical aligning with :before to prevent overfill */
+    #footer {
+        padding-top: 20px;
+    }
+    #footer .instring {
+        display: inline-block;
+        width: 100%;
+    }
+    #footer:before {
+        display: none;
+    }
+}
+
 @media screen and (max-width: 1024px) and (max-height: 768px) and (orientation:landscape) {
     header h1 {
         font-size: 1.5em;
@@ -363,7 +383,7 @@ li.js-item-container:hover .js-item-content {
     .js-item-content .menu-item {
         font-size: 0.8em;
     }
-    .js-item-content {
+    .js-item-wrapper {
         width: calc((100vw / 6) + 20px);
         left: calc(((100vw / 6) + 20px - 120px) / -2);
     }
