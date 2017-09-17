@@ -20,8 +20,22 @@
         </header>
 		<div class="content">
             <div id="sidebar" class="menu">
-                <ul class="menu-list">
-                    <li><a class="menu-item" onclick="onLinkClick(0)" href="javascript:void(0)">Пууууууууууункт 1</a></li>
+                <ul>
+                    <li class="menu-item hoverable-menu-parent">
+                        <a onclick="onLinkClick(0)" href="javascript:void(0)">Пууууууууууункт 1</a>
+                        <div class="hoverable-menu-content-wrapper">
+                            <div class="hoverable-menu-content">
+                                <ul class="menu">
+                                    <li><a class="menu-item" href="javascript:void(0)">бла бла 1</a></li>
+                                    <li><a class="menu-item" href="javascript:void(0)">блаа бла 2</a></li>
+                                    <li><a class="menu-item" href="javascript:void(0)">бла блааааа 3</a></li>
+                                    <li><a class="menu-item" href="javascript:void(0)">бла бла 4</a></li>
+                                    <li><a class="menu-item" href="javascript:void(0)">бла бла бла 5</a></li>
+                                    <li><a class="menu-item" href="javascript:void(0)">блаа бла 6</a></li>
+                                 </ul>
+                            </div>
+                        </div>
+                    </li>
                     <li><a class="menu-item" onclick="onLinkClick(1)" href="javascript:void(0)">Пууууууункт 2</a></li>
                     <li><a class="menu-item" onclick="onLinkClick(2)" href="javascript:void(0)">Пуункт 3</a></li>
                     <li><a class="menu-item" onclick="onLinkClick(3)" href="javascript:void(0)">Пууууууууууу уууууункт 4</a></li>
@@ -37,11 +51,11 @@
         </div>
             
 		<div id="footer">
-            <ul class="instring">
-                <li class="instring-item js-item-container">
+            <ul class="instring hoverable-menu">
+                <li class="instring-item hoverable-menu-parent">
                     <a class="nav-item js-item" href="javascript:void(0)">Пункт 1<a/>
-                    <div class="js-item-wrapper">
-                        <div class="js-item-content">
+                    <div class="hoverable-menu-content-wrapper">
+                        <div class="hoverable-menu-content">
                             <ul class="menu">
                                 <li><a class="menu-item" href="javascript:void(0)">бла бла 1</a></li>
                                 <li><a class="menu-item" href="javascript:void(0)">блаа бла 2</a></li>
@@ -53,10 +67,10 @@
                         </div>
                     </div>
                 </li>
-                <li class="instring-item js-item-container">
-                    <a class="nav-item js-item" href="javascript:void(0)">Пункт 2<a/>
-                    <div class="js-item-wrapper">
-                        <div class="js-item-content">
+                <li class="instring-item hoverable-menu-parent">
+                    <a class="nav-item js-item" href="javascript:void(0)">Пункт 1<a/>
+                    <div class="hoverable-menu-content-wrapper">
+                        <div class="hoverable-menu-content">
                             <ul class="menu">
                                 <li><a class="menu-item" href="javascript:void(0)">бла бла 1</a></li>
                                 <li><a class="menu-item" href="javascript:void(0)">блаа бла 2</a></li>
@@ -68,10 +82,10 @@
                         </div>
                     </div>
                 </li>
-                <li class="instring-item js-item-container">
-                    <a class="nav-item js-item" href="javascript:void(0)">Пункт 3<a/>
-                    <div class="js-item-wrapper">
-                        <div class="js-item-content">
+                <li class="instring-item hoverable-menu-parent">
+                    <a class="nav-item js-item" href="javascript:void(0)">Пункт 1<a/>
+                    <div class="hoverable-menu-content-wrapper">
+                        <div class="hoverable-menu-content">
                             <ul class="menu">
                                 <li><a class="menu-item" href="javascript:void(0)">бла бла 1</a></li>
                                 <li><a class="menu-item" href="javascript:void(0)">блаа бла 2</a></li>
@@ -83,10 +97,10 @@
                         </div>
                     </div>
                 </li>
-                <li class="instring-item js-item-container">
-                    <a class="nav-item js-item" href="javascript:void(0)">Пункт 4<a/>
-                    <div class="js-item-wrapper">
-                        <div class="js-item-content">
+                <li class="instring-item hoverable-menu-parent">
+                    <a class="nav-item js-item" href="javascript:void(0)">Пункт 1<a/>
+                    <div class="hoverable-menu-content-wrapper">
+                        <div class="hoverable-menu-content">
                             <ul class="menu">
                                 <li><a class="menu-item" href="javascript:void(0)">бла бла 1</a></li>
                                 <li><a class="menu-item" href="javascript:void(0)">блаа бла 2</a></li>
@@ -98,10 +112,10 @@
                         </div>
                     </div>
                 </li>
-                <li class="instring-item js-item-container">
-                    <a class="nav-item js-item" href="javascript:void(0)">Пункт 5<a/>
-                    <div class="js-item-wrapper">
-                        <div class="js-item-content">
+                <li class="instring-item hoverable-menu-parent">
+                    <a class="nav-item js-item" href="javascript:void(0)">Пункт 1<a/>
+                    <div class="hoverable-menu-content-wrapper">
+                        <div class="hoverable-menu-content">
                             <ul class="menu">
                                 <li><a class="menu-item" href="javascript:void(0)">бла бла 1</a></li>
                                 <li><a class="menu-item" href="javascript:void(0)">блаа бла 2</a></li>
@@ -113,10 +127,10 @@
                         </div>
                     </div>
                 </li>
-                <li class="instring-item js-item-container">
-                    <a class="nav-item js-item" href="javascript:void(0)">Пункт 6<a/>
-                    <div class="js-item-wrapper">
-                        <div class="js-item-content">
+                <li class="instring-item hoverable-menu-parent">
+                    <a class="nav-item js-item" href="javascript:void(0)">Пункт 1<a/>
+                    <div class="hoverable-menu-content-wrapper">
+                        <div class="hoverable-menu-content">
                             <ul class="menu">
                                 <li><a class="menu-item" href="javascript:void(0)">бла бла 1</a></li>
                                 <li><a class="menu-item" href="javascript:void(0)">блаа бла 2</a></li>
@@ -129,7 +143,7 @@
                     </div>
                 </li>
             </ul>
-		</div>
+        </div>
 	</div>
 
 	<script src="scripts/jquery-3.2.1.min.js"></script>
@@ -191,7 +205,7 @@
         }
 
 
-        showContent(0);
+        showContent(4);
     </script>
 </body>
 

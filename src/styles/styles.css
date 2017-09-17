@@ -189,21 +189,19 @@ ul.instring {
 .menu {
     background: #333;
     opacity: 0.8;
-    border-radius: 5px;
-    overflow: hidden; /*to prevent hover item bachkgound overlapping*/
+    /*border-radius: 5px;*/
 }
 
-.menu ul {
+.menu ul, ul.menu {
     list-style: none;
 }
 
-.menu li {
+.menu-item {
+    white-space: nowrap;
     cursor: pointer;
-    padding: 0;
-    margin: 0;
 }
 
-a.menu-item, a.nav-item {
+a.menu-item, a.nav-item, .menu-item a, .nav-item a {
     color: #ccc;
     text-decoration: none;
 }
@@ -223,6 +221,7 @@ a.menu-item:active, a.nav-item:active {
     padding: 10px 30px;
     margin: 0 !important;
     box-sizing: border-box;
+    /*overflow: hidden;*/ /*to prevent hover item bachkgound overlapping*/
 }
 .nav-item {
     margin: 0 10px;
@@ -232,32 +231,49 @@ a.menu-item:active, a.nav-item:active {
     background: #222;
 }
 
-.js-item-wrapper {
+.hoverable-menu-content-wrapper {
     position: absolute;
+}
+
+.hoverable-menu-content {
+    display: none;
+    width: 100%;
+}
+.hoverable-menu-parent {
+    position: relative;
+    
+}
+
+.hoverable-menu-parent:hover .hoverable-menu-content {
+    display: block;
+}
+
+#sidebar .hoverable-menu-content-wrapper {
+    top: 0;
+    left: 250px;
+}
+#sidebar .hoverable-menu-content .menu {
+    opacity: 1;
+}
+
+
+#footer .hoverable-menu-content-wrapper {
     padding-bottom: 80px;
     bottom: 0;
     width: 200px;
     left: -40px;
 }
-
-.js-item-content {
-    display: none;
-    width: 100%;
-}
-.js-item-content .menu-item {
-    font-size: medium;
-    text-align: left;
-}
-.js-item-container {
-    position: relative;
+#footer .hoverable-menu-parent {
+    z-index: 100;
     height: 30px;
     width: 120px;
     text-align: center;
 }
-
-li.js-item-container:hover .js-item-content {
-    display: block;
+#footer .hoverable-menu-content .menu-item {
+    font-size: medium;
+    text-align: left;
 }
+
 
 /*menu*/
 
@@ -312,7 +328,7 @@ li.js-item-container:hover .js-item-content {
     #sidebar {
         /*position: fixed;*/
         position: absolute;
-        width: calc(100vw - 160px);
+        width: auto;
         margin-top: 10px;
         font-size: 2em;
         display: none;
@@ -325,15 +341,15 @@ li.js-item-container:hover .js-item-content {
         transition: all 350ms ease-out;*/
     }
     .menu {
-        border-radius: 10px;
+        /*border-radius: 10px;*/
     }
     .menu-item, .nav-item {
         font-size: 1.5em;
     }
-    .js-item-content .menu-item {
+    #footer .hoverable-menu-content .menu-item {
         font-size: 1.3em;
     }
-    .js-item-wrapper {
+    #footer .hoverable-menu-content-wrapper {
         width: calc((100vw / 6) + 50px);
         left: calc(((100vw / 6) + 50px - 120px) / -2);
     }
@@ -380,10 +396,10 @@ li.js-item-container:hover .js-item-content {
     .menu-item, .nav-item {
         font-size: 1em;
     }
-    .js-item-content .menu-item {
+    #footer .hoverable-menu-content .menu-item {
         font-size: 0.8em;
     }
-    .js-item-wrapper {
+    #footer .hoverable-menu-content-wrapper {
         width: calc((100vw / 6) + 20px);
         left: calc(((100vw / 6) + 20px - 120px) / -2);
     }
