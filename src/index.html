@@ -9,14 +9,31 @@
 <body>
 	<div class="wrapper">
         <header>
-            <span class="navigation">
+            <div class="header-item" id="menuHandler">
+                <span class="header-item-icon" id="menuButton" onclick="toggleMenu()"></span>
+            </div>
+            <div class="header-item" id="menuHandlerCover"></div>
+            <div class="header-item branding">
+                <div class="header-simple-name"><span class="header-item-icon icon-weight-medium"></span></div>
+                <div class="inline-item">
+                    <span class="header-item-icon icon-weight-large"></span>
+                </div>
+                <div class="inline-item">
+                    <div class="maininfo">Имя компании</div>
+                    <div class="subinfo">Автоматизация взвешиваний</div>
+                </div>
+            </div>
+            <div class="header-item navigation">
                 <nav>
                     <a class="nav-item" href="javascript:void(0)">First link</a>
                     <a class="nav-item" href="javascript:void(0)">Second</a>
                     <a class="nav-item" href="javascript:void(0)">Third link</a>
                 </nav>
-            </span>
-            <h1>Добро пожаловать</h1>
+            </div>
+            <div class="header-item header-item-last">
+                <a class="nav-item" href="javascript:void(0)">Link</a>
+            </div>
+            <div class="clearfix"></div>
         </header>
         <div class="content">
             <div id="sidebar" class="menu">
@@ -43,15 +60,16 @@
                     <li><a class="menu-item" onclick="onLinkClick(5)" href="javascript:void(0)">Пууууункт 6</a></li>
                  </ul>
             </div>
-            <div id="menuHandler">
-                <span id="menuButton" onclick="toggleMenu()"></span>
-            </div>
+
             <div id="content-handler">
             </div>
         </div>
 
         <div id="footer">
-            <ul class="instring hoverable-menu">
+            <div class="string-item">
+                <span>© 2017 Имя компании</span>
+            </div>
+            <!--<ul class="instring hoverable-menu">
                 <li class="instring-item hoverable-menu-parent">
                     <a class="nav-item js-item" href="javascript:void(0)">Пункт 1<a/>
                     <div class="hoverable-menu-content-wrapper">
@@ -142,7 +160,7 @@
                         </div>
                     </div>
                 </li>
-            </ul>
+            </ul>-->
         </div>
     </div>
 
@@ -277,19 +295,14 @@
             //$("#sidebar.is-active").css("height", "calc(100vh - 20px - " + height + "px)");
         });
         window.addEventListener("scroll", function() {
-            if (headerHeight < window.pageYOffset) {
-                $("#sidebar").css("position", "fixed");
-                $("#menuHandler").css("position", "fixed");
-                $("#sidebar").css("top", 0);
-                $("#menuHandler").css("top", 0);
-                //$("#sidebar.is-active").css("height", "calc(100vh - 20px - " + footerHeight + "px)");
+            if (window.pageYOffset > 0) {
+                $("header").addClass("scroll-header");
+                $("#sidebar").addClass("scroll-header");
             } else {
-                $("#sidebar").css("position", "absolute");
-                $("#menuHandler").css("position", "absolute");
-                $("#sidebar").css("top", "auto");
-                $("#menuHandler").css("top", "auto");
-                //$("#sidebar.is-active").css("height", "calc(100vh - 20px - " + headerHeight + "px)");
+                $("header").removeClass("scroll-header");
+                $("#sidebar").removeClass("scroll-header");
             }
+            
         });
         $("#content-handler").on("click", hideMenu);
 
