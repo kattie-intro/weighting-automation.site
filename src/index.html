@@ -23,19 +23,47 @@
                     <div class="subinfo">Автоматизация взвешиваний</div>
                 </div>
             </div>
-            <div class="header-item navigation">
-                <nav>
-                    <a class="nav-item" href="javascript:void(0)">First link</a>
-                    <a class="nav-item" href="javascript:void(0)">Second</a>
-                    <a class="nav-item" href="javascript:void(0)">Third link</a>
-                </nav>
+            <div class="header-items-wrapper-activator" onclick="toggleHeader()">
             </div>
-            <div class="header-item header-item-last">
-                <a class="nav-item" href="javascript:void(0)">Link</a>
+            <div class="header-items-wrapper">
+                <div class="header-item before-last">
+                    <a class="nav-item" href="javascript:void(0)">Link</a>
+                </div>
+                <div class="header-item navigation header-item-last">
+                    <nav>
+                        <a class="nav-item" href="javascript:void(0)">First link</a>
+                        <a class="nav-item" href="javascript:void(0)">Second</a>
+                        <a class="nav-item" href="javascript:void(0)">Third link</a>
+                    </nav>
+                </div>
             </div>
-            <div class="clearfix"></div>
+            <!--<div class="clearfix"></div>-->
         </header>
+        <div id="header-shadow">
+        </div>
         <div class="content">
+            <div id="toggleSidebar" class="sidebar">
+                <div id="menuContainer">
+                    <ul>
+                        <li><a class="menu-item" onclick="onLinkClick(0)" href="javascript:void(0)">Пууууууууууункт 1</a></li>
+                        <li><a class="menu-item" onclick="onLinkClick(1)" href="javascript:void(0)">Пууууууункт 2</a></li>
+                        <li><a class="menu-item" onclick="onLinkClick(2)" href="javascript:void(0)">Пуункт 3</a></li>
+                        <li><a class="menu-item" onclick="onLinkClick(3)" href="javascript:void(0)">Пуууууууууу нкт 4</a></li>
+                        <li><a class="menu-item" onclick="onLinkClick(4)" href="javascript:void(0)">Пункт 5</a></li>
+                        <li><a class="menu-item" onclick="onLinkClick(5)" href="javascript:void(0)">Пууууункт 6</a></li>
+                     </ul>
+                 </div>
+            </div>
+            <!--<div id="mySidenav" class="sidenav">
+                <ul>
+                    <li><a class="menu-item" onclick="onLinkClick(0)" href="javascript:void(0)">Пууууууууууункт 1</a></li>
+                    <li><a class="menu-item" onclick="onLinkClick(1)" href="javascript:void(0)">Пууууууункт 2</a></li>
+                    <li><a class="menu-item" onclick="onLinkClick(2)" href="javascript:void(0)">Пуункт 3</a></li>
+                    <li><a class="menu-item" onclick="onLinkClick(3)" href="javascript:void(0)">Пуууууууууу нкт 4</a></li>
+                    <li><a class="menu-item" onclick="onLinkClick(4)" href="javascript:void(0)">Пункт 5</a></li>
+                    <li><a class="menu-item" onclick="onLinkClick(5)" href="javascript:void(0)">Пууууункт 6</a></li>
+                 </ul>
+            </div>
             <div id="sidebar" class="menu">
                 <ul>
                     <li class="menu-item hoverable-menu-parent">
@@ -59,15 +87,15 @@
                     <li><a class="menu-item" onclick="onLinkClick(4)" href="javascript:void(0)">Пункт 5</a></li>
                     <li><a class="menu-item" onclick="onLinkClick(5)" href="javascript:void(0)">Пууууункт 6</a></li>
                  </ul>
-            </div>
+            </div>-->
 
             <div id="content-handler">
             </div>
         </div>
 
         <div id="footer">
-            <div class="string-item">
-                <span>© 2017 Имя компании</span>
+            <div class="footer-item">
+                <span class="branding">© <span class="js-year">2017</span> Имя компании</span>
             </div>
             <!--<ul class="instring hoverable-menu">
                 <li class="instring-item hoverable-menu-parent">
@@ -162,6 +190,8 @@
                 </li>
             </ul>-->
         </div>
+        <div id="footer-shadow">
+        </div>
     </div>
 
     <div style="display: none">
@@ -250,7 +280,7 @@
                 
             <h1 class="header">Это 5 страница</h1>
 
-            ыке цкецекуе йу ецйкуекураврпук ецецуецу    ецецуецу ецекце цуецц
+            ПЯТАЯ  ПЯТАЯ  ПЯТАЯ  ПЯТАЯ  ПЯТАЯ  ПЯТАЯ  ПЯТАЯ  ПЯТАЯ  ПЯТАЯ  ПЯТАЯ  ПЯТАЯ  ПЯТАЯ  ПЯТАЯ   ыке цкецекуе йу ецйкуекураврпук ецецуецу    ецецуецу ецекце цуецц
             <br><br>setkjo9wen utwerlihdagk,iawero't
 
             End<br><br>
@@ -265,6 +295,9 @@
             ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ 
             <br><br>ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ 
 
+            ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ 
+            <br><br>ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ 
+
             End<br><br>
             End<br><br>
             End<br><br>
@@ -272,37 +305,32 @@
     </div>
 	<script src="scripts/jquery-3.2.1.min.js"></script>
     <script type="text/javascript">
-        var headerHeight = $('header').outerHeight();
-        var footerHeight = $("#footer").outerHeight();
-        setupContentHeight();
-
         function toggleMenu() {
             $("#menuButton").toggleClass("is-active");
-            $("#sidebar").toggleClass("is-active");
-            var height = headerHeight < window.pageYOffset ? footerHeight : headerHeight;
-            //$("#sidebar.is-active").css("height", "calc(100vh - 20px - " + height + "px)");
+            $("#toggleSidebar").toggleClass("is-active");
         }
         function hideMenu() {
             $("#menuButton").removeClass("is-active");
-            $("#sidebar").removeClass("is-active");
+            $("#toggleSidebar").removeClass("is-active");
+        }
+        function toggleHeader() {
+            $(".header-items-wrapper").toggleClass("is-active");
         }
 
         window.addEventListener("resize", function() {
-            headerHeight = $('header').outerHeight();
-            footerHeight = $("#footer").outerHeight();
-            var height = headerHeight < window.pageYOffset ? footerHeight : headerHeight;
-            setupContentHeight();
-            //$("#sidebar.is-active").css("height", "calc(100vh - 20px - " + height + "px)");
         });
         window.addEventListener("scroll", function() {
             if (window.pageYOffset > 0) {
                 $("header").addClass("scroll-header");
-                $("#sidebar").addClass("scroll-header");
+                $("#header-shadow").addClass("scroll-header");
+                $(".content").addClass("scroll-header");
+                $("#menuContainer").css("top", window.pageYOffset + 64 +"px");
             } else {
                 $("header").removeClass("scroll-header");
-                $("#sidebar").removeClass("scroll-header");
+                $("#header-shadow").removeClass("scroll-header");
+                $("#menuContainer").css("top", "60px");
+                $(".content").removeClass("scroll-header");
             }
-            
         });
         $("#content-handler").on("click", hideMenu);
 
@@ -319,14 +347,33 @@
         ];
         function showContent(index) {
             document.getElementById("content-handler").innerHTML = document.getElementById(contentIds[index]).innerHTML;
+            //setupSidebarHeight();
         }
 
-        function setupContentHeight() {
-            $(".content").css("min-height", "calc(100vh - " + footerHeight + "px - " + headerHeight + "px)");
+        /*function setupContentHeight() {
+            //$(".content").css("min-height", "calc(100vh - 80px - " + headerHeight + "px)");
         }
+
+        function setupSidebarHeight() {
+            //$("#toggleSidebar").css("height", $(".content").height() + "px");
+        }
+
+        function setupMenuHeight() {
+            $("#mySidenav").css("height", "calc(100vh - " + $("header").outerHeight() + "px - " +footerVisiblePart() + "px)");
+        }
+
+        function isFooterVisible() {
+            return $(".content").outerHeight() + $("header").outerHeight() < window.outerHeight + window.pageYOffset;
+        }
+
+        function footerVisiblePart() {
+            var diff = window.outerHeight + window.pageYOffset - $(".content").outerHeight() - $("header").outerHeight();
+            return diff < 0 ? 0 : (diff > 80 ? 80 : diff);
+        }*/
 
 
         showContent(0);
+        $(".js-year").text((new Date()).getFullYear());
     </script>
 </body>
 

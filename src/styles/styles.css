@@ -1,53 +1,128 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+
+.wrapper {
+    position: relative;
 }
 
 .content {
-    min-height: calc(100vh - 80px);
+    min-height: calc((100vh - 80px) - 124px);
+    position: relative;
+
+    background: url(../images/header-bg2.png) repeat-x;
+    background-size: auto 100%;
+}
+.content.scroll-header {
+    margin-top: 94px;
+    min-height: calc((100vh - 80px) - 94px);
+}
+#content-handler {
+    margin: 0 10%;
+    padding: 20px;
+    position: relative;
 }
 
 header,
-#footer {
+#footer,
+.header-items-wrapper {
     background: #2c3e50;
     color: #fff;
 }
 
 #footer {
+    width: 100%;
+    height: 80px;
+    bottom: -80px;
+    position: absolute;
+    z-index: 21;
+
     font-size: 1.5em;
-    min-height: 80px;
     background: #2c3e50;
-    padding: 0 10%;
+    padding: 20px 10%;
     /*clear: both;*/
+}
+#footer-shadow {
+    width: 100%;
+    height: 80px;
+    bottom: -80px;
+    position: absolute;
+    z-index: 3;
+    box-shadow: 0 0 50px 10px #555;
+}
+.footer-item {
+    height: 40px;
+    line-height: 40px;
+    margin: 0 10px;
 }
 
 
+header {
+    width: 100%;
+    height: 124px;
+    position: relative;
+    z-index: 21;
+
+    font-size: 1.5em;
+    letter-spacing: 1px;
+    padding: 20px;
+}
+#header-shadow {
+    width: 100%;
+    height: 124px;
+    position: absolute;
+    top: 0;
+    z-index: 3;
+    box-shadow: 0 0 20px 10px #555;
+}
+
+header.scroll-header {
+    height: 94px;
+    position: fixed;
+    top: 0;
+    padding: 5px 20px;
+}
+#header-shadow.scroll-header {
+    height: 94px;
+    position: fixed;
+    top: 0;
+}
 /*выравнивание по высоте*/
-
-
-
-#footer::before {
+header::before {
     content: '';
     display: inline-block;
     vertical-align: middle;
     height: 100%;
 }
 
+header .nav-item {
+    font-size: 15px;
+    font-family: Arial,sans-serif;
+}
 
-header {
-    box-sizing: border-box;
-    position: relative;
-    font-size: 30px;
-    letter-spacing: 1px;
-    padding: 20px;
+.header-items-wrapper-activator {
+    display: inline-block;
+    float: right;
+    margin: 10px;
+    cursor: pointer;
+}
+.header-items-wrapper-activator:before {
+    display: none;
+    content: "...";
+    color: white;
+    font-weight: bold;
+    font-size: 3em;
+    line-height: 0.5em;
+}
+.header-items-wrapper {
+    display: inline;
 }
 .inline-item {
     display: inline-block;
     float: left;
     height: 100%;
-}
-.string-item {
-    margin: 0 10px;
 }
 .header-item {
     float: left;
@@ -56,177 +131,17 @@ header {
     height: 64px;
     box-sizing: content-box;
 }
+.header-item.branding {
+    margin-left: 0;
+    margin-right: 5%;
+}
+
+/*выравнивание по высоте*/
 .header-item::before {
     content: '';
     display: inline-block;
     vertical-align: middle;
     height: 100%;
-}
-#menuHandlerCover {
-    width: calc(10vw - 20px - 10px);
-    min-width: 64px;
-}
-.header-item.branding {
-    margin-left: 0;
-}
-.header-item.header-item-last {
-    float: right;
-}
-.header-item-icon {
-    position: relative;
-    display: inline-block;
-    vertical-align: middle;
-}
-.header-simple-name {
-    display: none;
-    height: 48px;
-}
-
-header.scroll-header {
-    position: fixed;
-    top: 0;
-    padding: 5px 20px;
-    width: 100%;
-    z-index: 3;
-}
-.scroll-header .header-simple-name {
-    display: inline-block;
-}
-
-.scroll-header .header-item {
-    margin: 10px 0;
-}
-.scroll-header .subinfo, .scroll-header .inline-item {
-    display: none;
-}
-
-header::before {
-    content: '';
-    display: inline-block;
-    vertical-align: middle;
-    height: 100%;
-}
-.navigation .nav-item {
-    margin: 0 10px;
-}
-
-.header-item nav {
-    display: inline-block;
-}
-
-.clearfix {
-    clear: both;
-}
-
-.content {  
-    background: url(../images/header-bg2.png) repeat-x;
-    background-size: auto 100%;
-}
-
-.maininfo {
-    line-height: 1.5em;
-    color: white;
-}
-.subinfo {
-    font-size: 0.5em;
-    line-height: 0.5em;
-    color: #ccc;
-}
-
-
-
-header a,
-#footer a {
-    white-space: nowrap;
-    /*предотвращение переноса строк*/
-}
-
-
-
-/*----------------horizontal list------------------*/
-
-.instring {
-    text-align: justify;
-    display: block;
-}
-
-
-/*выравнивание по ширине*/
-
-.instring::after {
-    content: '';
-    display: inline-block;
-    width: 100%;
-}
-
-.instring-item {
-    white-space: nowrap;
-    /*предотвращение переноса строк*/
-    display: inline-block;
-    /*отображение в одну линию*/
-    cursor: pointer;
-}
-
-a.instring-item {
-    text-decoration: none;
-}
-
-ul.instring {
-    list-style: none;
-    padding-left: 0;
-}
-
-
-
-.icon-info::before {
-    content: url("../images/info.png");
-}
-.icon-weight-small::before {
-    content: url("../images/weight32.png");
-}
-.icon-weight-medium::before {
-    content: url("../images/weight48.png");
-}
-.icon-weight-large::before {
-    content: url("../images/weight64.png");
-}
-.icon-weight-xlarge::before {
-    content: url("../images/weight128.png");
-}
-
-
-.header {
-    padding: 20px 0;
-}
-
-
-
-
-
-#sidebar {
-    float: left;
-    width: 250px;
-    margin: 10px;
-    position: absolute;
-    box-sizing: border-box;
-    z-index: 99;
-    display: none;
-}
-
-#sidebar.scroll-header {
-    position: fixed;
-    top: 94px;
-}
-
-#sidebar.is-active {
-    display: block;
-}
-
-#menuHandler {
-    position: absolute;
-    left: 0;
-    float: left;
-    z-index: 99;
 }
 #menuButton {
     height: 64px;
@@ -244,50 +159,149 @@ ul.instring {
     background: url("../images/menu_active64.png") no-repeat 0 0;
     background-size: contain;
 }
-
-#content-handler {
-    /*float: right;*/
-    margin: 0 10%;
-    padding: 20px;
+#menuHandler {
+    position: absolute;
+    left: 0;
+    float: left;
+    z-index: 11;
+    margin-left: 30px;
+}
+#menuHandlerCover {
+    width: calc(10vw - 20px);
+    min-width: 64px;
+}
+.header-item.header-item-last {
+    float: right;
+}
+.header-item-icon {
     position: relative;
-    box-sizing: border-box;
+    display: inline-block;
+    vertical-align: middle;
+}
+.header-simple-name {
+    display: none;
+    height: 48px;
+}
+.scroll-header .header-simple-name {
+    display: inline-block;
 }
 
+.scroll-header .header-item {
+    margin: 10px 0;
+}
+.scroll-header .subinfo, .scroll-header .inline-item {
+    display: none;
+}
+
+
+.navigation .nav-item {
+    margin: 0 10px;
+}
+
+.header-item nav {
+    display: inline-block;
+}
+
+.clearfix {
+    clear: both;
+}
+
+.maininfo {
+    font-size: 1.5em;
+    color: white;
+}
+.subinfo {
+    font-size: 0.5em;
+    color: #ccc;
+    transform: scale(1.3,1);
+    text-align: center;
+}
+
+
+
+header a,
+#footer a {
+    white-space: nowrap;
+    /*предотвращение переноса строк*/
+}
+
+
+
+/*----------------icons--------------------*/
+.icon-info::before {
+    content: url("../images/info.png");
+}
+.icon-weight-small::before {
+    content: url("../images/weight32.png");
+}
+.icon-weight-medium::before {
+    content: url("../images/weight48.png");
+}
+.icon-weight-large::before {
+    content: url("../images/weight64.png");
+}
+.icon-weight-xlarge::before {
+    content: url("../images/weight128.png");
+}
+/*----------------------------------------*/
+
+
+
+
+
+/*----------------menu---------------------*/
+.sidebar {
+    position: absolute;
+    float: left;
+    width: 0px;
+    z-index: 11;
+    min-height: 100%;
+    background-color: #111; /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    transition: 0.5s width; /* 0.5 second transition effect to slide in the sidenav */
+    padding-top: 60px; /* Place content 60px from the top */
+}
+.sidebar a {
+    font-size: 20px;
+}
+.sidebar.is-active {
+    width: 300px;
+}
+
+#menuContainer {
+    position: absolute;
+    top: 60px;
+    width: 100%;
+}
+/*#sidebar {
+    position: absolute;
+    width: 250px;
+    float: left;
+    display: none;
+    margin: 10px;
+    z-index: 11;
+}
+#sidebar.scroll-header {
+    position: fixed;
+    top: 94px;
+}
+#sidebar.is-active {
+    display: block;
+}*/
 .menu {
     background: #333;
     opacity: 0.8;
-    /*border-radius: 5px;*/
 }
-
 .menu ul, ul.menu {
     list-style: none;
 }
-
-.menu-item {
-    white-space: nowrap;
-    cursor: pointer;
-}
-
-a.menu-item, a.nav-item, .menu-item a, .nav-item a {
-    color: #ccc;
-    text-decoration: none;
-}
-a.menu-item:hover, a.nav-item:hover {
-    color: white;
-}
-a.menu-item:active, a.nav-item:active {
-    color: red;
-}
-#footer .nav-item:active {
-    color: white;
-}
-
 .menu-item {
     width: 100%;
     display: inline-block;
     padding: 10px 30px;
     margin: 0 !important;
-    box-sizing: border-box;
+    white-space: nowrap;
+    cursor: pointer; 
     /*overflow: hidden;*/ /*to prevent hover item bachkgound overlapping*/
 }
 .nav-item {
@@ -297,85 +311,58 @@ a.menu-item:active, a.nav-item:active {
 .menu-item:hover {
     background: #222;
 }
+a.menu-item, a.nav-item, .menu-item a, .nav-item a {
+    color: #ccc;
+    text-decoration: none;
+    transition: 0.3s;
+}
+a.menu-item:hover, a.nav-item:hover {
+    color: white;
+}
+/*-----------------------------------------*/
 
-.hoverable-menu-content-wrapper {
-    position: absolute;
-}
 
-.hoverable-menu-content {
-    display: none;
-    width: 100%;
-}
-.hoverable-menu-parent {
-    position: relative;
-    
-}
 
-.hoverable-menu-parent:hover .hoverable-menu-content {
-    display: block;
+.branding {
+    color: #ccc;
+    transition: 1s;
 }
-
-#sidebar .hoverable-menu-content-wrapper {
-    top: 0;
-    left: 250px;
-}
-#sidebar .hoverable-menu-content .menu {
-    opacity: 1;
+.branding:hover {
+    color: white;
+    text-shadow: black 10px 10px 10px
 }
 
 
-#footer .hoverable-menu-content-wrapper {
-    padding-bottom: 80px;
-    bottom: 0;
-    width: 200px;
-    left: -40px;
-}
-#footer .hoverable-menu-parent {
-    z-index: 100;
-    height: 30px;
-    width: 120px;
-    text-align: center;
-}
-#footer .hoverable-menu-content .menu-item {
-    font-size: medium;
-    text-align: left;
+#footer .nav-item:active {
+    color: white;
 }
 
 
-/*menu*/
-
-
-/*.menu {
-    height: 100%;
-    display: inline-block;
-    width:25%;
-    float: left;
+.header {
+    padding: 20px 0;
 }
-.menu ul {
-    list-style: none;
-}
-#content-handler {
-    height: 100%;
-    display: inline-block;
-    width:70%;
-}*/
-
-
 
 
 
 /*----------------adaptability------------------*/
-
-@media screen  and (min-width: 768px) and (max-width: 1024px) {
-    header h1 {
-        font-size: 2em;
-        margin: 0;
-    }
-    header .nav-item {
-        font-size: 1em;
+@media screen and (max-width: 1024px) {
+    /*header .nav-item {
+        font-size: 1.5em;
     }
     .menu-item, .nav-item {
         font-size: 1.5em;
+    }*/
+    header {
+        font-size: 1em;
+    }
+    .maininfo {
+        line-height: 2em;
+    }
+    .subinfo {
+        line-height: 0.5em;
+    }
+    #menuHandler {
+        margin-left: 15px;
     }
     #menuHandlerCover {
         width: calc(5vw - 20px);
@@ -384,14 +371,67 @@ a.menu-item:active, a.nav-item:active {
         margin: 0 5%;
     }
     #footer {
-        padding: 0 5%;
+        padding: 20px 5%;
     }
 
     .header-item.header-item-last {
         float: left;
+        margin-left: 0;
     }
+    .header-item.branding {
+        margin-right: 10px;
+    }
+    .header-item.before-last {
+        margin-right: 0;
+    }
+    .navigation .nav-item, .nav-item {
+        margin: 0 5px;
+    }
+
+    /*.header-items-wrapper {
+        display: none;
+        position: absolute;
+        right: 0;
+        top: auto;
+        z-index: 105;
+        margin-top: 18px;
+    }
+    .header-items-wrapper.is-active {
+        display: block;
+    }
+    .header-items-wrapper-activator:before {
+        display: inline-block;
+    }*/
 }
 
 @media screen and (max-width: 768px) {
+    header .header-items-wrapper {
+        display: none;
+        position: absolute;
+        right: 0;
+        top: auto;
+        margin-top: 18px;
+    }
+    header.scroll-header .header-items-wrapper {
+        margin-top: 0;
+    }
+    header .header-items-wrapper.is-active {
+        display: block;
+    }
+    header .header-items-wrapper-activator:before {
+        display: inline-block;
+    }
 
+    font-size: 
 }
+/*--------------------------------------------*/
+
+
+
+
+
+/*меню на весь экран*/
+/*box-shadow*/
+
+
+

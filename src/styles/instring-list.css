@@ -1,0 +1,32 @@
+/*----------------horizontal list------------------*/
+
+.instring {
+    text-align: justify;
+    display: block;
+}
+
+
+/*выравнивание по ширине*/
+
+.instring::after {
+    content: '';
+    display: inline-block;
+    width: 100%;
+}
+
+.instring-item {
+    white-space: nowrap;
+    /*предотвращение переноса строк*/
+    display: inline-block;
+    /*отображение в одну линию*/
+    cursor: pointer;
+}
+
+a.instring-item {
+    text-decoration: none;
+}
+
+ul.instring {
+    list-style: none;
+    padding-left: 0;
+}

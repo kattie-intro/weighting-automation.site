@@ -1,0 +1,45 @@
+.hoverable-menu-content-wrapper {
+    position: absolute;
+}
+
+.hoverable-menu-content {
+    display: none;
+    width: 100%;
+}
+.hoverable-menu-parent {
+    position: relative;
+    
+}
+
+.hoverable-menu-parent:hover .hoverable-menu-content {
+    display: block;
+}
+
+
+
+
+.sidebar .hoverable-menu-content-wrapper {
+    top: 0;
+    left: 250px;
+}
+.sidebar .hoverable-menu-content .menu {
+    opacity: 1;
+}
+
+
+#footer .hoverable-menu-content-wrapper {
+    padding-bottom: 80px;
+    bottom: 0;
+    width: 200px;
+    left: -40px;
+}
+#footer .hoverable-menu-parent {
+    z-index: 100;
+    height: 30px;
+    width: 120px;
+    text-align: center;
+}
+#footer .hoverable-menu-content .menu-item {
+    font-size: medium;
+    text-align: left;
+}
