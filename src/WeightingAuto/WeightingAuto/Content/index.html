@@ -1,24 +1,103 @@
 <!DOCTYPE html>
 <html lang="ru" xmlns="http://www.w3.org/1999/xhtml">
 <head>
-	<meta charset="utf-8" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="icon" href="images/scale.ico" type="image/x-icon" />
-	<link rel="stylesheet" type="text/css" href="styles/styles.css">
-	<title>Автоматизация взвешиваний</title>
+    <link rel="stylesheet" type="text/css" href="styles/styles.css">
+    <link rel="stylesheet" type="text/css" href="styles/icons.css">
+    <link rel="stylesheet" type="text/css" href="styles/galery.css">
+    <title>Автоматизация взвешиваний</title>
 </head>
 <body>
-	<div class="wrapper">
+    <div class="wrapper">
         <header>
-            <span class="navigation">
-                <nav>
-                    <a class="nav-item" href="javascript:void(0)">First link</a>
-                    <a class="nav-item" href="javascript:void(0)">Second</a>
-                    <a class="nav-item" href="javascript:void(0)">Third link</a>
-                </nav>
-            </span>
-            <h1>Добро пожаловать</h1>
+            <div class="header-item" id="menuHandler">
+                <span class="header-item-icon" id="menuButton" onclick="toggleMenu()"></span>
+            </div>
+            <div class="header-item" id="menuHandlerCover"></div>
+            <div class="header-item branding">
+                <div class="inline-item brand-icon-small">
+                    <span class="header-item-icon icon-weight-medium"></span>
+                </div>
+                <div class="inline-item brand-icon-large">
+                    <span class="header-item-icon icon-weight-large"></span>
+                </div>
+                <div class="inline-item brand-name-large">
+                    <div class="maininfo">Имя компании</div>
+                    <div class="subinfo">Автоматизация взвешиваний</div>
+                </div>
+            </div>
+
+            
+            
+            
+            <div class="header-item inline-item-last">
+                <button class="header-item-icon header-button button-blue-login"></button>
+            </div>
+
+            
+
+
+
+            <!--<div class="header-item inline-item-last"><span title="Файлы" class="header-item-icon icon-folder"></span></div>
+            <div class="header-item inline-item-last"><span title="Синхронизация" class="header-item-icon icon-network"></span></div>-->
+
+            <div class="header-item header-search inline-item-last">
+                <div class="header-search-activator">
+                    <button class="button-search" onclick="toggleSearch(this)"></button>
+                </div>
+                <div class="header-search-wrapper">
+                    <input placeholder="Поиск по сайту">
+                    <!--<span class="header-item-icon icon-search-white" onclick="openSearch()"></span>-->
+                </div>
+            </div>
+            
+            <!--<div class="clearfix"></div>-->
         </header>
-		<div class="content">
+        <div id="header-shadow">
+        </div>
+        <div class="content">
+            <div id="toggleSidebar" class="sidebar">
+                <div id="menuContainer">
+                    <ul>
+                        <li class="menu-item" onclick="onLinkClick(0)">
+                            <span class="menu-icon icon-blue-fax-small"></span>
+                            <a class="menu-text" href="javascript:void(0)">Пууууууууууункт 1</a>
+                        </li>
+                        <li class="menu-item" onclick="onLinkClick(1)">
+                            <span class="menu-icon icon-blue-globe-small"></span>
+                            <a class="menu-text" href="javascript:void(0)">Пууууууункт 2</a>
+                        </li>
+                        <li class="menu-item" onclick="onLinkClick(2)">
+                            <span class="menu-icon icon-blue-location-small"></span>
+                            <a class="menu-text" href="javascript:void(0)">Пуункт 3</a>
+                        </li>
+                        <li class="menu-item" onclick="onLinkClick(3)">
+                            <span class="menu-icon icon-blue-mail-small"></span>
+                            <a class="menu-text" href="javascript:void(0)">Пуууууууууу нкт 4</a>
+                        </li>
+                        <li class="menu-item" onclick="onLinkClick(4)">
+                            <span class="menu-icon icon-blue-phone-small"></span>
+                            <a class="menu-text" href="javascript:void(0)">Пункт 5</a>
+                        </li>
+                        <li class="menu-item" onclick="onLinkClick(5)">
+                            <span class="menu-icon icon-blue-lock-small"></span>
+                            <a class="menu-text" href="javascript:void(0)">Пууууункт 6</a>
+                        </li>
+                     </ul>
+                 </div>
+            </div>
+            <!--<div id="mySidenav" class="sidenav">
+                <ul>
+                    <li><a class="menu-item" onclick="onLinkClick(0)" href="javascript:void(0)">Пууууууууууункт 1</a></li>
+                    <li><a class="menu-item" onclick="onLinkClick(1)" href="javascript:void(0)">Пууууууункт 2</a></li>
+                    <li><a class="menu-item" onclick="onLinkClick(2)" href="javascript:void(0)">Пуункт 3</a></li>
+                    <li><a class="menu-item" onclick="onLinkClick(3)" href="javascript:void(0)">Пуууууууууу нкт 4</a></li>
+                    <li><a class="menu-item" onclick="onLinkClick(4)" href="javascript:void(0)">Пункт 5</a></li>
+                    <li><a class="menu-item" onclick="onLinkClick(5)" href="javascript:void(0)">Пууууункт 6</a></li>
+                 </ul>
+            </div>
             <div id="sidebar" class="menu">
                 <ul>
                     <li class="menu-item hoverable-menu-parent">
@@ -42,170 +121,203 @@
                     <li><a class="menu-item" onclick="onLinkClick(4)" href="javascript:void(0)">Пункт 5</a></li>
                     <li><a class="menu-item" onclick="onLinkClick(5)" href="javascript:void(0)">Пууууункт 6</a></li>
                  </ul>
-            </div>
-            <div id="menuHandler">
-                <span id="menuButton" onclick="toggleMenu()"></span>
-            </div>
+            </div>-->
+
             <div id="content-handler">
             </div>
         </div>
-            
-		<div id="footer">
-            <ul class="instring hoverable-menu">
-                <li class="instring-item hoverable-menu-parent">
-                    <a class="nav-item js-item" href="javascript:void(0)">Пункт 1<a/>
-                    <div class="hoverable-menu-content-wrapper">
-                        <div class="hoverable-menu-content">
-                            <ul class="menu">
-                                <li><a class="menu-item" href="javascript:void(0)">бла бла 1</a></li>
-                                <li><a class="menu-item" href="javascript:void(0)">блаа бла 2</a></li>
-                                <li><a class="menu-item" href="javascript:void(0)">бла блааааа 3</a></li>
-                                <li><a class="menu-item" href="javascript:void(0)">бла бла 4</a></li>
-                                <li><a class="menu-item" href="javascript:void(0)">бла бла бла 5</a></li>
-                                <li><a class="menu-item" href="javascript:void(0)">блаа бла 6</a></li>
-                             </ul>
-                        </div>
-                    </div>
-                </li>
-                <li class="instring-item hoverable-menu-parent">
-                    <a class="nav-item js-item" href="javascript:void(0)">Пункт 1<a/>
-                    <div class="hoverable-menu-content-wrapper">
-                        <div class="hoverable-menu-content">
-                            <ul class="menu">
-                                <li><a class="menu-item" href="javascript:void(0)">бла бла 1</a></li>
-                                <li><a class="menu-item" href="javascript:void(0)">блаа бла 2</a></li>
-                                <li><a class="menu-item" href="javascript:void(0)">бла блааааа 3</a></li>
-                                <li><a class="menu-item" href="javascript:void(0)">бла бла 4</a></li>
-                                <li><a class="menu-item" href="javascript:void(0)">бла бла бла 5</a></li>
-                                <li><a class="menu-item" href="javascript:void(0)">блаа бла 6</a></li>
-                             </ul>
-                        </div>
-                    </div>
-                </li>
-                <li class="instring-item hoverable-menu-parent">
-                    <a class="nav-item js-item" href="javascript:void(0)">Пункт 1<a/>
-                    <div class="hoverable-menu-content-wrapper">
-                        <div class="hoverable-menu-content">
-                            <ul class="menu">
-                                <li><a class="menu-item" href="javascript:void(0)">бла бла 1</a></li>
-                                <li><a class="menu-item" href="javascript:void(0)">блаа бла 2</a></li>
-                                <li><a class="menu-item" href="javascript:void(0)">бла блааааа 3</a></li>
-                                <li><a class="menu-item" href="javascript:void(0)">бла бла 4</a></li>
-                                <li><a class="menu-item" href="javascript:void(0)">бла бла бла 5</a></li>
-                                <li><a class="menu-item" href="javascript:void(0)">блаа бла 6</a></li>
-                             </ul>
-                        </div>
-                    </div>
-                </li>
-                <li class="instring-item hoverable-menu-parent">
-                    <a class="nav-item js-item" href="javascript:void(0)">Пункт 1<a/>
-                    <div class="hoverable-menu-content-wrapper">
-                        <div class="hoverable-menu-content">
-                            <ul class="menu">
-                                <li><a class="menu-item" href="javascript:void(0)">бла бла 1</a></li>
-                                <li><a class="menu-item" href="javascript:void(0)">блаа бла 2</a></li>
-                                <li><a class="menu-item" href="javascript:void(0)">бла блааааа 3</a></li>
-                                <li><a class="menu-item" href="javascript:void(0)">бла бла 4</a></li>
-                                <li><a class="menu-item" href="javascript:void(0)">бла бла бла 5</a></li>
-                                <li><a class="menu-item" href="javascript:void(0)">блаа бла 6</a></li>
-                             </ul>
-                        </div>
-                    </div>
-                </li>
-                <li class="instring-item hoverable-menu-parent">
-                    <a class="nav-item js-item" href="javascript:void(0)">Пункт 1<a/>
-                    <div class="hoverable-menu-content-wrapper">
-                        <div class="hoverable-menu-content">
-                            <ul class="menu">
-                                <li><a class="menu-item" href="javascript:void(0)">бла бла 1</a></li>
-                                <li><a class="menu-item" href="javascript:void(0)">блаа бла 2</a></li>
-                                <li><a class="menu-item" href="javascript:void(0)">бла блааааа 3</a></li>
-                                <li><a class="menu-item" href="javascript:void(0)">бла бла 4</a></li>
-                                <li><a class="menu-item" href="javascript:void(0)">бла бла бла 5</a></li>
-                                <li><a class="menu-item" href="javascript:void(0)">блаа бла 6</a></li>
-                             </ul>
-                        </div>
-                    </div>
-                </li>
-                <li class="instring-item hoverable-menu-parent">
-                    <a class="nav-item js-item" href="javascript:void(0)">Пункт 1<a/>
-                    <div class="hoverable-menu-content-wrapper">
-                        <div class="hoverable-menu-content">
-                            <ul class="menu">
-                                <li><a class="menu-item" href="javascript:void(0)">бла бла 1</a></li>
-                                <li><a class="menu-item" href="javascript:void(0)">блаа бла 2</a></li>
-                                <li><a class="menu-item" href="javascript:void(0)">бла блааааа 3</a></li>
-                                <li><a class="menu-item" href="javascript:void(0)">бла бла 4</a></li>
-                                <li><a class="menu-item" href="javascript:void(0)">бла бла бла 5</a></li>
-                                <li><a class="menu-item" href="javascript:void(0)">блаа бла 6</a></li>
-                             </ul>
-                        </div>
-                    </div>
-                </li>
-            </ul>
-        </div>
-	</div>
 
-	<script src="scripts/jquery-3.2.1.min.js"></script>
+        <div id="footer">
+            <div class="footer-wrapper">
+                <span class="branding">© <span class="js-year">2017</span> Имя компании</span>
+                <div class="navigation inline-item-last">
+                    <nav>
+                        <a class="nav-item" href="javascript:void(0)">First link</a>
+                        <a class="nav-item" href="javascript:void(0)">Second</a>
+                        <a class="nav-item" href="javascript:void(0)">Third link</a>
+                    </nav>
+                </div>
+            </div>
+            <!--<ul class="instring hoverable-menu">
+                <li class="instring-item hoverable-menu-parent">
+                    <a class="nav-item js-item" href="javascript:void(0)">Пункт 1<a/>
+                    <div class="hoverable-menu-content-wrapper">
+                        <div class="hoverable-menu-content">
+                            <ul class="menu">
+                                <li><a class="menu-item" href="javascript:void(0)">бла бла 1</a></li>
+                                <li><a class="menu-item" href="javascript:void(0)">блаа бла 2</a></li>
+                                <li><a class="menu-item" href="javascript:void(0)">бла блааааа 3</a></li>
+                                <li><a class="menu-item" href="javascript:void(0)">бла бла 4</a></li>
+                                <li><a class="menu-item" href="javascript:void(0)">бла бла бла 5</a></li>
+                                <li><a class="menu-item" href="javascript:void(0)">блаа бла 6</a></li>
+                             </ul>
+                        </div>
+                    </div>
+                </li>
+                <li class="instring-item hoverable-menu-parent">
+                    <a class="nav-item js-item" href="javascript:void(0)">Пункт 1<a/>
+                    <div class="hoverable-menu-content-wrapper">
+                        <div class="hoverable-menu-content">
+                            <ul class="menu">
+                                <li><a class="menu-item" href="javascript:void(0)">бла бла 1</a></li>
+                                <li><a class="menu-item" href="javascript:void(0)">блаа бла 2</a></li>
+                                <li><a class="menu-item" href="javascript:void(0)">бла блааааа 3</a></li>
+                                <li><a class="menu-item" href="javascript:void(0)">бла бла 4</a></li>
+                                <li><a class="menu-item" href="javascript:void(0)">бла бла бла 5</a></li>
+                                <li><a class="menu-item" href="javascript:void(0)">блаа бла 6</a></li>
+                             </ul>
+                        </div>
+                    </div>
+                </li>
+                <li class="instring-item hoverable-menu-parent">
+                    <a class="nav-item js-item" href="javascript:void(0)">Пункт 1<a/>
+                    <div class="hoverable-menu-content-wrapper">
+                        <div class="hoverable-menu-content">
+                            <ul class="menu">
+                                <li><a class="menu-item" href="javascript:void(0)">бла бла 1</a></li>
+                                <li><a class="menu-item" href="javascript:void(0)">блаа бла 2</a></li>
+                                <li><a class="menu-item" href="javascript:void(0)">бла блааааа 3</a></li>
+                                <li><a class="menu-item" href="javascript:void(0)">бла бла 4</a></li>
+                                <li><a class="menu-item" href="javascript:void(0)">бла бла бла 5</a></li>
+                                <li><a class="menu-item" href="javascript:void(0)">блаа бла 6</a></li>
+                             </ul>
+                        </div>
+                    </div>
+                </li>
+                <li class="instring-item hoverable-menu-parent">
+                    <a class="nav-item js-item" href="javascript:void(0)">Пункт 1<a/>
+                    <div class="hoverable-menu-content-wrapper">
+                        <div class="hoverable-menu-content">
+                            <ul class="menu">
+                                <li><a class="menu-item" href="javascript:void(0)">бла бла 1</a></li>
+                                <li><a class="menu-item" href="javascript:void(0)">блаа бла 2</a></li>
+                                <li><a class="menu-item" href="javascript:void(0)">бла блааааа 3</a></li>
+                                <li><a class="menu-item" href="javascript:void(0)">бла бла 4</a></li>
+                                <li><a class="menu-item" href="javascript:void(0)">бла бла бла 5</a></li>
+                                <li><a class="menu-item" href="javascript:void(0)">блаа бла 6</a></li>
+                             </ul>
+                        </div>
+                    </div>
+                </li>
+                <li class="instring-item hoverable-menu-parent">
+                    <a class="nav-item js-item" href="javascript:void(0)">Пункт 1<a/>
+                    <div class="hoverable-menu-content-wrapper">
+                        <div class="hoverable-menu-content">
+                            <ul class="menu">
+                                <li><a class="menu-item" href="javascript:void(0)">бла бла 1</a></li>
+                                <li><a class="menu-item" href="javascript:void(0)">блаа бла 2</a></li>
+                                <li><a class="menu-item" href="javascript:void(0)">бла блааааа 3</a></li>
+                                <li><a class="menu-item" href="javascript:void(0)">бла бла 4</a></li>
+                                <li><a class="menu-item" href="javascript:void(0)">бла бла бла 5</a></li>
+                                <li><a class="menu-item" href="javascript:void(0)">блаа бла 6</a></li>
+                             </ul>
+                        </div>
+                    </div>
+                </li>
+                <li class="instring-item hoverable-menu-parent">
+                    <a class="nav-item js-item" href="javascript:void(0)">Пункт 1<a/>
+                    <div class="hoverable-menu-content-wrapper">
+                        <div class="hoverable-menu-content">
+                            <ul class="menu">
+                                <li><a class="menu-item" href="javascript:void(0)">бла бла 1</a></li>
+                                <li><a class="menu-item" href="javascript:void(0)">блаа бла 2</a></li>
+                                <li><a class="menu-item" href="javascript:void(0)">бла блааааа 3</a></li>
+                                <li><a class="menu-item" href="javascript:void(0)">бла бла 4</a></li>
+                                <li><a class="menu-item" href="javascript:void(0)">бла бла бла 5</a></li>
+                                <li><a class="menu-item" href="javascript:void(0)">блаа бла 6</a></li>
+                             </ul>
+                        </div>
+                    </div>
+                </li>
+            </ul>-->
+        </div>
+        <div id="footer-shadow">
+        </div>
+    </div>
+
+    <script src="scripts/jquery-3.2.1.min.js"></script>
     <script src="scripts/app.js"></script>
     <script type="text/javascript">
-        var headerHeight = $('header').outerHeight();
-        var footerHeight = $("#footer").outerHeight();
-        setupContentHeight();
-
         function toggleMenu() {
             $("#menuButton").toggleClass("is-active");
-            $("#sidebar").toggleClass("is-active");
-            var height = headerHeight < window.pageYOffset ? footerHeight : headerHeight;
-            //$("#sidebar.is-active").css("height", "calc(100vh - 20px - " + height + "px)");
+            $("#toggleSidebar").toggleClass("is-active");
+            hideSearch();
         }
         function hideMenu() {
             $("#menuButton").removeClass("is-active");
-            $("#sidebar").removeClass("is-active");
+            $("#toggleSidebar").removeClass("is-active");
+        }
+        function toggleHeader() {
+            $(".header-items-wrapper").toggleClass("is-active");
+        }
+
+        function toggleSearch(e) {
+            console.log(">> toggleSearch");console.log(e);
+            $(".header-search").toggleClass("is-active");
+        }
+        function hideSearch(e) {
+            $(".header-search").removeClass("is-active");
         }
 
         window.addEventListener("resize", function() {
-            headerHeight = $('header').outerHeight();
-            footerHeight = $("#footer").outerHeight();
-            var height = headerHeight < window.pageYOffset ? footerHeight : headerHeight;
-            setupContentHeight();
-            //$("#sidebar.is-active").css("height", "calc(100vh - 20px - " + height + "px)");
+            hideSearch();
         });
         window.addEventListener("scroll", function() {
-            if (headerHeight < window.pageYOffset) {
-                $("#sidebar").css("position", "fixed");
-                $("#menuHandler").css("position", "fixed");
-                $("#sidebar").css("top", 0);
-                $("#menuHandler").css("top", 0);
-                //$("#sidebar.is-active").css("height", "calc(100vh - 20px - " + footerHeight + "px)");
+            if (window.pageYOffset > 0) {
+                    $("header").addClass("scroll-header");
+                    $("#header-shadow").addClass("scroll-header");
+                    $(".content").addClass("scroll-header");
+                    $("#menuContainer").css("top", window.pageYOffset + 60 +"px");
             } else {
-                $("#sidebar").css("position", "absolute");
-                $("#menuHandler").css("position", "absolute");
-                $("#sidebar").css("top", "auto");
-                $("#menuHandler").css("top", "auto");
-                //$("#sidebar.is-active").css("height", "calc(100vh - 20px - " + headerHeight + "px)");
+                $("header").removeClass("scroll-header");
+                $("#header-shadow").removeClass("scroll-header");
+                $("#menuContainer").css("top", "60px");
+                $(".content").removeClass("scroll-header");
             }
         });
         $("#content-handler").on("click", hideMenu);
+        $("#content-handler").on("click", hideSearch);
 
-        var pageUrls = ["content/page1.html", "content/page2.html", "content/page3.html", "content/page4.html", "content/page5.html", "content/page6.html"]
+        var contentIds = [
+            "content1", "content2", "content3", "content4", "content5", "content6"
+        ];
         function onLinkClick(index) {
             console.log(index);
             showContent(index);
             hideMenu();
         }
+        var pageUrls = ["content/page1.html", "content/page2.html", "content/page3.html", "content/page4.html", "content/page5.html", "content/page6.html"];
         function showContent(index) {
             weightapp.cashedGetHtml(pageUrls[index]).done(function(content) {
                 document.getElementById("content-handler").innerHTML = content;
             });
+            //setupSidebarHeight();
         }
 
-        function setupContentHeight() {
-            $(".content").css("min-height", "calc(100vh - " + footerHeight + "px - " + headerHeight + "px)");
+        /*function setupContentHeight() {
+            //$(".content").css("min-height", "calc(100vh - 80px - " + headerHeight + "px)");
         }
 
+        function setupSidebarHeight() {
+            //$("#toggleSidebar").css("height", $(".content").height() + "px");
+        }
 
-        showContent(4);
+        function setupMenuHeight() {
+            $("#mySidenav").css("height", "calc(100vh - " + $("header").outerHeight() + "px - " +footerVisiblePart() + "px)");
+        }
+
+        function isFooterVisible() {
+            return $(".content").outerHeight() + $("header").outerHeight() < window.outerHeight + window.pageYOffset;
+        }
+
+        function footerVisiblePart() {
+            var diff = window.outerHeight + window.pageYOffset - $(".content").outerHeight() - $("header").outerHeight();
+            return diff < 0 ? 0 : (diff > 80 ? 80 : diff);
+        }*/
+
+
+        showContent(0);
+        $(".js-year").text((new Date()).getFullYear());
     </script>
 </body>
 
