@@ -2,6 +2,7 @@
 <html lang="ru" xmlns="http://www.w3.org/1999/xhtml">
 <head>
 	<meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="icon" href="images/scale.ico" type="image/x-icon" />
 	<link rel="stylesheet" type="text/css" href="styles/styles.css">
 	<title>Автоматизация взвешиваний</title>
@@ -14,29 +15,37 @@
             </div>
             <div class="header-item" id="menuHandlerCover"></div>
             <div class="header-item branding">
-                <div class="header-simple-name"><span class="header-item-icon icon-weight-medium"></span></div>
-                <div class="inline-item">
+                <div class="inline-item brand-icon-small">
+                    <span class="header-item-icon icon-weight-medium"></span>
+                </div>
+                <div class="inline-item brand-icon-large">
                     <span class="header-item-icon icon-weight-large"></span>
                 </div>
-                <div class="inline-item">
+                <div class="inline-item brand-name-large">
                     <div class="maininfo">Имя компании</div>
                     <div class="subinfo">Автоматизация взвешиваний</div>
                 </div>
             </div>
-            <div class="header-items-wrapper-activator" onclick="toggleHeader()">
-            </div>
-            <div class="header-items-wrapper">
-                <div class="header-item before-last">
-                    <a class="nav-item" href="javascript:void(0)">Link</a>
+
+            
+            
+            
+            <div class="header-item inline-item-last"><span class="header-item-icon icon-login"></span></div>
+
+            
+
+
+
+            <!--<div class="header-item inline-item-last"><span title="Файлы" class="header-item-icon icon-folder"></span></div>
+            <div class="header-item inline-item-last"><span title="Синхронизация" class="header-item-icon icon-network"></span></div>-->
+
+            <div class="header-item header-search inline-item-last">
+                <div class="header-search-wrapper">
+                <input placeholder="Поиск по сайту">
+                <!--<span class="header-item-icon icon-search-white" onclick="openSearch()"></span>-->
                 </div>
-                <div class="header-item navigation header-item-last">
-                    <nav>
-                        <a class="nav-item" href="javascript:void(0)">First link</a>
-                        <a class="nav-item" href="javascript:void(0)">Second</a>
-                        <a class="nav-item" href="javascript:void(0)">Third link</a>
-                    </nav>
-                </div>
             </div>
+            
             <!--<div class="clearfix"></div>-->
         </header>
         <div id="header-shadow">
@@ -94,8 +103,15 @@
         </div>
 
         <div id="footer">
-            <div class="footer-item">
+            <div class="footer-wrapper">
                 <span class="branding">© <span class="js-year">2017</span> Имя компании</span>
+                <div class="navigation inline-item-last">
+                    <nav>
+                        <a class="nav-item" href="javascript:void(0)">First link</a>
+                        <a class="nav-item" href="javascript:void(0)">Second</a>
+                        <a class="nav-item" href="javascript:void(0)">Third link</a>
+                    </nav>
+                </div>
             </div>
             <!--<ul class="instring hoverable-menu">
                 <li class="instring-item hoverable-menu-parent">
@@ -317,14 +333,18 @@
             $(".header-items-wrapper").toggleClass("is-active");
         }
 
+        function openSearch() {
+            $(".header-search").addClass("is-active");
+        }
+
         window.addEventListener("resize", function() {
         });
         window.addEventListener("scroll", function() {
             if (window.pageYOffset > 0) {
-                $("header").addClass("scroll-header");
-                $("#header-shadow").addClass("scroll-header");
-                $(".content").addClass("scroll-header");
-                $("#menuContainer").css("top", window.pageYOffset + 64 +"px");
+                    $("header").addClass("scroll-header");
+                    $("#header-shadow").addClass("scroll-header");
+                    $(".content").addClass("scroll-header");
+                    $("#menuContainer").css("top", window.pageYOffset + 60 +"px");
             } else {
                 $("header").removeClass("scroll-header");
                 $("#header-shadow").removeClass("scroll-header");
