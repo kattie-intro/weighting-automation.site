@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="icon" href="images/scale.ico" type="image/x-icon" />
 	<link rel="stylesheet" type="text/css" href="styles/styles.css">
+    <link rel="stylesheet" type="text/css" href="styles/icons.css">
+    <link rel="stylesheet" type="text/css" href="styles/galery.css">
 	<title>Автоматизация взвешиваний</title>
 </head>
 <body>
@@ -30,7 +32,9 @@
             
             
             
-            <div class="header-item inline-item-last"><span class="header-item-icon icon-login"></span></div>
+            <div class="header-item inline-item-last">
+                <button class="header-item-icon header-button button-blue-login"></button>
+            </div>
 
             
 
@@ -40,9 +44,12 @@
             <div class="header-item inline-item-last"><span title="Синхронизация" class="header-item-icon icon-network"></span></div>-->
 
             <div class="header-item header-search inline-item-last">
+                <div class="header-search-activator">
+                    <button class="button-search" onclick="toggleSearch(this)"></button>
+                </div>
                 <div class="header-search-wrapper">
-                <input placeholder="Поиск по сайту">
-                <!--<span class="header-item-icon icon-search-white" onclick="openSearch()"></span>-->
+                    <input placeholder="Поиск по сайту">
+                    <!--<span class="header-item-icon icon-search-white" onclick="openSearch()"></span>-->
                 </div>
             </div>
             
@@ -54,12 +61,30 @@
             <div id="toggleSidebar" class="sidebar">
                 <div id="menuContainer">
                     <ul>
-                        <li><a class="menu-item" onclick="onLinkClick(0)" href="javascript:void(0)">Пууууууууууункт 1</a></li>
-                        <li><a class="menu-item" onclick="onLinkClick(1)" href="javascript:void(0)">Пууууууункт 2</a></li>
-                        <li><a class="menu-item" onclick="onLinkClick(2)" href="javascript:void(0)">Пуункт 3</a></li>
-                        <li><a class="menu-item" onclick="onLinkClick(3)" href="javascript:void(0)">Пуууууууууу нкт 4</a></li>
-                        <li><a class="menu-item" onclick="onLinkClick(4)" href="javascript:void(0)">Пункт 5</a></li>
-                        <li><a class="menu-item" onclick="onLinkClick(5)" href="javascript:void(0)">Пууууункт 6</a></li>
+                        <li class="menu-item" onclick="onLinkClick(0)">
+                            <span class="menu-icon icon-blue-fax-small"></span>
+                            <a class="menu-text" href="javascript:void(0)">Пууууууууууункт 1</a>
+                        </li>
+                        <li class="menu-item" onclick="onLinkClick(1)">
+                            <span class="menu-icon icon-blue-globe-small"></span>
+                            <a class="menu-text" href="javascript:void(0)">Пууууууункт 2</a>
+                        </li>
+                        <li class="menu-item" onclick="onLinkClick(2)">
+                            <span class="menu-icon icon-blue-location-small"></span>
+                            <a class="menu-text" href="javascript:void(0)">Пуункт 3</a>
+                        </li>
+                        <li class="menu-item" onclick="onLinkClick(3)">
+                            <span class="menu-icon icon-blue-mail-small"></span>
+                            <a class="menu-text" href="javascript:void(0)">Пуууууууууу нкт 4</a>
+                        </li>
+                        <li class="menu-item" onclick="onLinkClick(4)">
+                            <span class="menu-icon icon-blue-phone-small"></span>
+                            <a class="menu-text" href="javascript:void(0)">Пункт 5</a>
+                        </li>
+                        <li class="menu-item" onclick="onLinkClick(5)">
+                            <span class="menu-icon icon-blue-lock-small"></span>
+                            <a class="menu-text" href="javascript:void(0)">Пууууункт 6</a>
+                        </li>
                      </ul>
                  </div>
             </div>
@@ -212,9 +237,13 @@
 
     <div style="display: none">
         <div id="content1">
+            <div class="content-header">
+                <span class="content-header-icon icon-blue-fax-large"></span>
+                <span class="content-header-text">Автоматизация</span>
+            </div>
+
+            <span class="content-subheader">Мы занимаемся автоматизацией взешивания</span>
             <p>Content goes here</p>
-                
-            <h1 class="header">Мы занимаемся автоматизацией взешивания</h1>
             <!--<div>
                 <ul class="instring">
                     <li class="instring-item">Пункт 1</li>
@@ -232,17 +261,229 @@
                 <span class="instring-item">Пункт 5</span>
             </div>-->
             <span>BLABLABLA</span>
+            <p>Begin<br><br>
             Begin<br><br>
             Begin<br><br>
-            Begin<br><br>
-            Lorem eskhwerlhwrkti rg;.resotg weower-twre otf 'war' 3er q 'reelf mweljw;r qw ewk rfsgf hiowrguwrp'wa erpqwSRFEWR EWR EQREWRQWRQWEWQ    EW R87Y W3E40 1Alaek iwptq3 po3w[- 4[eq2]3- 2qpawerke;aljrd qiwe rulajrealkr hsj g,fxcjzs,gjs JIF;lfislkhksfjagh;pfkoetpi' ab j hjkhv lkh lkhkjxfsdil guposewf iku i oli ol  g lirep irw rew; ew ;woei ;oew t;oiwepr oe rlewli ;we eirew; rw rirpe rwrwprop4ri3p4r5849 258439053 3-590 904wt59e0wogjrio yuerop it;pu4poeto perh9 5y4 Lorem eskhwerlhwrkti rg;.resotg weower-twre otf 'war' 3er q 'reelf mweljw;r qw ewk rfsgf hiowrguwrp'wa erpqwSRFEWR EWR EQREWRQWRQWEWQ  EW R87Y W3E40 1Alaek iwptq3 po3w[- 4[eq2]3- 2qpawerke;aljrd qiwe rulajrealkr hsj g,fxcjzs,gjs JIF;lfislkhksfjagh;pfkoetpi' ab j hjkhv lkh lkhkjxfsdil guposewf iku i oli ol  g lirep irw rew; ew ;woei ;oew t;oiwepr oe rlewli ;we eirew; rw rirpe rwrwprop4ri3p4r5849 258439053 3-590 904wt59e0wogjrio yuerop it;pu4poeto perh9 5y4 Lorem eskhwerlhwrkti rg;.resotg weower-twre otf 'war' 3er q 'reelf mweljw;r qw ewk rfsgf hiowrguwrp'wa erpqwSRFEWR EWR EQREWRQWRQWEWQ  EW R87Y W3E40 1Alaek iwptq3 po3w[- 4[eq2]3- 2qpawerke;aljrd qiwe rulajrealkr hsj g,fxcjzs,gjs JIF;lfislkhksfjagh;pfkoetpi' ab j hjkhv lkh lkhkjxfsdil guposewf iku i oli ol  g lirep irw rew; ew ;woei ;oew t;oiwepr oe rlewli ;we eirew; rw rirpe rwrwprop4ri3p4r5849 258439053 3-590 904wt59e0wogjrio yuerop it;pu4poeto perh9 5y4 Lorem eskhwerlhwrkti rg;.resotg weower-twre otf 'war' 3er q 'reelf mweljw;r qw ewk rfsgf hiowrguwrp'wa erpqwSRFEWR EWR EQREWRQWRQWEWQ  EW R87Y W3E40 1Alaek iwptq3 po3w[- 4[eq2]3- 2qpawerke;aljrd qiwe rulajrealkr hsj g,fxcjzs,gjs JIF;lfislkhksfjagh;pfkoetpi' ab j hjkhv lkh lkhkjxfsdil guposewf iku i oli ol  g lirep irw rew; ew ;woei ;oew t;oiwepr oe rlewli ;we eirew; rw rirpe rwrwprop4ri3p4r5849 258439053 3-590 904wt59e0wogjrio yuerop it;pu4poeto perh9 5y4<br><br>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur. 
+            <br><br></p>
 
-            Lorem eskhwerlhwrkti rg;.resotg weower-twre otf 'war' 3er q 'reelf mweljw;r qw ewk rfsgf hiowrguwrp'wa erpqwSRFEWR EWR EQREWRQWRQWEWQ    EW R87Y W3E40 1Alaek iwptq3 po3w[- 4[eq2]3- 2qpawerke;aljrd qiwe rulajrealkr hsj g,fxcjzs,gjs JIF;lfislkhksfjagh;pfkoetpi' ab j hjkhv lkh lkhkjxfsdil guposewf iku i oli ol  g lirep irw rew; ew ;woei ;oew t;oiwepr oe rlewli ;we eirew; rw rirpe rwrwprop4ri3p4r5849 258439053 3-590 904wt59e0wogjrio yuerop it;pu4poeto perh9 5y4 Lorem eskhwerlhwrkti rg;.resotg weower-twre otf 'war' 3er q 'reelf mweljw;r qw ewk rfsgf hiowrguwrp'wa erpqwSRFEWR EWR EQREWRQWRQWEWQ  EW R87Y W3E40 1Alaek iwptq3 po3w[- 4[eq2]3- 2qpawerke;aljrd qiwe rulajrealkr hsj g,fxcjzs,gjs JIF;lfislkhksfjagh;pfkoetpi' ab j hjkhv lkh lkhkjxfsdil guposewf iku i oli ol  g lirep irw rew; ew ;woei ;oew t;oiwepr oe rlewli ;we eirew; rw rirpe rwrwprop4ri3p4r5849 258439053 3-590 904wt59e0wogjrio yuerop it;pu4poeto perh9 5y4 Lorem eskhwerlhwrkti rg;.resotg weower-twre otf 'war' 3er q 'reelf mweljw;r qw ewk rfsgf hiowrguwrp'wa erpqwSRFEWR EWR EQREWRQWRQWEWQ  EW R87Y W3E40 1Alaek iwptq3 po3w[- 4[eq2]3- 2qpawerke;aljrd qiwe rulajrealkr hsj g,fxcjzs,gjs JIF;lfislkhksfjagh;pfkoetpi' ab j hjkhv lkh lkhkjxfsdil guposewf iku i oli ol  g lirep irw rew; ew ;woei ;oew t;oiwepr oe rlewli ;we eirew; rw rirpe rwrwprop4ri3p4r5849 258439053 3-590 904wt59e0wogjrio yuerop it;pu4poeto perh9 5y4 Lorem eskhwerlhwrkti rg;.resotg weower-twre otf 'war' 3er q 'reelf mweljw;r qw ewk rfsgf hiowrguwrp'wa erpqwSRFEWR EWR EQREWRQWRQWEWQ  EW R87Y W3E40 1Alaek iwptq3 po3w[- 4[eq2]3- 2qpawerke;aljrd qiwe rulajrealkr hsj g,fxcjzs,gjs JIF;lfislkhksfjagh;pfkoetpi' ab j hjkhv lkh lkhkjxfsdil guposewf iku i oli ol  g lirep irw rew; ew ;woei ;oew t;oiwepr oe rlewli ;we eirew; rw rirpe rwrwprop4ri3p4r5849 258439053 3-590 904wt59e0wogjrio yuerop it;pu4poeto perh9 5y4<br><br>
 
-            Lorem eskhwerlhwrkti rg;.resotg weower-twre otf 'war' 3er q 'reelf mweljw;r qw ewk rfsgf hiowrguwrp'wa erpqwSRFEWR EWR EQREWRQWRQWEWQ    EW R87Y W3E40 1Alaek iwptq3 po3w[- 4[eq2]3- 2qpawerke;aljrd qiwe rulajrealkr hsj g,fxcjzs,gjs JIF;lfislkhksfjagh;pfkoetpi' ab j hjkhv lkh lkhkjxfsdil guposewf iku i oli ol  g lirep irw rew; ew ;woei ;oew t;oiwepr oe rlewli ;we eirew; rw rirpe rwrwprop4ri3p4r5849 258439053 3-590 904wt59e0wogjrio yuerop it;pu4poeto perh9 5y4 Lorem eskhwerlhwrkti rg;.resotg weower-twre otf 'war' 3er q 'reelf mweljw;r qw ewk rfsgf hiowrguwrp'wa erpqwSRFEWR EWR EQREWRQWRQWEWQ  EW R87Y W3E40 1Alaek iwptq3 po3w[- 4[eq2]3- 2qpawerke;aljrd qiwe rulajrealkr hsj g,fxcjzs,gjs JIF;lfislkhksfjagh;pfkoetpi' ab j hjkhv lkh lkhkjxfsdil guposewf iku i oli ol  g lirep irw rew; ew ;woei ;oew t;oiwepr oe rlewli ;we eirew; rw rirpe rwrwprop4ri3p4r5849 258439053 3-590 904wt59e0wogjrio yuerop it;pu4poeto perh9 5y4 Lorem eskhwerlhwrkti rg;.resotg weower-twre otf 'war' 3er q 'reelf mweljw;r qw ewk rfsgf hiowrguwrp'wa erpqwSRFEWR EWR EQREWRQWRQWEWQ  EW R87Y W3E40 1Alaek iwptq3 po3w[- 4[eq2]3- 2qpawerke;aljrd qiwe rulajrealkr hsj g,fxcjzs,gjs JIF;lfislkhksfjagh;pfkoetpi' ab j hjkhv lkh lkhkjxfsdil guposewf iku i oli ol  g lirep irw rew; ew ;woei ;oew t;oiwepr oe rlewli ;we eirew; rw rirpe rwrwprop4ri3p4r5849 258439053 3-590 904wt59e0wogjrio yuerop it;pu4poeto perh9 5y4 Lorem eskhwerlhwrkti rg;.resotg weower-twre otf 'war' 3er q 'reelf mweljw;r qw ewk rfsgf hiowrguwrp'wa erpqwSRFEWR EWR EQREWRQWRQWEWQ  EW R87Y W3E40 1Alaek iwptq3 po3w[- 4[eq2]3- 2qpawerke;aljrd qiwe rulajrealkr hsj g,fxcjzs,gjs JIF;lfislkhksfjagh;pfkoetpi' ab j hjkhv lkh lkhkjxfsdil guposewf iku i oli ol  g lirep irw rew; ew ;woei ;oew t;oiwepr oe rlewli ;we eirew; rw rirpe rwrwprop4ri3p4r5849 258439053 3-590 904wt59e0wogjrio yuerop it;pu4poeto perh9 5y4<br><br>
+            <div class="image-block">
+                <div class="image-block__image-holder">
+                    <img src=images/colors.jpg>
+                </div>
+                <div class=image-block__button-holder>
+                    <button class="image-block__button icon-button button-play"></button>
+                    <button class="image-block__button icon-button button-download"></button>
+                    <button class="image-block__button icon-button button-sync"></button>
+                </div>
+            </div>
 
-            Lorem eskhwerlhwrkti rg;.resotg weower-twre otf 'war' 3er q 'reelf mweljw;r qw ewk rfsgf hiowrguwrp'wa erpqwSRFEWR EWR EQREWRQWRQWEWQ    EW R87Y W3E40 1Alaek iwptq3 po3w[- 4[eq2]3- 2qpawerke;aljrd qiwe rulajrealkr hsj g,fxcjzs,gjs JIF;lfislkhksfjagh;pfkoetpi' ab j hjkhv lkh lkhkjxfsdil guposewf iku i oli ol  g lirep irw rew; ew ;woei ;oew t;oiwepr oe rlewli ;we eirew; rw rirpe rwrwprop4ri3p4r5849 258439053 3-590 904wt59e0wogjrio yuerop it;pu4poeto perh9 5y4 Lorem eskhwerlhwrkti rg;.resotg weower-twre otf 'war' 3er q 'reelf mweljw;r qw ewk rfsgf hiowrguwrp'wa erpqwSRFEWR EWR EQREWRQWRQWEWQ  EW R87Y W3E40 1Alaek iwptq3 po3w[- 4[eq2]3- 2qpawerke;aljrd qiwe rulajrealkr hsj g,fxcjzs,gjs JIF;lfislkhksfjagh;pfkoetpi' ab j hjkhv lkh lkhkjxfsdil guposewf iku i oli ol  g lirep irw rew; ew ;woei ;oew t;oiwepr oe rlewli ;we eirew; rw rirpe rwrwprop4ri3p4r5849 258439053 3-590 904wt59e0wogjrio yuerop it;pu4poeto perh9 5y4 Lorem eskhwerlhwrkti rg;.resotg weower-twre otf 'war' 3er q 'reelf mweljw;r qw ewk rfsgf hiowrguwrp'wa erpqwSRFEWR EWR EQREWRQWRQWEWQ  EW R87Y W3E40 1Alaek iwptq3 po3w[- 4[eq2]3- 2qpawerke;aljrd qiwe rulajrealkr hsj g,fxcjzs,gjs JIF;lfislkhksfjagh;pfkoetpi' ab j hjkhv lkh lkhkjxfsdil guposewf iku i oli ol  g lirep irw rew; ew ;woei ;oew t;oiwepr oe rlewli ;we eirew; rw rirpe rwrwprop4ri3p4r5849 258439053 3-590 904wt59e0wogjrio yuerop it;pu4poeto perh9 5y4 Lorem eskhwerlhwrkti rg;.resotg weower-twre otf 'war' 3er q 'reelf mweljw;r qw ewk rfsgf hiowrguwrp'wa erpqwSRFEWR EWR EQREWRQWRQWEWQ  EW R87Y W3E40 1Alaek iwptq3 po3w[- 4[eq2]3- 2qpawerke;aljrd qiwe rulajrealkr hsj g,fxcjzs,gjs JIF;lfislkhksfjagh;pfkoetpi' ab j hjkhv lkh lkhkjxfsdil guposewf iku i oli ol  g lirep irw rew; ew ;woei ;oew t;oiwepr oe rlewli ;we eirew; rw rirpe rwrwprop4ri3p4r5849 258439053 3-590 904wt59e0wogjrio yuerop it;pu4poeto perh9 5y4<br><br>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur. 
+            <br><br></p>
 
+            <div class="galery__wrapper">
+            <div class="galery">
+                <div class="galery__item-wrapper">
+                    <div class="galery__item"></div>
+                    <div class="galery__item-text">Picture 1</div>
+                </div>
+                <div class="galery__item-wrapper">
+                    <div class="galery__item"></div>
+                    <div class="galery__item-text">Picture 2</div>
+                </div>
+                <div class="galery__item-wrapper">
+                    <div class="galery__item"></div>
+                    <div class="galery__item-text">Picture 3</div>
+                </div>
+                <div class="galery__item-wrapper">
+                    <div class="galery__item"></div>
+                    <div class="galery__item-text">Picture 4</div>
+                </div>
+                <div class="galery__item-wrapper">
+                    <div class="galery__item"></div>
+                    <div class="galery__item-text">Picture 5</div>
+                </div>
+                <div class="galery__item-wrapper">
+                    <div class="galery__item"></div>
+                    <div class="galery__item-text">Picture 6</div>
+                </div>
+                <div class="galery__item-wrapper">
+                    <div class="galery__item"></div>
+                    <div class="galery__item-text">Picture 7</div>
+                </div>
+                <div class="galery__item-wrapper">
+                    <div class="galery__item"></div>
+                    <div class="galery__item-text">Picture 8</div>
+                </div>
+                <!--<div class="clearfix"></div>-->
+            </div>
+            </div>
+
+            <!--<div style="width: 100%; height: 260px;">
+                <div style="margin: 30px; width: 300px; height: 200px; float: left; background: white; box-shadow: 0 0 30px 0 "></div>
+                <div style="margin: 30px; width: 300px; height: 200px; float: left; background: white; box-shadow: 0 10px 40px 0 "></div>
+            </div>-->
+
+            
+
+            <p>Excepteur sint occaecat cupidatat non
+            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+            proident, sunt in culpa qui officia deserunt mollit anim id est Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<br><br></p>
+
+            <p>Lorem eskhwerlhwrkti rg;.resotg weower-twre otf 'war' 3er q 'reelf mweljw;r qw ewk rfsgf hiowrguwrp'wa erpqwSRFEWR EWR EQREWRQWRQWEWQ    EW R87Y W3E40 1Alaek iwptq3 po3w[- 4[eq2]3- 2qpawerke;aljrd qiwe rulajrealkr hsj g,fxcjzs,gjs JIF;lfislkhksfjagh;pfkoetpi' ab j hjkhv lkh lkhkjxfsdil guposewf iku i oli ol  g lirep irw rew; ew ;woei ;oew t;oiwepr oe rlewli ;we eirew; rw rirpe rwrwprop4ri3p4r5849 258439053 3-590 904wt59e0wogjrio yuerop it;pu4poeto perh9 5y4 Lorem eskhwerlhwrkti rg;.resotg weower-twre otf 'war' 3er q 'reelf mweljw;r qw ewk rfsgf hiowrguwrp'wa erpqwSRFEWR EWR EQREWRQWRQWEWQ  EW R87Y W3E40 1Alaek iwptq3 po3w[- 4[eq2]3- 2qpawerke;aljrd qiwe rulajrealkr hsj g,fxcjzs,gjs JIF;lfislkhksfjagh;pfkoetpi' ab j hjkhv lkh lkhkjxfsdil guposewf iku i oli ol  g lirep irw rew; ew ;woei ;oew t;oiwepr oe rlewli ;we eirew; rw rirpe rwrwprop4ri3p4r5849 258439053 3-590 904wt59e0wogjrio yuerop it;pu4poeto perh9 5y4 Lorem eskhwerlhwrkti rg;.resotg weower-twre otf 'war' 3er q 'reelf mweljw;r qw ewk rfsgf hiowrguwrp'wa erpqwSRFEWR EWR EQREWRQWRQWEWQ  EW R87Y W3E40 1Alaek iwptq3 po3w[- 4[eq2]3- 2qpawerke;aljrd qiwe rulajrealkr hsj g,fxcjzs,gjs JIF;lfislkhksfjagh;pfkoetpi' ab j hjkhv lkh lkhkjxfsdil guposewf iku i oli ol  g lirep irw rew; ew ;woei ;oew t;oiwepr oe rlewli ;we eirew; rw rirpe rwrwprop4ri3p4r5849 258439053 3-590 904wt59e0wogjrio yuerop it;pu4poeto perh9 5y4 Lorem eskhwerlhwrkti rg;.resotg weower-twre otf 'war' 3er q 'reelf mweljw;r qw ewk rfsgf hiowrguwrp'wa erpqwSRFEWR EWR EQREWRQWRQWEWQ  EW R87Y W3E40 1Alaek iwptq3 po3w[- 4[eq2]3- 2qpawerke;aljrd qiwe rulajrealkr hsj g,fxcjzs,gjs JIF;lfislkhksfjagh;pfkoetpi' ab j hjkhv lkh lkhkjxfsdil guposewf iku i oli ol  g lirep irw rew; ew ;woei ;oew t;oiwepr oe rlewli ;we eirew; rw rirpe rwrwprop4ri3p4r5849 258439053 3-590 904wt59e0wogjrio yuerop it;pu4poeto perh9 5y4<br><br></p>
+
+            <p>Excepteur sint occaecat cupidatat non
+            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+            proident, sunt in culpa qui officia deserunt mollit anim id est Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<br><br></p>
             <!--Lorem eskhwerlhwrkti rg;.resotg weower-twre otf 'war' 3er q 'reelf mweljw;r qw ewk rfsgf hiowrguwrp'wa erpqwSRFEWR EWR EQREWRQWRQWEWQ    EW R87Y W3E40 1Alaek iwptq3 po3w[- 4[eq2]3- 2qpawerke;aljrd qiwe rulajrealkr hsj g,fxcjzs,gjs JIF;lfislkhksfjagh;pfkoetpi' ab j hjkhv lkh lkhkjxfsdil guposewf iku i oli ol  g lirep irw rew; ew ;woei ;oew t;oiwepr oe rlewli ;we eirew; rw rirpe rwrwprop4ri3p4r5849 258439053 3-590 904wt59e0wogjrio yuerop it;pu4poeto perh9 5y4 Lorem eskhwerlhwrkti rg;.resotg weower-twre otf 'war' 3er q 'reelf mweljw;r qw ewk rfsgf hiowrguwrp'wa erpqwSRFEWR EWR EQREWRQWRQWEWQ  EW R87Y W3E40 1Alaek iwptq3 po3w[- 4[eq2]3- 2qpawerke;aljrd qiwe rulajrealkr hsj g,fxcjzs,gjs JIF;lfislkhksfjagh;pfkoetpi' ab j hjkhv lkh lkhkjxfsdil guposewf iku i oli ol  g lirep irw rew; ew ;woei ;oew t;oiwepr oe rlewli ;we eirew; rw rirpe rwrwprop4ri3p4r5849 258439053 3-590 904wt59e0wogjrio yuerop it;pu4poeto perh9 5y4 Lorem eskhwerlhwrkti rg;.resotg weower-twre otf 'war' 3er q 'reelf mweljw;r qw ewk rfsgf hiowrguwrp'wa erpqwSRFEWR EWR EQREWRQWRQWEWQ  EW R87Y W3E40 1Alaek iwptq3 po3w[- 4[eq2]3- 2qpawerke;aljrd qiwe rulajrealkr hsj g,fxcjzs,gjs JIF;lfislkhksfjagh;pfkoetpi' ab j hjkhv lkh lkhkjxfsdil guposewf iku i oli ol  g lirep irw rew; ew ;woei ;oew t;oiwepr oe rlewli ;we eirew; rw rirpe rwrwprop4ri3p4r5849 258439053 3-590 904wt59e0wogjrio yuerop it;pu4poeto perh9 5y4 Lorem eskhwerlhwrkti rg;.resotg weower-twre otf 'war' 3er q 'reelf mweljw;r qw ewk rfsgf hiowrguwrp'wa erpqwSRFEWR EWR EQREWRQWRQWEWQ  EW R87Y W3E40 1Alaek iwptq3 po3w[- 4[eq2]3- 2qpawerke;aljrd qiwe rulajrealkr hsj g,fxcjzs,gjs JIF;lfislkhksfjagh;pfkoetpi' ab j hjkhv lkh lkhkjxfsdil guposewf iku i oli ol  g lirep irw rew; ew ;woei ;oew t;oiwepr oe rlewli ;we eirew; rw rirpe rwrwprop4ri3p4r5849 258439053 3-590 904wt59e0wogjrio yuerop it;pu4poeto perh9 5y4<br><br>
 
             Lorem eskhwerlhwrkti rg;.resotg weower-twre otf 'war' 3er q 'reelf mweljw;r qw ewk rfsgf hiowrguwrp'wa erpqwSRFEWR EWR EQREWRQWRQWEWQ    EW R87Y W3E40 1Alaek iwptq3 po3w[- 4[eq2]3- 2qpawerke;aljrd qiwe rulajrealkr hsj g,fxcjzs,gjs JIF;lfislkhksfjagh;pfkoetpi' ab j hjkhv lkh lkhkjxfsdil guposewf iku i oli ol  g lirep irw rew; ew ;woei ;oew t;oiwepr oe rlewli ;we eirew; rw rirpe rwrwprop4ri3p4r5849 258439053 3-590 904wt59e0wogjrio yuerop it;pu4poeto perh9 5y4 Lorem eskhwerlhwrkti rg;.resotg weower-twre otf 'war' 3er q 'reelf mweljw;r qw ewk rfsgf hiowrguwrp'wa erpqwSRFEWR EWR EQREWRQWRQWEWQ  EW R87Y W3E40 1Alaek iwptq3 po3w[- 4[eq2]3- 2qpawerke;aljrd qiwe rulajrealkr hsj g,fxcjzs,gjs JIF;lfislkhksfjagh;pfkoetpi' ab j hjkhv lkh lkhkjxfsdil guposewf iku i oli ol  g lirep irw rew; ew ;woei ;oew t;oiwepr oe rlewli ;we eirew; rw rirpe rwrwprop4ri3p4r5849 258439053 3-590 904wt59e0wogjrio yuerop it;pu4poeto perh9 5y4 Lorem eskhwerlhwrkti rg;.resotg weower-twre otf 'war' 3er q 'reelf mweljw;r qw ewk rfsgf hiowrguwrp'wa erpqwSRFEWR EWR EQREWRQWRQWEWQ  EW R87Y W3E40 1Alaek iwptq3 po3w[- 4[eq2]3- 2qpawerke;aljrd qiwe rulajrealkr hsj g,fxcjzs,gjs JIF;lfislkhksfjagh;pfkoetpi' ab j hjkhv lkh lkhkjxfsdil guposewf iku i oli ol  g lirep irw rew; ew ;woei ;oew t;oiwepr oe rlewli ;we eirew; rw rirpe rwrwprop4ri3p4r5849 258439053 3-590 904wt59e0wogjrio yuerop it;pu4poeto perh9 5y4 Lorem eskhwerlhwrkti rg;.resotg weower-twre otf 'war' 3er q 'reelf mweljw;r qw ewk rfsgf hiowrguwrp'wa erpqwSRFEWR EWR EQREWRQWRQWEWQ  EW R87Y W3E40 1Alaek iwptq3 po3w[- 4[eq2]3- 2qpawerke;aljrd qiwe rulajrealkr hsj g,fxcjzs,gjs JIF;lfislkhksfjagh;pfkoetpi' ab j hjkhv lkh lkhkjxfsdil guposewf iku i oli ol  g lirep irw rew; ew ;woei ;oew t;oiwepr oe rlewli ;we eirew; rw rirpe rwrwprop4ri3p4r5849 258439053 3-590 904wt59e0wogjrio yuerop it;pu4poeto perh9 5y4<br><br>
@@ -255,20 +496,28 @@
             End<br><br>
         </div>
         <div id="content2">
+            <div class="content-header">
+                <span class="content-header-icon icon-blue-globe-large"></span>
+                <span class="content-header-text">Другая страница</span>
+            </div>
+            <span class="content-subheader">Мы занимаемся автоматизацией взешивания</span>
             <p>Content goes here</p>
-                
-            <h1 class="header">Это другая страница</h1>
 
-            Lorem eskhwerlhwrkti rg;.resotg weower-twre otf 'war' 3er q 'reelf mweljw;r qw ewk rfsgf hiowrguwrp'wa erpqwSRFEWR EWR EQREWRQWRQWEWQ    EW R87Y W3E40 1Alaek iwptq3 po3w[- 4[eq2]3- 2qpawerke;aljrd qiwe rulajrealkr hsj g,fxcjzs,gjs JIF;lfislkhksfjagh;pfkoetpi' ab j hjkhv lkh lkhkjxfsdil guposewf iku i oli ol  g lirep irw rew; ew ;woei ;oew t;oiwepr oe rlewli ;we eirew; rw rirpe rwrwprop4ri3p4r5849 258439053 3-590 904wt59e0wogjrio yuerop it;pu4poeto perh9 5y4 Lorem eskhwerlhwrkti rg;.resotg weower-twre otf 'war' 3er q 'reelf mweljw;r qw ewk rfsgf hiowrguwrp'wa erpqwSRFEWR EWR EQREWRQWRQWEWQ  EW R87Y W3E40 1Alaek iwptq3 po3w[- 4[eq2]3- 2qpawerke;aljrd qiwe rulajrealkr hsj g,fxcjzs,gjs JIF;lfislkhksfjagh;pfkoetpi' ab j hjkhv lkh lkhkjxfsdil guposewf iku i oli ol  g lirep irw rew; ew ;woei ;oew t;oiwepr oe rlewli ;we eirew; rw rirpe rwrwprop4ri3p4r5849 258439053 3-590 904wt59e0wogjrio yuerop it;pu4poeto perh9 5y4 Lorem eskhwerlhwrkti rg;.resotg weower-twre otf 'war' 3er q 'reelf mweljw;r qw ewk rfsgf hiowrguwrp'wa erpqwSRFEWR EWR EQREWRQWRQWEWQ  EW R87Y W3E40 1Alaek iwptq3 po3w[- 4[eq2]3- 2qpawerke;aljrd qiwe rulajrealkr hsj g,fxcjzs,gjs JIF;lfislkhksfjagh;pfkoetpi' ab j hjkhv lkh lkhkjxfsdil guposewf iku i oli ol  g lirep irw rew; ew ;woei ;oew t;oiwepr oe rlewli ;we eirew; rw rirpe rwrwprop4ri3p4r5849 258439053 3-590 904wt59e0wogjrio yuerop it;pu4poeto perh9 5y4 Lorem eskhwerlhwrkti rg;.resotg weower-twre otf 'war' 3er q 'reelf mweljw;r qw ewk rfsgf hiowrguwrp'wa erpqwSRFEWR EWR EQREWRQWRQWEWQ  EW R87Y W3E40 1Alaek iwptq3 po3w[- 4[eq2]3- 2qpawerke;aljrd qiwe rulajrealkr hsj g,fxcjzs,gjs JIF;lfislkhksfjagh;pfkoetpi' ab j hjkhv lkh lkhkjxfsdil guposewf iku i oli ol  g lirep irw rew; ew ;woei ;oew t;oiwepr oe rlewli ;we eirew; rw rirpe rwrwprop4ri3p4r5849 258439053 3-590 904wt59e0wogjrio yuerop it;pu4poeto perh9 
+            <p>Lorem eskhwerlhwrkti rg;.resotg weower-twre otf 'war' 3er q 'reelf mweljw;r qw ewk rfsgf hiowrguwrp'wa erpqwSRFEWR EWR EQREWRQWRQWEWQ    EW R87Y W3E40 1Alaek iwptq3 po3w[- 4[eq2]3- 2qpawerke;aljrd qiwe rulajrealkr hsj g,fxcjzs,gjs JIF;lfislkhksfjagh;pfkoetpi' ab j hjkhv lkh lkhkjxfsdil guposewf iku i oli ol  g lirep irw rew; ew ;woei ;oew t;oiwepr oe rlewli ;we eirew; rw rirpe rwrwprop4ri3p4r5849 258439053 3-590 904wt59e0wogjrio yuerop it;pu4poeto perh9 5y4 Lorem eskhwerlhwrkti rg;.resotg weower-twre otf 'war' 3er q 'reelf mweljw;r qw ewk rfsgf hiowrguwrp'wa erpqwSRFEWR EWR EQREWRQWRQWEWQ  EW R87Y W3E40 1Alaek iwptq3 po3w[- 4[eq2]3- 2qpawerke;aljrd qiwe rulajrealkr hsj g,fxcjzs,gjs JIF;lfislkhksfjagh;pfkoetpi' ab j hjkhv lkh lkhkjxfsdil guposewf iku i oli ol  g lirep irw rew; ew ;woei ;oew t;oiwepr oe rlewli ;we eirew; rw rirpe </p>
+
+            <p>rwrwprop4ri3p4r5849 258439053 3-590 904wt59e0wogjrio yuerop it;pu4poeto perh9 5y4 Lorem eskhwerlhwrkti rg;.resotg weower-twre otf 'war' 3er q 'reelf mweljw;r qw ewk rfsgf hiowrguwrp'wa erpqwSRFEWR EWR EQREWRQWRQWEWQ  EW R87Y W3E40 1Alaek iwptq3 po3w[- 4[eq2]3- 2qpawerke;aljrd qiwe rulajrealkr hsj g,fxcjzs,gjs JIF;lfislkhksfjagh;pfkoetpi' ab j hjkhv lkh lkhkjxfsdil guposewf iku i oli ol  g lirep irw rew; ew ;woei ;oew t;oiwepr oe rlewli ;we eirew; rw rirpe rwrwprop4ri3p4r5849 258439053 3-590 904wt59e0wogjrio yuerop it;pu4poeto perh9 5y4 Lorem eskhwerlhwrkti rg;.resotg weower-twre otf 'war' 3er q 'reelf mweljw;r qw ewk rfsgf hiowrguwrp'wa erpqwSRFEWR EWR EQREWRQWRQWEWQ  EW R87Y W3E40 1Alaek iwptq3 po3w[- 4[eq2]3- 2qpawerke;aljrd qiwe rulajrealkr hsj g,fxcjzs,gjs JIF;lfislkhksfjagh;pfkoetpi' ab j hjkhv lkh lkhkjxfsdil guposewf iku i oli ol  g lirep irw rew; ew ;woei ;oew t;oiwepr oe rlewli ;we eirew; rw rirpe rwrwprop4ri3p4r5849 258439053 3-590 904wt59e0wogjrio yuerop it;pu4poeto perh9
 
             End<br><br>
             End<br><br>
-            End<br><br>
+            End<br><br></p>
         </div>
         <div id="content3">
+            <div class="content-header">
+                <span class="content-header-icon icon-blue-location-large"></span>
+                <span class="content-header-text">Третья страница!!!</span>
+            </div>
+            <span class="content-subheader">Мы занимаемся автоматизацией взешивания</span>
             <p>Content goes here</p>
-                        
-            <h1 class="header">Это третья страница!!!</h1>
 
             Lorem eskhwerlhwrkti rg;.resotg weower-twre otf 'war' 3er q 'reelf mweljw;r qw ewk rfsgf hiowrguwrp'wa erpqwSRFEWR EWR EQREWRQWRQWEWQ    EW R87Y W3E40 1Alaek iwptq3 po3w[- 4[eq2]3- 2qpawerke;aljrd qiwe rulajrealkr hsj g,fxcjzs,gjs JIF;lfislkhksfjagh;pfkoetpi' ab j hjkhv lkh lkhkjxfsdil guposewf iku i oli ol  g lirep irw rew; ew ;woei ;oew t;oiwepr oe rlewli ;we 
             <br><br>eirew; rw rirpe rwrwprop4ri3p4r5849 258439053 3-590 904wt59e0wogjrio yuerop it;pu4poeto perh9 5y4 Lorem eskhwerlhwrkti rg;.resotg weower-twre otf 'war' 3er q 'reelf mweljw;r qw ewk rfsgf hiowrguwrp'wa erpqwSRFEWR EWR EQREWRQWRQWEWQ  EW R87Y W3E40 1Alaek iwptq3 po3w[- 4[eq2]3- 2qpawerke;aljrd qiwe rulajrealkr hsj g,fxcjzs,gjs JIF;lfislkhksfjagh;pfkoetpi' ab j hjkhv lkh lkhkjxfsdil guposewf iku i oli ol  g lirep irw rew; ew ;woei ;oew t;oiwepr oe rlewli ;we eirew; rw rirpe rwrwprop4ri3p4r5849 258439053 3-590 904wt59e0wogjrio yuerop it;pu4poeto perh9 5y4 Lorem eskhwerlhwrkti rg;.resotg weower-twre otf
@@ -279,9 +528,12 @@
             End<br><br>
         </div>
         <div id="content4">
+            <div class="content-header">
+                <span class="content-header-icon icon-blue-mail-large"></span>
+                <span class="content-header-text">Четвертая...</span>
+            </div>
+            <span class="content-subheader">Мы занимаемся автоматизацией взешивания</span>
             <p>Content goes here</p>
-                
-            <h1 class="header">Это четвертая страница...</h1>
 
             Lorem eskhwerlhwrkti rg;.resotg weower-twre otf 'war' 3er q 'reelf mweljw;r qw ewk rfsgf hiowrguwrp'wa erpqwSRFEWR EWR EQREWRQWRQWEWQ    EW R87Y W3E40 1Alaek iwptq3 po3w[- 4[eq2]3- <br><br>2qpawerke;aljrd qiwe rulajrealkr hsj g,fxcjzs,gjs JIF;lfislkhksfjagh;pfkoetpi' ab j hjkhv lkh lkhkjxfsdil guposewf iku i oli ol  g lirep irw rew; ew ;woei ;oew t;oiwepr oe rlewli ;we 
             <br><br>eirew; rw rirpe rwrwprop4ri3p4r5849 258439053 3-590 904wt59e0wogjrio yuerop it;pu4poeto perh9 5y4 Lorem eskhwerlhwrkti rg;.resotg weower-twre otf 'war' 3er q 'reelf mweljw;r qw ewk rfsgf hiowrguwrp'wa erpqwSRFEWR EWR EQREWRQWRQWEWQ  EW R87Y W3E40 1Alaek iwptq3 po3w[- 4[eq2]3- 2qpawerke;aljrd qiwe rulajrealkr hsj g,fxcjzs,gjs <br><br>JIF;lfislkhksfjagh;pfkoetpi' ab j hjkhv lkh lkhkjxfsdil guposewf iku i oli ol  g lirep irw rew; ew ;woei ;oew t;oiwepr oe rlewli ;we eirew; rw rirpe rwrwprop4ri3p4r5849 258439053 3-590 904wt59e0wogjrio yuerop it;pu4poeto perh9 5y4 Lorem eskhwerlhwrkti rg;.resotg weower-twre otf
@@ -292,11 +544,29 @@
             End<br><br>
         </div>
         <div id="content5">
+            <div class="content-header">
+                <span class="content-header-icon icon-blue-phone-large"></span>
+                <span class="content-header-text">Это 5 страница</span>
+            </div>
+            <span class="content-subheader">Мы занимаемся автоматизацией взешивания</span>
             <p>Content goes here</p>
-                
-            <h1 class="header">Это 5 страница</h1>
 
-            ПЯТАЯ  ПЯТАЯ  ПЯТАЯ  ПЯТАЯ  ПЯТАЯ  ПЯТАЯ  ПЯТАЯ  ПЯТАЯ  ПЯТАЯ  ПЯТАЯ  ПЯТАЯ  ПЯТАЯ  ПЯТАЯ   ыке цкецекуе йу ецйкуекураврпук ецецуецу    ецецуецу ецекце цуецц
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
             <br><br>setkjo9wen utwerlihdagk,iawero't
 
             End<br><br>
@@ -304,15 +574,74 @@
             End<br><br>
         </div>
         <div id="content6">
+            <div class="content-header">
+                <span class="content-header-icon icon-blue-lock-large"></span>
+                <span class="content-header-text">ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ</span>
+            </div>
+            <span class="content-subheader">Мы занимаемся автоматизацией взешивания</span>
             <p>Content goes here</p>
                 
             <h1 class="header">Это ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ страница</h1>
 
-            ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ 
-            <br><br>ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ 
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            <br><br>
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            <br><br>
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            <br><br>
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            <br><br>
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            <br><br>
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ 
 
             ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ 
-            <br><br>ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ 
+            <br><br>
 
             End<br><br>
             End<br><br>
@@ -324,6 +653,7 @@
         function toggleMenu() {
             $("#menuButton").toggleClass("is-active");
             $("#toggleSidebar").toggleClass("is-active");
+            hideSearch();
         }
         function hideMenu() {
             $("#menuButton").removeClass("is-active");
@@ -333,11 +663,16 @@
             $(".header-items-wrapper").toggleClass("is-active");
         }
 
-        function openSearch() {
-            $(".header-search").addClass("is-active");
+        function toggleSearch(e) {
+            console.log(">> toggleSearch");console.log(e);
+            $(".header-search").toggleClass("is-active");
+        }
+        function hideSearch(e) {
+            $(".header-search").removeClass("is-active");
         }
 
         window.addEventListener("resize", function() {
+            hideSearch();
         });
         window.addEventListener("scroll", function() {
             if (window.pageYOffset > 0) {
@@ -353,6 +688,7 @@
             }
         });
         $("#content-handler").on("click", hideMenu);
+        $("#content-handler").on("click", hideSearch);
 
         var contentIds = [
             "content1", "content2", "content3", "content4", "content5", "content6"
