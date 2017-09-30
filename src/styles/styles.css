@@ -352,33 +352,40 @@ header a,
 
 
 /*----------------branding-----------------*/
-    .branding {
-        color: #e3f2fd; /*50*/
-        transition: 1s all;
+    .branding, .branding .branding-text {
+        color: #ccc;/*#e3f2fd; /*50*/
+        -webkit-transition: text-shadow 1s, color 1s;
+        -moz-transition: text-shadow 1s, color 1s;
+        -o-transition: text-shadow 1s, color 1s;
+        transition: text-shadow 1s, color 1s;
     }
-    .branding:hover {
+    .branding:hover, .branding:hover .branding-text {
         color: white;
         text-shadow: black 10px 10px 10px;
     }
     .branding .header-item-icon {
-        transition: 1s all;
+        -webkit-transition: 1s -webkit-filter;
+        -moz-transition: 1s -moz-filter;
+        -o-transition: 1s -o-filter;
+        transition: 1s filter;
     }
     .branding:hover .header-item-icon {
         -webkit-filter: drop-shadow(10px 10px 10px #000);
          filter: drop-shadow(10px 10px 10px #000);
     }
-
-
-    .maininfo {
+    .branding-text.maininfo {
         font-size: 1.5em;
         color: white;
     }
-    .subinfo {
+    .branding-text.subinfo {
         font-size: 0.5em;
-        color: #e3f2fd; /*50*/;
+        color: #ccc; /*#e3f2fd; /*50*/;
         letter-spacing: 0.25em;
         text-align: center;
     }
+    
+
+    
 /*-----------------------------------------*/
 
 
