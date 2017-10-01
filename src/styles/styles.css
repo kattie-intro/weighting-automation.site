@@ -225,7 +225,7 @@ header a,
         margin-left: 30px;
     }
     #menuHandlerCover {
-        width: calc(10vw - 20px);
+        width: calc(10vw - 40px);
     }
     .header-item-icon {
         position: relative;
@@ -255,19 +255,23 @@ header a,
         left: 0;
         min-height: calc((100vh - 80px) - 124px);
         float: left;
-        background: #111;
+        background: #444;
         height: 100%;
         transition: 0.5s left;
     }
 
     .sidebar {
         width: 300px;
+        height: calc(100vh - 84px);
         position: fixed;
-        top: 214px; /*60 + 94 + 60*/
         left: -300px;
+        top: 84px;
+
+        padding-top: 20px;
         overflow-x: hidden;
         z-index: 11;
         transition: 0.5s left;
+        overflow-y: auto;
     }
     .sidebar.is-active {
         left: 0;
@@ -318,7 +322,7 @@ header a,
         transition: 0.3s background;
     }
     .menu-item:hover {
-        background: #444;
+        background: #777;
         text-shadow: black 5px 5px 10px;
     }
     .menu-item:hover .menu-text {
@@ -382,10 +386,7 @@ header a,
         color: #ccc; /*#e3f2fd; /*50*/;
         letter-spacing: 0.25em;
         text-align: center;
-    }
-    
-
-    
+    } 
 /*-----------------------------------------*/
 
 
@@ -637,7 +638,8 @@ header a,
             width: 72px;
         }
         .sidebar {
-            top: 78px;
+            top: 68px;
+            height: calc(100vh - 68px);
             width: 72px;
             left: -72px;
         }
@@ -687,9 +689,6 @@ header a,
     }
 
     @media screen and (max-width: 500px) {
-        .sidebar {
-            top: 136px;
-        }
         .header-search .header-search-wrapper {
             width: 0;
 
