@@ -5,35 +5,40 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="icon" href="images/scale.ico" type="image/x-icon" />
 	<link rel="stylesheet" type="text/css" href="styles/styles.css">
+    <!--<script type="text/javascript" src="scripts/less.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="styles/styles.less">-->
     <link rel="stylesheet" type="text/css" href="styles/icons.css">
     <link rel="stylesheet" type="text/css" href="styles/galery.css">
 	<title>Автоматизация взвешиваний</title>
 </head>
 <body>
 	<div class="wrapper">
-        <header>
-            <div class="header-item" id="menuHandler">
-                <span class="header-item-icon" id="menuButton" onclick="toggleMenu()"></span>
+        <header class="header">
+            <div class="header__item header__item-menu-handler" id="menuHandler">
+                <span class="header__item-icon header__item-menu-button" id="menuButton" onclick="toggleMenu()"></span>
             </div>
-            <div class="header-item" id="menuHandlerCover"></div>
-            <div class="header-item branding">
-                <div class="inline-item brand-icon-small">
-                    <span class="header-item-icon icon-weight-medium"></span>
+            <div class="header__item header__item-menu-cover" id="menuHandlerCover"></div>
+            <div class="header__item header__item-branding">
+                <span class="header__item-icon inline-item icon-weight-medium"></span>
+                <div class="branding-text inline-item maininfo">Имя компании</div>
+
+                <!--<div class="inline-item brand-icon-small">
+                    <span class="header__item-icon icon-weight-medium"></span>
                 </div>
                 <div class="inline-item brand-icon-large">
-                    <span class="header-item-icon icon-weight-large"></span>
+                    <span class="header__item-icon icon-weight-large"></span>
                 </div>
                 <div class="inline-item brand-name-large">
                     <div class="branding-text maininfo">Имя компании</div>
                     <div class="branding-text subinfo">Автоматизация взвешиваний</div>
-                </div>
+                </div>-->
             </div>
 
             
             
             
-            <div class="header-item inline-item-last">
-                <button class="header-item-icon icon-button button-blue-login"></button>
+            <div class="header__item header__item-right">
+                <button class="header__item-icon icon-button button-blue-login"></button>
             </div>
 
             
@@ -43,21 +48,21 @@
             <!--<div class="header-item inline-item-last"><span title="Файлы" class="header-item-icon icon-folder"></span></div>
             <div class="header-item inline-item-last"><span title="Синхронизация" class="header-item-icon icon-network"></span></div>-->
 
-            <div class="header-item header-search inline-item-last">
-                <div class="header-search-activator">
-                    <button class="button-search" onclick="toggleSearch(this)"></button>
+            <div class="header__item header__item-right header__item-search">
+                <div class="header__item-search-activator">
+                    <button class="header__item-search-button" onclick="toggleSearch(this)"></button>
                 </div>
-                <div class="header-search-wrapper">
-                    <input placeholder="Поиск по сайту">
+                <div class="header__item-search-wrapper js-search">
+                    <button class="header__item-close-search-button js-search" onclick="hideSearch(this)"></button>
+                    <input class="header__item-search-input js-search" placeholder="Поиск по сайту">
+                    <div class="header__item-search-button-cover"></div>
                     <!--<span class="header-item-icon icon-search-white" onclick="openSearch()"></span>-->
                 </div>
             </div>
             
             <!--<div class="clearfix"></div>-->
         </header>
-        <div id="header-shadow">
-        </div>
-        <div class="content">
+        <div class="content is-scrolled">
             <div id="menuBack" class="sidebar__wrapper">
             </div>
             <div id="menuContainer" class="sidebar">
@@ -88,11 +93,11 @@
                     </li>
                 </ul>
             </div>
-            <div class="content__handler" id="content-handler">
+            <div class="content__handler is-scrolled" id="content-handler">
             </div>
         </div>
 
-        <div id="footer">
+        <footer id="footer" class="footer">
             <div class="footer-wrapper">
                 <span class="branding">© <span class="js-year">2017</span> Имя компании</span>
                 <div class="navigation inline-item-last">
@@ -195,7 +200,7 @@
                     </div>
                 </li>
             </ul>-->
-        </div>
+        </footer>
     </div>
 
     <div style="display: none">
@@ -670,27 +675,27 @@
 
         function toggleSearch(e) {
             console.log(">> toggleSearch");console.log(e);
-            $(".header-search").toggleClass("is-active");
+            $(".js-search").toggleClass("is-active");
         }
         function hideSearch(e) {
-            $(".header-search").removeClass("is-active");
+            $(".js-search").removeClass("is-active");
         }
 
         window.addEventListener("resize", function() {
             hideSearch();
         });
         window.addEventListener("scroll", function() {
-            /*if (window.pageYOffset > 0) {
-                    $("header").addClass("scroll-header");
-                    $("#header-shadow").addClass("scroll-header");
+            if (window.pageYOffset > 0) {
+                    $("header").addClass("is-scrolled");
+                    /*$("#header-shadow").addClass("scroll-header");
                     $(".content").addClass("is-scrolled");
-                    $("#content-handler").addClass("is-scrolled");
+                    $("#content-handler").addClass("is-scrolled");*/
             } else {
-                $("header").removeClass("scroll-header");
-                $("#header-shadow").removeClass("scroll-header");
+                $("header").removeClass("is-scrolled");
+                /*$("#header-shadow").removeClass("scroll-header");
                 $(".content").removeClass("is-scrolled");
-                $("#content-handler").removeClass("is-scrolled");
-            }*/
+                $("#content-handler").removeClass("is-scrolled");*/
+            }
         });
         $("#content-handler").on("click", hideMenu);
         $("#content-handler").on("click", hideSearch);
