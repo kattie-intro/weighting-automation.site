@@ -19,8 +19,8 @@
             </div>
             <div class="header__item header__item-menu-cover" id="menuHandlerCover"></div>
             <div class="header__item header__item-branding">
-                <span class="header__item-icon inline-item icon-weight-medium"></span>
-                <div class="branding-text inline-item maininfo">Имя компании</div>
+                <!--<span class="header__item-icon inline-item icon-weight-medium js-page-icon"></span>-->
+                <div class="inline-item maininfo js-page-title">Имя компании</div>
 
                 <!--<div class="inline-item brand-icon-small">
                     <span class="header__item-icon icon-weight-medium"></span>
@@ -62,52 +62,104 @@
             
             <!--<div class="clearfix"></div>-->
         </header>
-        <div class="content is-scrolled">
+        <div class="content__wrapper is-scrolled">
             <div id="menuBack" class="sidebar__wrapper">
             </div>
             <div id="menuContainer" class="sidebar">
                 <ul>
-                    <li class="menu-item" onclick="onLinkClick(0)">
-                        <span class="menu-icon icon-blue-fax-small"></span>
-                        <a class="menu-text" href="javascript:void(0)">Пууууууууууункт 1</a>
+                    <li class="menu-item js-menu-item" onclick="onLinkClick(0)">
+                        <span class="menu-icon icon-blue-fax-small js-menu-item-icon"></span>
+                        <a class="menu-text js-menu-item-text" href="javascript:void(0)">Автоматизация</a>
                     </li>
-                    <li class="menu-item" onclick="onLinkClick(1)">
-                        <span class="menu-icon icon-blue-globe-small"></span>
-                        <a class="menu-text" href="javascript:void(0)">Пууууууункт 2</a>
+                    <li class="menu-item js-menu-item" onclick="onLinkClick(1)">
+                        <span class="menu-icon icon-blue-globe-small js-menu-item-icon"></span>
+                        <a class="menu-text js-menu-item-text" href="javascript:void(0)">Другая страница</a>
                     </li>
-                    <li class="menu-item" onclick="onLinkClick(2)">
-                        <span class="menu-icon icon-blue-location-small"></span>
-                        <a class="menu-text" href="javascript:void(0)">Пуункт 3</a>
+                    <li class="menu-item js-menu-item" onclick="onLinkClick(2)">
+                        <span class="menu-icon icon-blue-location-small js-menu-item-icon"></span>
+                        <a class="menu-text js-menu-item-text" href="javascript:void(0)">Третья страница!!!</a>
                     </li>
-                    <li class="menu-item" onclick="onLinkClick(3)">
-                        <span class="menu-icon icon-blue-mail-small"></span>
-                        <a class="menu-text" href="javascript:void(0)">Пуууууууууу нкт 4</a>
+                    <li class="menu-item js-menu-item" onclick="onLinkClick(3)">
+                        <span class="menu-icon icon-blue-mail-small js-menu-item-icon"></span>
+                        <a class="menu-text js-menu-item-text" href="javascript:void(0)">Четвертая...</a>
                     </li>
-                    <li class="menu-item" onclick="onLinkClick(4)">
-                        <span class="menu-icon icon-blue-phone-small"></span>
-                        <a class="menu-text" href="javascript:void(0)">Пункт 5</a>
+                    <li class="menu-item js-menu-item" onclick="onLinkClick(4)">
+                        <span class="menu-icon icon-blue-phone-small js-menu-item-icon"></span>
+                        <a class="menu-text js-menu-item-text" href="javascript:void(0)">Это 5 страница</a>
                     </li>
-                    <li class="menu-item" onclick="onLinkClick(5)">
-                        <span class="menu-icon icon-blue-lock-small"></span>
-                        <a class="menu-text" href="javascript:void(0)">Пууууункт 6</a>
+                    <li class="menu-item js-menu-item" onclick="onLinkClick(5)">
+                        <span class="menu-icon icon-blue-lock-small js-menu-item-icon"></span>
+                        <a class="menu-text js-menu-item-text" href="javascript:void(0)">ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ</a>
                     </li>
                 </ul>
             </div>
-            <div class="content__handler is-scrolled" id="content-handler">
+                <div class="content" id="content">
+                <div class="content__header">  
+                    <span class="content__header-item icon-weight-xlarge" style="vertical-align: middle;"></span>
+                    <span class="branding maininfo" style="vertical-align: middle; color: black; font-size: 3em; font-weight: bold; display: inline-block;">Имя компании</span>
+                </div>
+                <div class="content__handler is-scrolled" id="content-handler">
+                </div>
             </div>
         </div>
 
         <footer id="footer" class="footer">
-            <div class="footer-wrapper">
-                <span class="branding">© <span class="js-year">2017</span> Имя компании</span>
-                <div class="navigation inline-item-last">
-                    <nav>
+            <div class="row">
+                <div class="row__part-left">
+                    <div class="row__item">
                         <a class="nav-item" href="javascript:void(0)">First link</a>
-                        <a class="nav-item" href="javascript:void(0)">Second</a>
-                        <a class="nav-item" href="javascript:void(0)">Third link</a>
-                    </nav>
+                        <a class="nav-item nav-item-sub" href="javascript:void(0)">First link</a>
+                        <a class="nav-item nav-item-sub" href="javascript:void(0)">First link</a>
+                        <a class="nav-item nav-item-sub" href="javascript:void(0)">First link</a>
+                    </div>
+                </div>
+                <div class="row__part-right">
+                    <div class="row__item navigation inline-item-last">
+                        <nav>
+                            <a class="nav-item" href="javascript:void(0)">First link</a>
+                            <a class="nav-item" href="javascript:void(0)">Second</a>
+                            <a class="nav-item" href="javascript:void(0)">Third link</a>
+                        </nav>
+                    </div>
                 </div>
             </div>
+            <div class="row">
+                <div class="row__part-left">
+                    <div class="row__item">
+                        <a class="nav-item" href="javascript:void(0)">First link</a>
+                        <a class="nav-item nav-item-sub" href="javascript:void(0)">First link</a>
+                        <a class="nav-item nav-item-sub" href="javascript:void(0)">First link</a>
+                        <a class="nav-item nav-item-sub" href="javascript:void(0)">First link</a>
+                    </div>
+                </div>
+                <div class="row__part-right">
+                    <div class="row__item inline-item-last">
+                        <a class="nav-item" href="javascript:void(0)">First link</a>
+                    </div>
+                </div>
+            </div>
+            <div class="row row-brand">
+                <div class="row__part-left">
+                    <span class="row-icon-left icon-item icon-weight-medium"></span>
+                    <div class="row__item">
+                        <span class="branding">© <span class="js-year">2017</span> Имя компании</span>
+                        <a class="nav-item" href="javascript:void(0)">First link</a>
+                        <a class="nav-item" href="javascript:void(0)">First link</a>
+                        <a class="nav-item" href="javascript:void(0)">First link</a>
+                    </div>
+                </div>
+                <div class="row__part-right">
+                    <div class="row__item navigation inline-item-last">
+                        <nav>
+                            <a class="nav-item" href="javascript:void(0)">First link</a>
+                            <a class="nav-item" href="javascript:void(0)">Second</a>
+                            <a class="nav-item" href="javascript:void(0)">Third link</a>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            
+            
             <!--<ul class="instring hoverable-menu">
                 <li class="instring-item hoverable-menu-parent">
                     <a class="nav-item js-item" href="javascript:void(0)">Пункт 1<a/>
@@ -212,6 +264,23 @@
 
             <span class="content-subheader">Мы занимаемся автоматизацией взешивания</span>
             <p>Content goes here</p>
+
+            <div class="image-block">
+                <div class="image-block__image-holder">
+                    <img src="images/car.jpg"></img>
+                </div>
+                <div class=image-block__button-holder>
+                    <div class="image-block__button-wrapper icon-button-wrapper">
+                        <button class="image-block__button icon-button button-play"></button>
+                    </div>
+                    <div class="image-block__button-wrapper icon-button-wrapper">
+                        <button class="image-block__button icon-button button-download"></button>
+                    </div>
+                    <div class="image-block__button-wrapper icon-button-wrapper">
+                        <button class="image-block__button icon-button button-sync"></button>
+                    </div>
+                </div>
+            </div>
             <!--<div>
                 <ul class="instring">
                     <li class="instring-item">Пункт 1</li>
@@ -509,20 +578,56 @@
             <span class="content-subheader">Мы занимаемся автоматизацией взешивания</span>
             <p>Content goes here</p>
 
-            Lorem eskhwerlhwrkti rg;.resotg weower-twre otf 'war' 3er q 'reelf mweljw;r qw ewk rfsgf hiowrguwrp'wa erpqwSRFEWR EWR EQREWRQWRQWEWQ    EW R87Y W3E40 1Alaek iwptq3 po3w[- 4[eq2]3- <br><br>2qpawerke;aljrd qiwe rulajrealkr hsj g,fxcjzs,gjs JIF;lfislkhksfjagh;pfkoetpi' ab j hjkhv lkh lkhkjxfsdil guposewf iku i oli ol  g lirep irw rew; ew ;woei ;oew t;oiwepr oe rlewli ;we 
-            <br><br>eirew; rw rirpe rwrwprop4ri3p4r5849 258439053 3-590 904wt59e0wogjrio yuerop it;pu4poeto perh9 5y4 Lorem eskhwerlhwrkti rg;.resotg weower-twre otf 'war' 3er q 'reelf mweljw;r qw ewk rfsgf hiowrguwrp'wa erpqwSRFEWR EWR EQREWRQWRQWEWQ  EW R87Y W3E40 1Alaek iwptq3 po3w[- 4[eq2]3- 2qpawerke;aljrd qiwe rulajrealkr hsj g,fxcjzs,gjs <br><br>JIF;lfislkhksfjagh;pfkoetpi' ab j hjkhv lkh lkhkjxfsdil guposewf iku i oli ol  g lirep irw rew; ew ;woei ;oew t;oiwepr oe rlewli ;we eirew; rw rirpe rwrwprop4ri3p4r5849 258439053 3-590 904wt59e0wogjrio yuerop it;pu4poeto perh9 5y4 Lorem eskhwerlhwrkti rg;.resotg weower-twre otf
-            <br><br> 'war' 3er q 'reelf mweljw;r qw ewk rfsgf hiowrguwrp'wa erpqwSRFEWR EWR EQREWRQWRQWEWQ  EW R87Y W3E40 1Alaek iwptq3 po3w[- 4[eq2]3- 2qpawerke;aljrd qiwe rulajrealkr hsj g,fxcjzs,gjs JIF;lfislkhksfjagh;pfkoetpi' ab j hjkhv lkh lkhkjxfsdil guposewf iku i oli ol  g lirep irw rew; ew ;woei ;oew t;oiwepr oe rlewli ;we eirew; rw rirpe rwrwprop4ri3p4r5849 <br><br>258439053 3-590 904wt59e0wogjrio yuerop it;pu4poeto perh9 5y4 Lorem eskhwerlhwrkti rg;.resotg weower-twre otf 'war' 3er q 'reelf mweljw;r qw ewk rfsgf hiowrguwrp'wa erpqwSRFEWR EWR EQREWRQWRQWEWQ  EW R87Y W3E40 1Alaek iwptq3 po3w[- 4[eq2]3- 2qpawerke;aljrd qiwe <br><br>rulajrealkr hsj g,fxcjzs,gjs JIF;lfislkhksfjagh;pfkoetpi' ab j hjkhv lkh lkhkjxfsdil guposewf iku i oli ol  g lirep irw rew; ew ;woei ;oew t;oiwepr oe rlewli ;we eirew; rw rirpe rwrwprop4ri3p4r5849 258439053 3-590 904wt59e0wogjrio yuerop it;pu4poeto perh9 
+            Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
-            End<br><br>
-            End<br><br>
-            End<br><br>
-        </div>
-        <div id="content5">
-            <div class="content-header">
-                <span class="content-header-icon icon-blue-phone-large"></span>
-                <span class="content-header-text">Это 5 страница</span>
+            
+            
+            <div class="image-block">
+                <div class="image-block__image-holder">
+                    <img src="images/car.jpg"></img>
+                </div>
+                <div class=image-block__button-holder>
+                    <div class="image-block__button-wrapper icon-button-wrapper">
+                        <button class="image-block__button icon-button button-play"></button>
+                    </div>
+                    <div class="image-block__button-wrapper icon-button-wrapper">
+                        <button class="image-block__button icon-button button-download"></button>
+                    </div>
+                    <div class="image-block__button-wrapper icon-button-wrapper">
+                        <button class="image-block__button icon-button button-sync"></button>
+                    </div>
+                </div>
             </div>
-            <span class="content-subheader">Мы занимаемся автоматизацией взешивания</span>
+
             <p>Content goes here</p>
 
             Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
@@ -547,6 +652,42 @@
             End<br><br>
             End<br><br>
         </div>
+        <div id="content5">
+            <div class="content-header">
+                <span class="content-header-icon icon-blue-phone-large"></span>
+                <span class="content-header-text">Это 5 страница</span>
+            </div>
+            <span class="content-subheader">Мы занимаемся автоматизацией взешивания</span>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+            proident, sunt in culpa qui officia deserunt mollit anim id est Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            <img class="" style="float: right; height: 200px;" src="images/car.png">
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur.
+        </div>
         <div id="content6">
             <div class="content-header">
                 <span class="content-header-icon icon-blue-lock-large"></span>
@@ -562,62 +703,10 @@
             cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
             proident, sunt in culpa qui officia deserunt mollit anim id est laborum.ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
             <br><br>
-            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-            <br><br>
-            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-            <br><br>
-            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-            <br><br>
-            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-            <br><br>
-            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ 
 
-            ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ 
-            <br><br>
-
-            End<br><br>
-            End<br><br>
-            End<br><br>
+            ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ
+            <br>
+            End
         </div>
         <!--<div id="mySidenav" class="sidenav">
                 <ul>
@@ -660,14 +749,14 @@
         function toggleMenu() {
             $("#menuButton").toggleClass("is-active");
             $("#menuContainer").toggleClass("is-active");
-            $("#content-handler").toggleClass("is-shifted");
+            $("#content").toggleClass("is-shifted");
             
             hideSearch();
         }
         function hideMenu() {
             $("#menuButton").removeClass("is-active");
             $("#menuContainer").removeClass("is-active");
-            $("#content-handler").removeClass("is-shifted");
+            $("#content").removeClass("is-shifted");
         }
         function toggleHeader() {
             $(".header-items-wrapper").toggleClass("is-active");
@@ -697,8 +786,8 @@
                 $("#content-handler").removeClass("is-scrolled");*/
             }
         });
-        $("#content-handler").on("click", hideMenu);
-        $("#content-handler").on("click", hideSearch);
+        $("#content").on("click", hideMenu);
+        $("#content").on("click", hideSearch);
 
         var contentIds = [
             "content1", "content2", "content3", "content4", "content5", "content6"
@@ -712,7 +801,13 @@
         var contentIds = [
             "content1", "content2", "content3", "content4", "content5", "content6"
         ];
+        var iconClasses = ["icon-blue-fax-medium", "icon-blue-globe-medium", "icon-blue-location-medium", "icon-blue-mail-medium", "icon-blue-phone-medium", "icon-blue-lock-medium"];
         function showContent(index) {
+            $(".js-menu-item").removeClass("is-active");
+            $(".js-menu-item")[index].className += " is-active";
+            $(".js-page-title").text($(".js-menu-item-text")[index].innerText);
+            //$(".js-page-icon")[0].className = "header__item-icon inline-item js-page-icon " + iconClasses[index];
+
             document.getElementById("content-handler").innerHTML = document.getElementById(contentIds[index]).innerHTML;
             //setupSidebarHeight();
         }
@@ -739,7 +834,7 @@
         }*/
 
 
-        showContent(0);
+        showContent(5);
         $(".js-year").text((new Date()).getFullYear());
     </script>
 </body>

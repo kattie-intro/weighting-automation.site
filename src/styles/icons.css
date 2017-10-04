@@ -1,16 +1,6 @@
 .icon-info::before {
     content: url("../images/info.png");
 }
-.icon-weight-small::before {
-    content: url("../images/weight32.png");
-}
-.icon-weight-medium::before {
-    content: url("../images/weight48.png");
-}
-
-.icon-weight-xlarge::before {
-    content: url("../images/weight128.png");
-}
 .icon-notificaton::before {
     content: url("../images/notification48.png");
 }
@@ -212,7 +202,22 @@
 }
 
 
+.icon-weight-small {
+    width: 32px;
+    height: 32px;
+    content: url("../images/weight32.png");
+}
+.icon-weight-medium {
+    width: 48px;
+    height: 48px;
+    content: url("../images/weight48.png");
+}
 
+.icon-weight-xlarge {
+    width: 128px;
+    height: 128px;
+    content: url("../images/weight128.png");
+}
 .icon-weight-large {
     width: 64px;
     height: 64px;
@@ -224,6 +229,37 @@
 /*.icon-weight-large::before {
     content: url("../images/weight64.png");
 }*/
+
+.icon-blue-fax-medium {
+    width: 48px;
+    height: 48px;
+    content: url("../images/blue_fax48.png");
+}
+.icon-blue-globe-medium {
+    width: 48px;
+    height: 48px;
+    content: url("../images/blue_globe48.png");
+}
+.icon-blue-location-medium {
+    width: 48px;
+    height: 48px;
+    content: url("../images/blue_location48.png");
+}
+.icon-blue-mail-medium {
+    width: 48px;
+    height: 48px;
+    content: url("../images/blue_mail48.png");
+}
+.icon-blue-phone-medium {
+    width: 48px;
+    height: 48px;
+    content: url("../images/blue_phone48.png");
+}
+.icon-blue-lock-medium {
+    width: 48px;
+    height: 48px;
+    content: url("../images/blue_lock48.png");
+}
 
 .button-login {
     width: 48px;
