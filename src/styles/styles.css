@@ -19,7 +19,9 @@
     width: 100%;
     position: relative;
     background: #bbdefb; /*100*/
-    padding: 20px 10%;
+    background: #64b5f6; /*300*/
+    background: #90cafd; /*200*/
+    padding: 20px 5%;
     transition: 0.5s margin;
 }
 .content.is-shifted {
@@ -31,10 +33,28 @@
     height: 200px;
     position: relative;
     display: inline-block;
-    padding: 20px;
     border-radius: 5px;
     background: #e3f2fd; /*50*/
     border: none;
+    box-shadow: 0 0 15px 0 #263238;
+}
+.content__header-back {
+    height: 100%;
+    border-radius: 5px;
+
+    background: url(../images/car.png) no-repeat;
+    background-position: right 0;
+    
+    background: url(../images/car-big.jpg);
+    background-position: center 85%;
+    opacity: 0.5;
+}
+.content__header-wrapper {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    padding: 20px;
 }
 .content__header-item {
     max-height: 160px;
@@ -47,6 +67,7 @@
     border-radius: 5px;
     background: #e3f2fd; /*50*/
     border: none;
+    box-shadow: 0 0 15px 0 #263238;
 }
 
 .header {
@@ -106,7 +127,7 @@
     z-index: 11;
 }
 .header__item-menu-cover {
-    width: calc(10vw - 30px);
+    width: calc(5vw - 30px);
 }
 
 .header__item-search {
@@ -317,12 +338,12 @@
 
     .sidebar {
         width: 300px;
-        height: calc(100vh - 84px);
+        height: calc(100vh);
         position: fixed;
         left: -300px;
-        top: 84px;
+        top: 0;
 
-        padding-top: 20px;
+        padding-top: 104px;
         overflow-x: hidden;
         z-index: 11;
         transition: 0.5s left;
@@ -330,6 +351,7 @@
     }
     .sidebar.is-active {
         left: 0;
+        box-shadow: 0 0 15px 0 #263238;
     }
 
     .sidebar ul {
@@ -355,6 +377,7 @@
         left: 10px;
         bottom: 10px;
         z-index: 10;
+        opacity: 0.6;
     }
 
 
@@ -381,10 +404,8 @@
         font-weight: 600;
     }
     .menu-item:hover {
-        background: #777;
+        background: #546e7a; /*600*/
         background: #b0bec5; /*200*/
-        text-shadow: black 5px 5px 10px;
-        text-shadow: black 5px 5px 20px;
     }
     /*.menu-item:hover .menu-text {
         color: white;
@@ -397,6 +418,12 @@
         color: white;
         color: #1565c0; /*800*/
     }
+    .menu-item.is-active .menu-icon {
+        opacity: 1;
+    }
+    .menu-item:hover .menu-icon {
+        opacity: 1;
+    }
 /*-----------------------------------------*/
 
 
@@ -407,7 +434,7 @@
     }
     .nav-item {
         margin: 0 10px;
-        color: #ccc;
+        color: #90cafd; /*200*/;
         text-decoration: none;
         transition: 0.3s background;
         font-family: Arial,sans-serif;

@@ -94,9 +94,13 @@
                 </ul>
             </div>
                 <div class="content" id="content">
-                <div class="content__header">  
-                    <span class="content__header-item icon-weight-xlarge" style="vertical-align: middle;"></span>
-                    <span class="branding maininfo" style="vertical-align: middle; color: black; font-size: 3em; font-weight: bold; display: inline-block;">Имя компании</span>
+                <div class="content__header">
+                    <div class="content__header-back">
+                    </div>
+                    <div class="content__header-wrapper">
+                        <span class="content__header-item icon-weight-xlarge" style="vertical-align: middle;"></span>
+                        <span class="maininfo" style="vertical-align: middle; color: black; font-size: 3em; font-weight: bold; display: inline-block;">Имя компании</span>
+                    </div>
                 </div>
                 <div class="content__handler is-scrolled" id="content-handler">
                 </div>
@@ -316,7 +320,7 @@
 
             <div class="image-block">
                 <div class="image-block__image-holder">
-                    <img src=images/colors.jpg>
+                    <img src=images/colors_all.jpg>
                 </div>
                 <div class=image-block__button-holder>
                     <div class="image-block__button-wrapper icon-button-wrapper">
@@ -796,7 +800,7 @@
             console.log(index);
             showContent(index);
             window.scrollTo(0, 0);
-            hideMenu();
+            setTimeout(hideMenu, 100);
         }
         var contentIds = [
             "content1", "content2", "content3", "content4", "content5", "content6"
