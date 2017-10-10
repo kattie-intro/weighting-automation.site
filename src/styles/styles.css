@@ -41,12 +41,8 @@
 .content__header-back {
     height: 100%;
     border-radius: 5px;
-
-    background: url(../images/car.png) no-repeat;
-    background-position: right 0;
-    
-    background: url(../images/car-big.jpg);
-    background-position: center 85%;
+    background: url(../images/nais3.jpg) no-repeat;
+    background-size: cover;
     opacity: 0.5;
 }
 .content__header-wrapper {
@@ -227,7 +223,7 @@
     padding: 15px 10%;
     z-index: 21;
 
-    font-family: Arial,sans-serif;
+    font-family: Verdana,sans-serif;
     box-shadow: 0 0 20px 0 #222;
     background: #0d47a1; /*900*/
     background: #37474f; /*800*/
@@ -271,7 +267,7 @@
     position: relative;
     width: 100%;
     height: 20px;
-    font-size: 0.75em;
+    font-size: 0.8em;
     /*border: 1px solid black;*/
 }
 .row-item-separator {
@@ -446,7 +442,7 @@
         color: white; /*#90cafd; /*200*/;
         text-decoration: none;
         transition: 0.3s background;
-        font-family: Arial,sans-serif;
+        font-family: Verdana,sans-serif;
     }
     .nav-item:hover {
         color:  #64b5f6; /*300*/ /*white; /*#e3f2fd; /*50*/;
@@ -539,39 +535,78 @@
 
 
 /*---------------image-block---------------*/
-    .image-block {
-        margin: 20px 0;
-        padding: 20px;
-        padding-bottom: 84px;
-        position: relative;
-        background-color: white;
-        border-radius: 5px;
-        box-shadow: 0 0 15px 0 #263238;
+    .image-block__wrapper {
         text-align: center;
     }
-    .image-block__image-holder {
+    .image-block {
         max-width: 100%;
-        overflow-x: auto;
+        position: relative;
+        margin: 20px 0;
+        display: inline-block;
+        background: #1565c0; /*800*/
+        padding-bottom: 48px;
+        box-shadow: 0 0 15px 0 #263238;
+        border-radius: 5px;
+    }
+    .image-block__image-holder {
+        border-radius: inherit;
+    }
+    .image-block__image-cover {
+        border-radius: inherit;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        text-align: center;
+        background: radial-gradient(circle at 50% 0%, transparent 70%, rgba(0, 0, 0, 0.65));
+        background: linear-gradient(to bottom, transparent 70%, rgba(0, 0, 0, 0.65));
+    }
+    .image-block__image-text {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 48px;
+        line-height: 48px;
+        padding: 0 40px;
+        overflow:hidden;
+        display:inline-block;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        font-size: 1.2em;
+        color: white;
+        text-align: center;
     }
     .image-block__button-holder {
         position: absolute;
-        right: 20px;
-        bottom: 20px;
+        width: 100%;
+        /*background: rgba(0, 0, 0, 0.7);*/
+        /*background: #bbdefb; /*100*/
+        border-radius: 5px 5px 0 0;
+        padding: 10px 20px;
+        left: 0;
+        top: 0;
     }
     .image-block__button-wrapper {
         margin-left: 20px;
         float: right;
+    } 
+    .image-block img {
+        max-width: 100%;
+        display: block;
+        border-radius: 5px 5px 0 0;
     }
 /*-----------------------------------------*/
 
 
 
 /*---------------buttons-------------------*/
-    .icon-button-wrapper {
-        width: 48px;
-        height: 48px;
+    .icon-button32-wrapper {
+        width: 32px;
+        height: 32px;
     }
-    .icon-button {
+    .icon-button32, .icon-button48 {
         width: 48px;
         height: 48px;
         border-radius: 24px;
@@ -580,16 +615,26 @@
         -webkit-filter: drop-shadow(2px 2px 2px #000);
         filter: drop-shadow(2px 2px 2px #000);
     }
-    .icon-button:hover {
+    .icon-button32 {
+        width: 32px;
+        height: 32px;
+        border-radius: 16px;
+    }
+    .icon-button32:hover, .icon-button48:hover {
         -webkit-filter: drop-shadow(5px 5px 5px #000);
         filter: drop-shadow(5px 5px 5px #000);
     }
-    .icon-button:active {
+    .icon-button32:active, .icon-button48:active {
         width: 44px;
         height: 44px;
         border-radius: 22px;
         -webkit-filter: drop-shadow(2px 2px 2px #000);
         filter: drop-shadow(2px 2px 2px #000);
+    }
+    .icon-button32:active {
+        width: 30px;
+        height: 30px;
+        border-radius: 15px;
     }
 /*-----------------------------------------*/
 

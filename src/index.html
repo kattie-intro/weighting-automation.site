@@ -38,7 +38,7 @@
             
             
             <div class="header__item header__item-right">
-                <button class="header__item-icon icon-button button-blue-login"></button>
+                <button class="header__item-icon icon-button32 button-login"></button>
             </div>
 
             
@@ -277,19 +277,27 @@
             <span class="content-subheader">Мы занимаемся автоматизацией взешивания</span>
             <p>Content goes here</p>
 
-            <div class="image-block">
-                <div class="image-block__image-holder">
-                    <img src="images/car.jpg"></img>
-                </div>
-                <div class=image-block__button-holder>
-                    <div class="image-block__button-wrapper icon-button-wrapper">
-                        <button class="image-block__button icon-button button-play"></button>
+            <div class="image-block__wrapper">
+                <div class="image-block">
+                    <img src="images/vesi2.jpg"></img>
+                    <div class="image-block__image-text">
+                        <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</span>
                     </div>
-                    <div class="image-block__button-wrapper icon-button-wrapper">
-                        <button class="image-block__button icon-button button-download"></button>
-                    </div>
-                    <div class="image-block__button-wrapper icon-button-wrapper">
-                        <button class="image-block__button icon-button button-sync"></button>
+                    <div class=image-block__button-holder>
+                        <div class="image-block__button-wrapper icon-button32-wrapper">
+                            <button class="image-block__button icon-button32 button-play"></button>
+                        </div>
+                        <div class="image-block__button-wrapper icon-button32-wrapper">
+                            <button class="image-block__button icon-button32 button-download"></button>
+                        </div>
+                        <div class="image-block__button-wrapper icon-button32-wrapper">
+                            <button class="image-block__button icon-button32 button-sync"></button>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -309,8 +317,8 @@
                 <span class="instring-item">Пункт 4</span>
                 <span class="instring-item">Пункт 5</span>
             </div>-->
-            <span>BLABLABLA</span>
-            <p>Begin<br><br>
+            <div><span>BLABLABLA</span>
+            <p>Begin<br><br></div>
             Begin<br><br>
             Begin<br><br>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
@@ -325,20 +333,24 @@
             cillum dolore eu fugiat nulla pariatur. 
             <br><br></p>
 
-
-            <div class="image-block">
-                <div class="image-block__image-holder">
-                    <img src=images/colors_all.jpg>
-                </div>
-                <div class=image-block__button-holder>
-                    <div class="image-block__button-wrapper icon-button-wrapper">
-                        <button class="image-block__button icon-button button-play"></button>
+            <div class="image-block__wrapper">
+                <div class="image-block">
+                    <div class="image-block__image-holder">
+                        <div class="image-block__image-text">
+                            <span>All colors</span>
+                        </div>
+                        <img src="images/colors_all.jpg"></img>
                     </div>
-                    <div class="image-block__button-wrapper icon-button-wrapper">
-                        <button class="image-block__button icon-button button-download"></button>
-                    </div>
-                    <div class="image-block__button-wrapper icon-button-wrapper">
-                        <button class="image-block__button icon-button button-sync"></button>
+                    <div class=image-block__button-holder>
+                        <div class="image-block__button-wrapper icon-button32-wrapper">
+                            <button class="image-block__button icon-button32 button-play"></button>
+                        </div>
+                        <div class="image-block__button-wrapper icon-button32-wrapper">
+                            <button class="image-block__button icon-button32 button-download"></button>
+                        </div>
+                        <div class="image-block__button-wrapper icon-button32-wrapper">
+                            <button class="image-block__button icon-button32 button-sync"></button>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -357,37 +369,53 @@
 
             <div class="galery__wrapper">
             <div class="galery">
-                <div class="galery__item-wrapper">
-                    <div class="galery__item"></div>
-                    <div class="galery__item-text">Picture 1</div>
+                <div class="galery__item-wrapper" onclick="openImage(this)">
+                    <div class="galery__item">
+                        <img src="images/car-big3.jpg">
+                        <div class="galery__item-text">Picture 1</div>
+                    </div>
                 </div>
-                <div class="galery__item-wrapper">
-                    <div class="galery__item"></div>
-                    <div class="galery__item-text">Picture 2</div>
+                <div class="galery__item-wrapper" onclick="openImage(this)">
+                    <div class="galery__item">
+                        <img src="images/car-big4.jpg">
+                        <div class="galery__item-text">Picture 2</div>
+                    </div>
                 </div>
-                <div class="galery__item-wrapper">
-                    <div class="galery__item"></div>
-                    <div class="galery__item-text">Picture 3</div>
+                <div class="galery__item-wrapper" onclick="openImage(this)">
+                    <div class="galery__item">
+                        <img src="images/car-big.jpg">
+                        <div class="galery__item-text">Picture 3</div>
+                    </div>
                 </div>
-                <div class="galery__item-wrapper">
-                    <div class="galery__item"></div>
-                    <div class="galery__item-text">Picture 4</div>
+                <div class="galery__item-wrapper" onclick="openImage(this)">
+                    <div class="galery__item">
+                        <img src="images/car-big2.jpg">
+                        <div class="galery__item-text">Picture 4</div>
+                    </div>
                 </div>
-                <div class="galery__item-wrapper">
-                    <div class="galery__item"></div>
-                    <div class="galery__item-text">Picture 5</div>
+                <div class="galery__item-wrapper" onclick="openImage(this)">
+                    <div class="galery__item">
+                        <img src="images/car-big.jpg">
+                        <div class="galery__item-text">Picture 5</div>
+                    </div>
                 </div>
-                <div class="galery__item-wrapper">
-                    <div class="galery__item"></div>
-                    <div class="galery__item-text">Picture 6</div>
+                <div class="galery__item-wrapper" onclick="openImage(this)">
+                    <div class="galery__item">
+                        <img src="images/car-big2.jpg">
+                        <div class="galery__item-text">Picture 6</div>
+                    </div>
                 </div>
-                <div class="galery__item-wrapper">
-                    <div class="galery__item"></div>
-                    <div class="galery__item-text">Picture 7</div>
+                <div class="galery__item-wrapper" onclick="openImage(this)">
+                    <div class="galery__item">
+                        <img src="images/car-big3.jpg">
+                        <div class="galery__item-text">Picture 7</div>
+                    </div>
                 </div>
-                <div class="galery__item-wrapper">
-                    <div class="galery__item"></div>
-                    <div class="galery__item-text">Picture 8</div>
+                <div class="galery__item-wrapper" onclick="openImage(this)">
+                    <div class="galery__item">
+                        <img src="images/car-big4.jpg">
+                        <div class="galery__item-text">Picture 8</div>
+                    </div>
                 </div>
                 <!--<div class="clearfix"></div>-->
             </div>
@@ -560,11 +588,75 @@
 
             <p>Lorem eskhwerlhwrkti rg;.resotg weower-twre otf 'war' 3er q 'reelf mweljw;r qw ewk rfsgf hiowrguwrp'wa erpqwSRFEWR EWR EQREWRQWRQWEWQ    EW R87Y W3E40 1Alaek iwptq3 po3w[- 4[eq2]3- 2qpawerke;aljrd qiwe rulajrealkr hsj g,fxcjzs,gjs JIF;lfislkhksfjagh;pfkoetpi' ab j hjkhv lkh lkhkjxfsdil guposewf iku i oli ol  g lirep irw rew; ew ;woei ;oew t;oiwepr oe rlewli ;we eirew; rw rirpe rwrwprop4ri3p4r5849 258439053 3-590 904wt59e0wogjrio yuerop it;pu4poeto perh9 5y4 Lorem eskhwerlhwrkti rg;.resotg weower-twre otf 'war' 3er q 'reelf mweljw;r qw ewk rfsgf hiowrguwrp'wa erpqwSRFEWR EWR EQREWRQWRQWEWQ  EW R87Y W3E40 1Alaek iwptq3 po3w[- 4[eq2]3- 2qpawerke;aljrd qiwe rulajrealkr hsj g,fxcjzs,gjs JIF;lfislkhksfjagh;pfkoetpi' ab j hjkhv lkh lkhkjxfsdil guposewf iku i oli ol  g lirep irw rew; ew ;woei ;oew t;oiwepr oe rlewli ;we eirew; rw rirpe </p>
 
+            <div class="image-block__wrapper">
+                <div class="image-block">
+                    <div class="image-block__image-text">
+                        <span>Машина на весах</span>
+                    </div>
+                    <img src="images/vesi3.jpg"></img>
+                    <div class=image-block__button-holder>
+                        <div class="image-block__button-wrapper icon-button32-wrapper">
+                            <button class="image-block__button icon-button32 button-play"></button>
+                        </div>
+                        <div class="image-block__button-wrapper icon-button32-wrapper">
+                            <button class="image-block__button icon-button32 button-download"></button>
+                        </div>
+                        <div class="image-block__button-wrapper icon-button32-wrapper">
+                            <button class="image-block__button icon-button32 button-sync"></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
             <p>rwrwprop4ri3p4r5849 258439053 3-590 904wt59e0wogjrio yuerop it;pu4poeto perh9 5y4 Lorem eskhwerlhwrkti rg;.resotg weower-twre otf 'war' 3er q 'reelf mweljw;r qw ewk rfsgf hiowrguwrp'wa erpqwSRFEWR EWR EQREWRQWRQWEWQ  EW R87Y W3E40 1Alaek iwptq3 po3w[- 4[eq2]3- 2qpawerke;aljrd qiwe rulajrealkr hsj g,fxcjzs,gjs JIF;lfislkhksfjagh;pfkoetpi' ab j hjkhv lkh lkhkjxfsdil guposewf iku i oli ol  g lirep irw rew; ew ;woei ;oew t;oiwepr oe rlewli ;we eirew; rw rirpe rwrwprop4ri3p4r5849 258439053 3-590 904wt59e0wogjrio yuerop it;pu4poeto perh9 5y4 Lorem eskhwerlhwrkti rg;.resotg weower-twre otf 'war' 3er q 'reelf mweljw;r qw ewk rfsgf hiowrguwrp'wa erpqwSRFEWR EWR EQREWRQWRQWEWQ  EW R87Y W3E40 1Alaek iwptq3 po3w[- 4[eq2]3- 2qpawerke;aljrd qiwe rulajrealkr hsj g,fxcjzs,gjs JIF;lfislkhksfjagh;pfkoetpi' ab j hjkhv lkh lkhkjxfsdil guposewf iku i oli ol  g lirep irw rew; ew ;woei ;oew t;oiwepr oe rlewli ;we eirew; rw rirpe rwrwprop4ri3p4r5849 258439053 3-590 904wt59e0wogjrio yuerop it;pu4poeto perh9
 
             End<br><br>
             End<br><br>
             End<br><br></p>
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+            proident, sunt in culpa qui officia deserunt mollit anim id est</p>
+
+            <div class="image-block__wrapper">
+                <div class="image-block">
+                    <div class="image-block__image-text">
+                        <span>Машина на весах</span>
+                    </div>
+                    <img src="images/nais4.jpg"></img>
+                    <div class=image-block__button-holder>
+                        <div class="image-block__button-wrapper icon-button32-wrapper">
+                            <button class="image-block__button icon-button32 button-play"></button>
+                        </div>
+                        <div class="image-block__button-wrapper icon-button32-wrapper">
+                            <button class="image-block__button icon-button32 button-download"></button>
+                        </div>
+                        <div class="image-block__button-wrapper icon-button32-wrapper">
+                            <button class="image-block__button icon-button32 button-sync"></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</span>
         </div>
         <div id="content3">
             <div class="content-header">
@@ -622,20 +714,22 @@
             proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
             
-            
-            <div class="image-block">
-                <div class="image-block__image-holder">
-                    <img src="images/car.jpg"></img>
-                </div>
-                <div class=image-block__button-holder>
-                    <div class="image-block__button-wrapper icon-button-wrapper">
-                        <button class="image-block__button icon-button button-play"></button>
+            <div class="image-block__wrapper">
+                <div class="image-block">
+                    <div class="image-block__image-text">
+                        <span>Машина на весах</span>
                     </div>
-                    <div class="image-block__button-wrapper icon-button-wrapper">
-                        <button class="image-block__button icon-button button-download"></button>
-                    </div>
-                    <div class="image-block__button-wrapper icon-button-wrapper">
-                        <button class="image-block__button icon-button button-sync"></button>
+                    <img src="images/vesi.jpg"></img>
+                    <div class=image-block__button-holder>
+                        <div class="image-block__button-wrapper icon-button32-wrapper">
+                            <button class="image-block__button icon-button32 button-play"></button>
+                        </div>
+                        <div class="image-block__button-wrapper icon-button32-wrapper">
+                            <button class="image-block__button icon-button32 button-download"></button>
+                        </div>
+                        <div class="image-block__button-wrapper icon-button32-wrapper">
+                            <button class="image-block__button icon-button32 button-sync"></button>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -846,7 +940,7 @@
         }*/
 
 
-        showContent(5);
+        showContent(0);
         $(".js-year").text((new Date()).getFullYear());
     </script>
 </body>
