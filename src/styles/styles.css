@@ -7,6 +7,7 @@
 .wrapper {
     position: relative;
     min-width: 350px;
+    background: #bbdefb; /*100*/
 }
 
 .content__wrapper {
@@ -26,6 +27,7 @@
 }
 .content.is-shifted {
     margin-left: 300px;
+    /*width: calc(100vw - 300px);*/
 }
 
 .content__header {
@@ -74,7 +76,7 @@
     position: fixed;
     top: 0;
     background: #1565c0; /*800*/
-    color: white;
+    color: #bbdefb; /*100*/
     /*padding: 0 20px;*/
     z-index: 21;
     font-size: 1.5em;
@@ -89,7 +91,7 @@
     height: 48px;
     display: inline-block;
     position: relative;
-    margin: 1px 10px;
+    margin: 1px 20px;
     text-align: center;
     float: left;
 }
@@ -108,6 +110,11 @@
     display: inline-block;
     vertical-align: middle;
 }
+.header__item-text {
+    vertical-align: middle;
+    display: inline-block;
+    font-size: 1.5em;
+}
 .header__item-menu-button {
     display: inline-block;
     width: 32px;
@@ -125,7 +132,7 @@
     z-index: 11;
 }
 .header__item-menu-cover {
-    width: calc(5vw - 30px);
+    width: calc(5vw - 50px);
 }
 
 .header__item-search {
@@ -196,7 +203,23 @@
 .header__item-search-input:-ms-input-placeholder      {color:#ccc;}
 
 .header__item-branding {
-    margin-left: 0;
+    margin: 1px 0;
+    min-width: 0;
+    overflow: hidden;
+    /*width: 0;
+    min-width: 0;
+    overflow-y: hidden;
+    transition: 0.5s all;*/
+}
+.header__item-branding-item {
+    max-width: 0;
+    overflow: hidden;
+    text-overflow: clip;
+    white-space: nowrap;
+    transition: 0.5s all;
+}
+.header.is-scrolled .header__item-branding-item {
+    max-width: 240px;
 }
 .header__item-branding {
 }
@@ -341,6 +364,13 @@
         background: #e3f2fd; /*50*/
         height: 100%;
         transition: 0.5s left;
+
+
+        background: url(../images/nais3.jpg) no-repeat;
+        background-position: center;
+        background-attachment: fixed;
+        background-size: cover;
+        opacity: 0.5;
     }
 
     .sidebar {
@@ -491,7 +521,7 @@
          filter: drop-shadow(10px 10px 10px #000);
     }
     .maininfo {
-        margin-left: 10px;
+        /*margin-left: 10px;*/
         font-size: 1.5em;
         color: white;
     }
