@@ -13,21 +13,34 @@
 .galery__item-container {
     width: 25%;
     height: 240px;
+    display: inline-block;
     position: relative;
     min-width: 340px;
     /*padding: 20px;*/
     float: left;
-    /*text-align: center;*/
+    text-align: left;
     border: 1px solid #42a5f5; /*400*/
     /*transition: 0.5s padding;*/
+}
+.galery__item-container::before {
+    content: '';
+    display: inline-block;
+    vertical-align: middle;
+    height: 100%;
+    /*width: 1px;*/
+    background: red;
 }
 .galery__item-wrapper {
     width: auto;
     height: auto;
+    display: inline-block;
+    vertical-align: middle;
     position: relative;
     padding: 20px;
     text-align: center;
     transition: 0.5s padding;
+
+    max-width: 99%;
 }
 .galery__item-container.full-screen {
     max-width: auto;
