@@ -42,31 +42,6 @@
 
     max-width: 99%;
 }
-.galery__item-container.full-screen {
-    max-width: auto;
-    float: none;
-    position: fixed;
-    padding: 0;
-    /*padding-top: 66.66%;*/
-    left: 0;
-    right: 0;
-    z-index: 3;
-}
-.galery__item-container.full-screen .galery__item, .galery__item-container.full-screen:hover .galery__item {
-    width: 100%;
-    height: 100%;
-    top: 0px;
-    left: 20px;
-    z-index: 3;
-}
-.galery__item-container.full-screen .galery__item-text,.galery__item-container.full-screen:hover .galery__item-text {
-    width: 100%;
-    opacity: 1;
-    bottom: -2px;
-    font-size: 20px;
-    opacity: 1;
-    left: 0px;
-}
 
 
 .galery__item {

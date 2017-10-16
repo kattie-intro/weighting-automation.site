@@ -327,3 +327,32 @@
     background: transparent url("../images/color_back48.png") no-repeat;
     background-size: cover;
 }
+
+.download-white {
+    background: transparent url(../images/download_white_24px.svg) no-repeat;
+    background-size: cover;
+}
+.fullscreen-white {
+    background: transparent url(../images/fullscreen_white_24px.svg) no-repeat;
+    background-size: cover;
+}
+.fullscreen-exit-white {
+    background: transparent url(../images/fullscreen_exit_white_24px.svg) no-repeat;
+    background-size: cover;
+}
+.exposure-white {
+    background: transparent url(../images/exposure_white_24px.svg) no-repeat;
+    background-size: cover;
+}
+.brightness-white {
+    background: transparent url(../images/ic_sunny_white_24px.svg) no-repeat;
+    background-size: cover;
+}
+.close-white {
+    background: transparent url(../images/ic_close_white_24px.svg) no-repeat;
+    background-size: cover;
+}
+.open-in-new {
+    background: transparent url(../images/ic_open_in_new_white_24px.svg) no-repeat;
+    background-size: cover;
+}

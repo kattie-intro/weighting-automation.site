@@ -269,6 +269,11 @@
                 </li>
             </ul>-->
         </footer>
+
+        <div class="image-overlay"></div>
+        <div id="imageContainer"  onclick="closeImage()" class="image-fullscreen">
+            <img id="fullScreenImage" src="">
+        </div>
     </div>
 
     <div style="display: none">
@@ -293,14 +298,17 @@
                         proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</span>
                     </div>
                     <div class=image-block__button-holder>
-                        <div class="image-block__button-wrapper icon-button32-wrapper">
-                            <button class="image-block__button icon-button32 button-play"></button>
+                        <div class="image-block__button-wrapper image-block__button-wrapper-left icon-button32-wrapper">
+                            <button class="image-block__button icon-button32 close-white"></button>
                         </div>
                         <div class="image-block__button-wrapper icon-button32-wrapper">
-                            <button class="image-block__button icon-button32 button-download"></button>
+                            <button class="image-block__button icon-button32 download-white"></button>
                         </div>
                         <div class="image-block__button-wrapper icon-button32-wrapper">
-                            <button class="image-block__button icon-button32 button-sync"></button>
+                            <button class="image-block__button icon-button32 open-in-new"></button>
+                        </div>
+                        <div class="image-block__button-wrapper icon-button32-wrapper">
+                            <button class="image-block__button icon-button32 fullscreen-white" onclick="openImage(this)"></button>
                         </div>
                     </div>
                 </div>
@@ -339,21 +347,22 @@
 
             <div class="image-block__wrapper">
                 <div class="image-block">
-                    <div class="image-block__image-holder">
-                        <div class="image-block__image-text">
-                            <span>All colors</span>
-                        </div>
-                        <img src="images/colors_all.jpg"></img>
+                    <img src="images/colors_all.jpg"></img>
+                    <div class="image-block__image-text">
+                        <span>All colors</span>
                     </div>
                     <div class=image-block__button-holder>
-                        <div class="image-block__button-wrapper icon-button32-wrapper">
-                            <button class="image-block__button icon-button32 button-play"></button>
+                        <div class="image-block__button-wrapper image-block__button-wrapper-left icon-button32-wrapper">
+                            <button class="image-block__button icon-button32 close-white"></button>
                         </div>
                         <div class="image-block__button-wrapper icon-button32-wrapper">
-                            <button class="image-block__button icon-button32 button-download"></button>
+                            <button class="image-block__button icon-button32 download-white"></button>
                         </div>
                         <div class="image-block__button-wrapper icon-button32-wrapper">
-                            <button class="image-block__button icon-button32 button-sync"></button>
+                            <button class="image-block__button icon-button32 open-in-new"></button>
+                        </div>
+                        <div class="image-block__button-wrapper icon-button32-wrapper">
+                            <button class="image-block__button icon-button32 fullscreen-white" onclick="openImage(this)"></button>
                         </div>
                     </div>
                 </div>
@@ -373,7 +382,7 @@
 
             <div class="galery__wrapper">
             <div class="galery">
-                <div class="galery__item-container" onclick="openImage(this)">
+                <div class="galery__item-container" onclick="openGaleryImage(this)">
                     <div class="galery__item-wrapper">
                         <div class="galery__item">
                             <img src="images/car-big3.jpg">
@@ -381,7 +390,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="galery__item-container" onclick="openImage(this)">
+                <div class="galery__item-container" onclick="openGaleryImage(this)">
                     <div class="galery__item-wrapper">
                         <div class="galery__item">
                             <img src="images/car-big4.jpg">
@@ -389,7 +398,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="galery__item-container" onclick="openImage(this)">
+                <div class="galery__item-container" onclick="openGaleryImage(this)">
                     <div class="galery__item-wrapper">
                         <div class="galery__item">
                             <img src="images/car-big.jpg">
@@ -397,7 +406,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="galery__item-container" onclick="openImage(this)">
+                <div class="galery__item-container" onclick="openGaleryImage(this)">
                     <div class="galery__item-wrapper">
                         <div class="galery__item">
                             <img src="images/car-big2.jpg">
@@ -405,7 +414,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="galery__item-container" onclick="openImage(this)">
+                <div class="galery__item-container" onclick="openGaleryImage(this)">
                     <div class="galery__item-wrapper">
                         <div class="galery__item">
                             <img src="images/car-big.jpg">
@@ -413,7 +422,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="galery__item-container" onclick="openImage(this)">
+                <div class="galery__item-container" onclick="openGaleryImage(this)">
                     <div class="galery__item-wrapper">
                         <div class="galery__item">
                             <img src="images/car-big2.jpg">
@@ -421,7 +430,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="galery__item-container" onclick="openImage(this)">
+                <div class="galery__item-container" onclick="openGaleryImage(this)">
                     <div class="galery__item-wrapper">
                         <div class="galery__item">
                             <img src="images/car-big3.jpg">
@@ -429,7 +438,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="galery__item-container" onclick="openImage(this)">
+                <div class="galery__item-container" onclick="openGaleryImage(this)">
                     <div class="galery__item-wrapper">
                         <div class="galery__item">
                             <img src="images/car-big4.jpg">
@@ -615,14 +624,17 @@
                     </div>
                     <img src="images/vesi3.jpg"></img>
                     <div class=image-block__button-holder>
-                        <div class="image-block__button-wrapper icon-button32-wrapper">
-                            <button class="image-block__button icon-button32 button-play"></button>
+                        <div class="image-block__button-wrapper image-block__button-wrapper-left icon-button32-wrapper">
+                            <button class="image-block__button icon-button32 close-white"></button>
                         </div>
                         <div class="image-block__button-wrapper icon-button32-wrapper">
-                            <button class="image-block__button icon-button32 button-download"></button>
+                            <button class="image-block__button icon-button32 download-white"></button>
                         </div>
                         <div class="image-block__button-wrapper icon-button32-wrapper">
-                            <button class="image-block__button icon-button32 button-sync"></button>
+                            <button class="image-block__button icon-button32 open-in-new"></button>
+                        </div>
+                        <div class="image-block__button-wrapper icon-button32-wrapper">
+                            <button class="image-block__button icon-button32 fullscreen-white" onclick="openImage(this)"></button>
                         </div>
                     </div>
                 </div>
@@ -653,14 +665,17 @@
                     </div>
                     <img src="images/nais4.jpg"></img>
                     <div class=image-block__button-holder>
-                        <div class="image-block__button-wrapper icon-button32-wrapper">
-                            <button class="image-block__button icon-button32 button-play"></button>
+                        <div class="image-block__button-wrapper image-block__button-wrapper-left icon-button32-wrapper">
+                            <button class="image-block__button icon-button32 close-white"></button>
                         </div>
                         <div class="image-block__button-wrapper icon-button32-wrapper">
-                            <button class="image-block__button icon-button32 button-download"></button>
+                            <button class="image-block__button icon-button32 download-white"></button>
                         </div>
                         <div class="image-block__button-wrapper icon-button32-wrapper">
-                            <button class="image-block__button icon-button32 button-sync"></button>
+                            <button class="image-block__button icon-button32 open-in-new"></button>
+                        </div>
+                        <div class="image-block__button-wrapper icon-button32-wrapper">
+                            <button class="image-block__button icon-button32 fullscreen-white" onclick="openImage(this)"></button>
                         </div>
                     </div>
                 </div>
@@ -741,14 +756,17 @@
                     </div>
                     <img src="images/vesi.jpg"></img>
                     <div class=image-block__button-holder>
-                        <div class="image-block__button-wrapper icon-button32-wrapper">
-                            <button class="image-block__button icon-button32 button-play"></button>
+                        <div class="image-block__button-wrapper image-block__button-wrapper-left icon-button32-wrapper">
+                            <button class="image-block__button icon-button32 close-white"></button>
                         </div>
                         <div class="image-block__button-wrapper icon-button32-wrapper">
-                            <button class="image-block__button icon-button32 button-download"></button>
+                            <button class="image-block__button icon-button32 download-white"></button>
                         </div>
                         <div class="image-block__button-wrapper icon-button32-wrapper">
-                            <button class="image-block__button icon-button32 button-sync"></button>
+                            <button class="image-block__button icon-button32 open-in-new"></button>
+                        </div>
+                        <div class="image-block__button-wrapper icon-button32-wrapper">
+                            <button class="image-block__button icon-button32 fullscreen-white" onclick="openImage(this)"></button>
                         </div>
                     </div>
                 </div>
@@ -882,6 +900,26 @@
         }
         function hideSearch(e) {
             $(".js-search").removeClass("is-active");
+        }
+
+        function openImage(el) {
+            var src = $(el).parents(".image-block").children("img").attr("src");
+            console.log("openImage: ", src);
+            openImageImpl(src);
+        }
+        function openGaleryImage(el) {
+            var src = $("img", $(el)).attr("src");
+            console.log("openImage: ", src);
+            openImageImpl(src);
+        }
+        function openImageImpl(src) {
+            $(".image-overlay").addClass("is-active");
+            $("#imageContainer").addClass("is-active");
+            $("#fullScreenImage").attr("src", src);
+        }
+        function closeImage() {
+            $(".image-overlay").removeClass("is-active");
+            $("#imageContainer").removeClass("is-active")
         }
 
         window.addEventListener("resize", function() {
