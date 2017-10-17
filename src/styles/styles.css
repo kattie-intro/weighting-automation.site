@@ -151,7 +151,7 @@
     height: 32px;
     border: none;
     outline: none;
-    background: transparent url(../images/search-white-32.png) no-repeat;
+    background: transparent url(../images/ic_search_white_24px.svg) no-repeat;
     background-size: contain;
 }
 .header__item-search-button-cover {
@@ -166,7 +166,7 @@
     visibility: hidden;
     border: none;
     outline: none;
-    background: transparent url(../images/cross-white-32-2.png) no-repeat;
+    background: transparent url(../images/ic_close_white_24px.svg) no-repeat;
     background-size: contain;
 }
 .header__item-close-search-button.is-active {
@@ -622,15 +622,22 @@
         padding: 8px 20px;
         transition: 0.5s top;
     }
+    .image-block__button-activator {
+        position: absolute;
+        width: 100%;
+        height: 96px;
+        top: 0;
+        background: transparent;
+    }
+    .image-block__button-activator:hover .image-block__button-holder {
+        top: 0;
+    }
     .image-block__button {
         opacity: 0.7;
         transition: 0.3s opacity;
     }
     .image-block__button:hover {
         opacity: 1;
-    }
-    .image-block:hover .image-block__button-holder {
-        top: 0;
     }
     .image-block__button-wrapper {
         height: 48px;
@@ -663,26 +670,42 @@
         display: block;
     }
     .image-fullscreen {
-        display: none;
         position: fixed;
         top: 0;
         left: 0;
-        width: 100%;
-        height: 100%;
+        /*width: 100%;
+        height: 100%;*/
         text-align: center;
-        z-index: 102;
+        transition: 1s all;
+
+        z-index: -1;
+        max-width: 0;
+        top: 50%;
+        bottom: 50%;
+        left: 50%;
+        right: 50%;
     }
     .image-fullscreen img {
-        max-width: 80%;
-        max-height: 80%;
-        height: auto;
+        /*height: auto;*/
+        max-width: 0;
+        max-height: 0;
         display: inline-block;
         vertical-align: middle;
         /* border: 5px solid #1565c0; */
         box-shadow: 0 0 45px 5px black;
+        transition: 1s all;
+    }
+    .image-fullscreen.is-active img {
+        max-width: 80%;
+        max-height: 80%;
     }
     .image-fullscreen.is-active {
-        display: block;
+        z-index: 102;
+        max-width: 100%;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
     }
     .image-fullscreen:before {
         content: '';

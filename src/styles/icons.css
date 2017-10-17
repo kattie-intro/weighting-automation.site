@@ -356,3 +356,11 @@
     background: transparent url(../images/ic_open_in_new_white_24px.svg) no-repeat;
     background-size: cover;
 }
+.search-white {
+    background: transparent url(../images/ic_search_white_24px.svg) no-repeat;
+    background-size: cover;
+}
+.person-white {
+    background: transparent url(../images/ic_person_white_24px.svg) no-repeat;
+    background-size: cover;
+}
