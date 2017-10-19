@@ -73,27 +73,31 @@
                 <ul>
                     <li class="menu-item js-menu-item" onclick="onLinkClick(0)">
                         <span class="menu-icon icon-blue-fax-small js-menu-item-icon"></span>
-                        <a class="menu-text js-menu-item-text" href="javascript:void(0)">Автоматизация</a>
+                        <a class="menu-text js-menu-item-text" href="#content-handler1">Автоматизация</a>
                     </li>
                     <li class="menu-item js-menu-item" onclick="onLinkClick(1)">
                         <span class="menu-icon icon-blue-globe-small js-menu-item-icon"></span>
-                        <a class="menu-text js-menu-item-text" href="javascript:void(0)">Другая страница</a>
+                        <a class="menu-text js-menu-item-text" href="#content-handler2">Другая страница</a>
                     </li>
                     <li class="menu-item js-menu-item" onclick="onLinkClick(2)">
                         <span class="menu-icon icon-blue-location-small js-menu-item-icon"></span>
-                        <a class="menu-text js-menu-item-text" href="javascript:void(0)">Третья страница!!!</a>
+                        <a class="menu-text js-menu-item-text" href="#content-handler3">Третья страница!!!</a>
                     </li>
                     <li class="menu-item js-menu-item" onclick="onLinkClick(3)">
                         <span class="menu-icon icon-blue-mail-small js-menu-item-icon"></span>
-                        <a class="menu-text js-menu-item-text" href="javascript:void(0)">Четвертая...</a>
+                        <a class="menu-text js-menu-item-text" href="#content-handler4">Четвертая...</a>
                     </li>
                     <li class="menu-item js-menu-item" onclick="onLinkClick(4)">
                         <span class="menu-icon icon-blue-phone-small js-menu-item-icon"></span>
-                        <a class="menu-text js-menu-item-text" href="javascript:void(0)">Это 5 страница</a>
+                        <a class="menu-text js-menu-item-text" href="#content-handler5">Это 5 страница</a>
                     </li>
                     <li class="menu-item js-menu-item" onclick="onLinkClick(5)">
                         <span class="menu-icon icon-blue-lock-small js-menu-item-icon"></span>
-                        <a class="menu-text js-menu-item-text" href="javascript:void(0)">ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ</a>
+                        <a class="menu-text js-menu-item-text" href="#content-handler6">ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ</a>
+                    </li>
+                    <li class="menu-item js-menu-item" onclick="onLinkClick(0)">
+                        <span class="menu-icon up-black js-menu-item-icon"></span>
+                        <a class="menu-text js-menu-item-text" href="#">Вверх</a>
                     </li>
                 </ul>
             </div>
@@ -106,7 +110,17 @@
                         <span class="maininfo" style="vertical-align: middle; color: black; font-size: 3em; font-weight: bold; display: inline-block;">Имя компании</span>
                     </div>
                 </div>
-                <div class="content__handler" id="content-handler">
+                <div class="content__handler" id="content-handler1">
+                </div>
+                <div class="content__handler" id="content-handler2">
+                </div>
+                <div class="content__handler" id="content-handler3">
+                </div>
+                <div class="content__handler" id="content-handler4">
+                </div>
+                <div class="content__handler" id="content-handler5">
+                </div>
+                <div class="content__handler" id="content-handler6">
                 </div>
             </div>
         </div>
@@ -957,8 +971,9 @@
         function onLinkClick(index) {
             console.log(index);
             showContent(index);
-            window.scrollTo(0, 0);
-            setTimeout(hideMenu, 100);
+            //window.scrollTo(0, 0);
+            window.scrollTo(0, $("#content-handler" + (index + 1)).offset().top - 60);
+            //setTimeout(hideMenu, 100);
         }
         var contentIds = [
             "content1", "content2", "content3", "content4", "content5", "content6"
@@ -970,9 +985,13 @@
             $(".js-page-title").text($(".js-menu-item-text")[index].innerText);
             //$(".js-page-icon")[0].className = "header__item-icon inline-item js-page-icon " + iconClasses[index];
 
-            document.getElementById("content-handler").innerHTML = document.getElementById(contentIds[index]).innerHTML;
+            //document.getElementById("content-handler").innerHTML = document.getElementById(contentIds[index]).innerHTML;
             //setupSidebarHeight();
         }
+
+        contentIds.forEach(function(contentId, index) {
+            document.getElementById("content-handler" + (index + 1)).innerHTML = document.getElementById(contentId).innerHTML;
+        });
 
         /*function setupContentHeight() {
             //$(".content").css("min-height", "calc(100vh - 80px - " + headerHeight + "px)");
