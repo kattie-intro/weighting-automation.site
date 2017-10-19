@@ -53,14 +53,14 @@
             <div class="header-item inline-item-last"><span title="Синхронизация" class="header-item-icon icon-network"></span></div>-->
 
             <div class="header__item header__item-right header__item-search">
-                <div class="header__item-search-activator">
+                <div class="header__item-search-activator js-search">
                     <button class="header__item-search-button" onclick="toggleSearch(this)"></button>
                 </div>
                 <div class="header__item-search-wrapper js-search">
                     <button class="header__item-close-search-button js-search" onclick="hideSearch(this)"></button>
                     <input class="header__item-search-input js-search" placeholder="Поиск по сайту">
-                    <div class="header__item-search-button-cover"></div>
-                    <!--<span class="header-item-icon icon-search-white" onclick="openSearch()"></span>-->
+                    <!--<div class="header__item-search-button-cover"></div>
+                    <span class="header-item-icon icon-search-white" onclick="openSearch()"></span>-->
                 </div>
             </div>
             
@@ -948,7 +948,7 @@
                 $("#content-handler").removeClass("is-scrolled");*/
             }
         });
-        $("#content").on("click", hideMenu);
+        //$("#content").on("click", hideMenu);
         $("#content").on("click", hideSearch);
 
         var contentIds = [
