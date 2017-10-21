@@ -366,10 +366,18 @@
 }
 
 .up-white{
-    background: transparent url(../images/ic_keyboard_arrow_up_white_24px.svg) no-repeat;
+    background-image: url(../images/ic_keyboard_arrow_up_white_24px.svg);
+    background-repeat: no-repeat;
     background-size: cover;
 }
 .up-black{
-    background: transparent url(../images/ic_keyboard_arrow_up_black_24px.svg) no-repeat;
+    background-image: url(../images/ic_keyboard_arrow_up_black_24px.svg);
+    background-repeat: no-repeat;
     background-size: cover;
+}
+.email-white {
+    background-image: url(../images/ic_email_white_24px.svg);
+    background-repeat: no-repeat;
+    background-size: 60% 60%;
+    background-position: center;
 }

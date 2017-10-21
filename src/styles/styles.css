@@ -17,30 +17,34 @@
 }
 
 .content {
-    max-width: 100%;
+    width: 100%; /*max-width: 100%;*/
     min-height: calc(100vh - 50px - 140px);
     position: relative;
     background: #64b5f6; /*300*/
     background: #90cafd; /*200*/
     background: #bbdefb; /*100*/
-    padding: 20px 5%;
-    transition: 0.5s all;
+    padding: 40px 5%;
+    transition: 0.4s all;
 }
 .content.is-shifted {
     margin-left: 300px;
-    max-width: calc(100vw - 300px);
+    /*max-width: calc(100vw - 300px);*/
 }
 
-.content__header {
+.brand__header {
     width: 100%;
-    height: 380px;
+    height: 200px;
     position: relative;
     border-radius: 5px;
     background: #e3f2fd; /*50*/
     border: none;
+    transition: 0.3s all;
     box-shadow: 0 0 15px 0 #263238;
 }
-.content__header-back {
+.brand__header.is-main {
+    height: 380px;
+ }
+.brand__header-back {
     height: 100%;
     border-radius: 5px;
     background: url(../images/nais3.jpg) no-repeat;
@@ -49,20 +53,27 @@
     background-size: cover;
     opacity: 0.5;
 }
-.content__header-wrapper {
+.brand__header-wrapper {
     width: 100%;
     height: 100%;
     position: absolute;
     top: 0;
     padding: 20px;
 }
-.content__header-item {
+.brand__header-item {
     max-height: 160px;
+}
+.brand__header-presentation {
+    padding: 20px;
+    visibility: hidden;
+}
+.brand__header.is-main .brand__header-presentation {
+    visibility: visible;
 }
 
 .content__handler {
     padding: 30px;
-    margin-top: 20px;
+    margin-top: 40px;
     border-radius: 5px;
     background: #e3f2fd; /*50*/
     border: none;
@@ -148,8 +159,8 @@
     background: transparent;
     color: white;
     float: left;
-    transition: 0.4s max-width;
-    transition: .4s cubic-bezier(.4,0,.2,1);
+    transition: 0.3s max-width;
+    transition: .3s cubic-bezier(.4,0,.2,1);
 }
 .header__item-search-wrapper.is-active {
     max-width: 500px;
@@ -364,7 +375,6 @@
         background: #37474f; /*800*/
         background: #e3f2fd; /*50*/
         height: 100%;
-        transition: 0.5s left;
 
 
         background: url(../images/nais3.jpg) no-repeat;
@@ -384,7 +394,7 @@
         padding-top: 104px;
         overflow-x: hidden;
         z-index: 11;
-        transition: 0.5s left;
+        transition: 0.4s left;
         overflow-y: auto;
     }
     .sidebar.is-active {
@@ -516,13 +526,13 @@
         color: white;
         text-shadow: black 10px 10px 10px;
     }
-    .branding .header-item-icon {
+    .branding .branding-icon {
         -webkit-transition: 1s -webkit-filter;
         -moz-transition: 1s -moz-filter;
         -o-transition: 1s -o-filter;
         transition: 1s filter;
     }
-    .branding:hover .header-item-icon {
+    .branding:hover .branding-icon {
         -webkit-filter: drop-shadow(10px 10px 10px #000);
          filter: drop-shadow(10px 10px 10px #000);
     }
@@ -546,7 +556,7 @@
     .content-header {
         line-height: 64px;
         padding: 20px 0;
-        margin: 10px 0;
+        margin: 0;
     }
     .content-header-icon {
         width: 64px;
@@ -569,6 +579,28 @@
     }
 /*-----------------------------------------*/
 
+
+
+/*-----------------action------------------*/
+.action__container {
+    position: fixed;
+    bottom: 116px;
+    z-index: 22;
+}
+.action__container--contact {
+    left: 20px;
+}
+.action__container--up {
+    right: 20px;
+}
+.action__button {
+    background-color: #1565c0; /*800*/
+}
+
+.action__home {
+    cursor: pointer;
+}
+/*-----------------------------------------*/
 
 
 
@@ -726,6 +758,13 @@
 /*---------------buttons-------------------*/
     .icon-button32-wrapper {
         width: 32px;
+        height: 32px;
+        text-align: center;
+    }
+    .icon-button48-wrapper {
+        width: 48px;
+        height: 48px;
+        text-align: center;
     }
     .icon-button32, .icon-button48 {
         width: 48px;
@@ -843,7 +882,7 @@
         .brand-name-large {
             display: none;
         }
-        .branding .header-item-icon {
+        .branding .branding-icon {
             transition: none;
         }
         .header-item.branding {
