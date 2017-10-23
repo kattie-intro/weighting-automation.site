@@ -20,11 +20,11 @@
             <div class="header__item header__item-menu-cover" id="menuHandlerCover"></div>
             <div class="header__item header__item-branding">
                 <span class="header__item-icon header__item-branding-item icon-weight-small"></span>
-                <div class="header__item-text header__item-branding-item maininfo">Имя компании</div>
+                <div class="header__item-text header__item-text-big header__item-branding-item maininfo">Имя компании</div>
             </div>
             <div class="header__item">
                 <!--<span class="header__item-icon inline-item icon-weight-medium js-page-icon"></span>-->
-                <div class="header__item-text js-page-title">Имя компании</div>
+                <div class="header__item-text header__item-text-big js-page-title">Имя компании</div>
 
                 <!--<div class="inline-item brand-icon-small">
                     <span class="header__item-icon icon-weight-medium"></span>
@@ -37,9 +37,13 @@
                     <div class="branding-text subinfo">Автоматизация взвешиваний</div>
                 </div>-->
             </div>
-
-            
-            
+            <div class="header__item header__item-hoverable">
+                <a class="header__item-text header__item-nav text-primary" href="javascript:void(0)">First link</a>
+            </div>
+            <div class="header__item header__item-hoverable">
+                <span class="header__item-icon icon-download-white" style = "filter:BasicImage(mascColor=0xbbdefb)"></span>
+                <a class="header__item-text header__item-nav text-primary" href="javascript:void(0)">First link</a>
+            </div>
             
             <div class="header__item header__item-right">
                 <button class="header__item-icon icon-button32 person-white"></button>
@@ -73,27 +77,27 @@
                 <ul>
                     <li class="menu-item js-menu-item" onclick="onLinkClick(0)">
                         <span class="menu-icon icon-blue-fax-small js-menu-item-icon"></span>
-                        <a class="menu-text js-menu-item-text" href="#">Автоматизация</a>
+                        <a class="menu-text ripple-button js-menu-item-text" href="#">Автоматизация</a>
                     </li>
                     <li class="menu-item js-menu-item" onclick="onLinkClick(1)">
                         <span class="menu-icon icon-blue-globe-small js-menu-item-icon"></span>
-                        <a class="menu-text js-menu-item-text" href="#">Другая страница</a>
+                        <a class="menu-text ripple-button js-menu-item-text" href="#">Другая страница</a>
                     </li>
                     <li class="menu-item js-menu-item" onclick="onLinkClick(2)">
                         <span class="menu-icon icon-blue-location-small js-menu-item-icon"></span>
-                        <a class="menu-text js-menu-item-text" href="#">Третья страница!!!</a>
+                        <a class="menu-text ripple-button js-menu-item-text" href="#">Третья страница!!!</a>
                     </li>
                     <li class="menu-item js-menu-item" onclick="onLinkClick(3)">
                         <span class="menu-icon icon-blue-mail-small js-menu-item-icon"></span>
-                        <a class="menu-text js-menu-item-text" href="#">Четвертая...</a>
+                        <a class="menu-text ripple-button js-menu-item-text" href="#">Четвертая...</a>
                     </li>
                     <li class="menu-item js-menu-item" onclick="onLinkClick(4)">
                         <span class="menu-icon icon-blue-phone-small js-menu-item-icon"></span>
-                        <a class="menu-text js-menu-item-text" href="#">Это 5 страница</a>
+                        <a class="menu-text ripple-button js-menu-item-text" href="#">Это 5 страница</a>
                     </li>
                     <li class="menu-item js-menu-item" onclick="onLinkClick(5)">
                         <span class="menu-icon icon-blue-lock-small js-menu-item-icon"></span>
-                        <a class="menu-text js-menu-item-text" href="#">ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ</a>
+                        <a class="menu-text ripple-button js-menu-item-text" href="#">ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ</a>
                     </li>
                 </ul>
             </div>
@@ -111,7 +115,10 @@
                                 <div class="content-subheader">Мы занимаемся автоматизацией взешивания</div>
                             <div class="content-subheader">Четко все делаем, и вообще офигенные</div>
                             <div class="content-subheader">А тут еще текст!</div>
-                            <div class="content-subheader">И еще немного</div>
+                            <button class="transparent-button ripple-button">
+                                <span class="icon-download-black"></span>
+                                <span>Попробовать</span>
+                            </button>
                         </div>
                     </div>
                 </div>
@@ -132,9 +139,12 @@
             </div>
         </div>
 
-        <div class="action__container action__container--contact">
+        <div class="action__container action__container--contact js-shifted">
             <div class="icon-button48-wrapper">
                 <button class="icon-button48 action__button email-white" onclick="onContactClick()"></button>
+            </div>
+            <div class="action__form--contact js-contact">
+                <textarea class="action__form--contact-input"></textarea>
             </div>
         </div>
         <div class="action__container action__container--up">
@@ -1137,6 +1147,7 @@
             $("#menuButton").toggleClass("is-active");
             $("#menuContainer").toggleClass("is-active");
             $("#content").toggleClass("is-shifted");
+            $(".js-shifted").toggleClass("is-shifted");
             
             hideSearch();
         }
@@ -1144,6 +1155,7 @@
             $("#menuButton").removeClass("is-active");
             $("#menuContainer").removeClass("is-active");
             $("#content").removeClass("is-shifted");
+            $(".js-shifted").removeClass("is-shifted");
         }
         function toggleHeader() {
             $(".header-items-wrapper").toggleClass("is-active");
@@ -1223,7 +1235,7 @@
             window.scrollTo(0, 0);
         }
         function onContactClick() {
-
+            $(".js-contact").toggleClass("is-active");
         }
         function onLinkClick(index) {
             var timeoutValue = index === 0 || currentContent === 0 ? 300 : 100;

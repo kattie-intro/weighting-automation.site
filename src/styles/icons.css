@@ -4,6 +4,12 @@
 .icon-notificaton::before {
     content: url("../images/notification48.png");
 }
+.icon-download-black::before {
+    content: url("../images/ic_cloud_download_black_24px.svg");
+}
+.icon-download-white::before {
+    content: url("../images/ic_cloud_download_white_24px.svg");
+}
 .icon-notificaton2::before {
     content: url("../images/notification48_2.png");
 }
