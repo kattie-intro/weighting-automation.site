@@ -10,6 +10,21 @@
 .icon-download-white::before {
     content: url("../images/ic_cloud_download_white_24px.svg");
 }
+.icon-service-white::before {
+    content: url("../images/ic_room_service_white_24px.svg");
+}
+.icon-phone-white::before {
+    content: url("../images/ic_phone_white_24px.svg");
+}
+.icon-email-white::before {
+    content: url("../images/ic_email_white_24px.svg");
+}
+.icon-contact-white::before {
+    content: url("../images/ic_perm_phone_msg_white_24px.svg");
+}
+.icon-business-white::before {
+    content: url("../images/ic_business_center_white_24px.svg");
+}
 .icon-notificaton2::before {
     content: url("../images/notification48_2.png");
 }

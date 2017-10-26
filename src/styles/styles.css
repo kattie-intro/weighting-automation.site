@@ -87,11 +87,12 @@
     top: 0;
     background: #1565c0; /*800*/
     color: #bbdefb; /*100*/
-    /*padding: 0 20px;*/
+    text-align: center;
     z-index: 21;
     font-size: 1.5em;
     letter-spacing: 1px;
     transition: 0.3s height;
+    font-family: Verdana,Arial,sans-serif;
 }
 .header.is-scrolled {
     box-shadow: 0 0 20px 0 #051d42;
@@ -103,7 +104,6 @@
     position: relative;
     margin: 1px 20px;
     text-align: center;
-    float: left;
 }
 /* vertical align */
 .header__item::before {
@@ -111,9 +111,6 @@
     display: inline-block;
     vertical-align: middle;
     height: 100%;
-}
-.header__item-right {
-    float: right;
 }
 .header__item-icon {
     position: relative;
@@ -124,22 +121,12 @@
     vertical-align: middle;
     display: inline-block;
 }
-.header__item-hoverable {
-    color: inherit;
-    text-decoration: none;
-    transition: 0.3s background;
-}
-.header__item-hoverable:hover {
-    color: white;
-}
 .header__item-nav {
-    font-family: inherit;
-    color: inherit;
-    text-decoration: none;
-    transition: 0.3s background;
+    float: right;
+    margin-right: 5%;
 }
-.header__item-text-big {
-    font-size: 1.5em;
+.header__item-nav .nav-item {
+    font-family: inherit;
 }
 .header__item-menu-button {
     display: inline-block;
@@ -152,16 +139,14 @@
     background: url("../images/menu_active32.png") no-repeat 0 0;background-size: contain;
 }
 .header__item-menu-handler {
-    margin-left: 1px;
     position: absolute;
     left: 0;
+    margin-left: 1px;
     z-index: 11;
-}
-.header__item-menu-cover {
-    width: calc(5vw - 50px);
 }
 
 .header__item-search {
+    float: right;
     min-width: 32px;
     padding: 6px 0;
 }
@@ -186,7 +171,8 @@
 .header__item-search-activator {
     position: absolute;
     left: 0;
-    bottom: 0;
+    bottom: 6px;
+    height: 32px;
     display: inline-block;
     /* background: white;
     z-index: 6;*/
@@ -235,6 +221,8 @@
 .header__item-search-input:-ms-input-placeholder      {color:#ccc;}
 
 .header__item-branding {
+    position: absolute;
+    left: 5%;
     margin: 1px 0;
     min-width: 0;
     overflow: hidden;
@@ -251,7 +239,7 @@
     transition: 0.5s all;
 }
 .header.is-scrolled .header__item-branding-item {
-    max-width: 240px;
+    max-width: 300px;
 }
 
 .brand-icon-small {
@@ -507,10 +495,13 @@
     }
     .nav-item {
         margin: 0 10px;
+        transition: 0.3s all;
+        font-family: Verdana,sans-serif;
+        cursor: pointer;
+    }
+    .nav-item, .nav-item a {
         color: white; /*#90cafd; /*200*/;
         text-decoration: none;
-        transition: 0.3s background;
-        font-family: Verdana,sans-serif;
     }
     .nav-item:hover {
         color: white; /*#e3f2fd; /*50*/

@@ -14,21 +14,34 @@
 <body>
     <div class="splash fade-in">
         <h1 class="splash-title fade-in">Автоматизация взвешиваний</h1>
-        <a href="#" class="splash-arrow fade-in"><img src="images/ic_keyboard_arrow_down_white_24px.svg" alt="" /></a>
+        <a href="#" class="splash-arrow fade-in">
+            <img src="images/ic_keyboard_arrow_down_white_24px.svg" alt="" />
+        </a>
     </div> 
 	<div class="wrapper">
         <header class="header">
             <div class="header__item header__item-menu-handler" id="menuHandler">
                 <span class="header__item-icon header__item-menu-button" id="menuButton" onclick="toggleMenu()"></span>
             </div>
-            <div class="header__item header__item-menu-cover" id="menuHandlerCover"></div>
             <div class="header__item header__item-branding">
                 <span class="header__item-icon header__item-branding-item icon-weight-small"></span>
-                <div class="header__item-text header__item-text-big header__item-branding-item maininfo">Имя компании</div>
+                <div class="header__item-text header__item-branding-item maininfo">Имя компании</div>
             </div>
-            <div class="header__item">
+            <div class="header__item header__item-nav">
+                <div class="nav-item header__item-text">
+                    <span class="header__item-icon icon-service-white"></span>
+                    <a class="text-primary" href="javascript:void(0)">Услуги</a>
+                </div>
+                <div class="nav-item header__item-text">
+                    <span class="header__item-icon icon-business-white"></span>
+                    <a class="text-primary" href="javascript:void(0)">О компании</a>
+                </div>
+                <div class="nav-item header__item-text">
+                    <span class="header__item-icon icon-email-white"></span>
+                    <a class="text-primary" href="javascript:void(0)">Контакты</a>
+                </div>
                 <!--<span class="header__item-icon inline-item icon-weight-medium js-page-icon"></span>-->
-                <div class="header__item-text header__item-text-big js-page-title">Имя компании</div>
+                <!--<div class="header__item-text js-page-title">Имя компании</div>-->
 
                 <!--<div class="inline-item brand-icon-small">
                     <span class="header__item-icon icon-weight-medium"></span>
@@ -41,26 +54,12 @@
                     <div class="branding-text subinfo">Автоматизация взвешиваний</div>
                 </div>-->
             </div>
-            <div class="header__item header__item-hoverable">
-                <a class="header__item-text header__item-nav text-primary" href="javascript:void(0)">First link</a>
-            </div>
-            <div class="header__item header__item-hoverable">
-                <span class="header__item-icon icon-download-white" style = "filter:BasicImage(mascColor=0xbbdefb)"></span>
-                <a class="header__item-text header__item-nav text-primary" href="javascript:void(0)">First link</a>
-            </div>
             
-            <div class="header__item header__item-right">
+            <!--<div class="header__item">
                 <button class="header__item-icon icon-button32 person-white"></button>
-            </div>
+            </div>-->
 
-            
-
-
-
-            <!--<div class="header-item inline-item-last"><span title="Файлы" class="header-item-icon icon-folder"></span></div>
-            <div class="header-item inline-item-last"><span title="Синхронизация" class="header-item-icon icon-network"></span></div>-->
-
-            <div class="header__item header__item-right header__item-search">
+            <div class="header__item header__item-search">
                 <div class="header__item-search-activator js-search">
                     <button class="header__item-search-button" onclick="toggleSearch(this)"></button>
                 </div>
