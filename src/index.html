@@ -4,6 +4,9 @@
 	<meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="icon" href="images/scale.ico" type="image/x-icon" />
+    <!--<link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Condensed&amp;subset=cyrillic" rel="stylesheet">-->
+    <link rel="stylesheet" href="fonts/Roboto/Roboto-Regular.ttf">
+    <link rel="stylesheet" href="fonts/Roboto_Condensed/RobotoCondensed-Regular.ttf">
 	<link rel="stylesheet" type="text/css" href="styles/styles.css">
     <!--<script type="text/javascript" src="scripts/less.min.js"></script>
     <link rel="stylesheet" type="text/css" href="styles/styles.less">-->
@@ -61,11 +64,12 @@
 
             <div class="header__item header__item-search">
                 <div class="header__item-search-activator js-search">
-                    <button class="header__item-search-button" onclick="toggleSearch(this)"></button>
+                    <button class="header__item-search-button" onclick="openSearch(this)"></button>
                 </div>
                 <div class="header__item-search-wrapper js-search">
                     <button class="header__item-close-search-button js-search" onclick="hideSearch(this)"></button>
-                    <input class="header__item-search-input js-search" placeholder="Поиск по сайту">
+                    <button class="header__item-clear-search-button js-search-clear" onclick="clearSearch(this)"></button>
+                    <input class="header__item-search-input js-search" onkeyup="onChangeSearch()" placeholder="Поиск по сайту">
                     <!--<div class="header__item-search-button-cover"></div>
                     <span class="header-item-icon icon-search-white" onclick="openSearch()"></span>-->
                 </div>
@@ -1164,12 +1168,26 @@
             $(".header-items-wrapper").toggleClass("is-active");
         }
 
-        function toggleSearch(e) {
-            console.log(">> toggleSearch");console.log(e);
-            $(".js-search").toggleClass("is-active");
+        function openSearch(e) {
+            console.log(">> openSearch");console.log(e);
+            $(".js-search").addClass("is-active");
+            onChangeSearch();
+        }
+        function onChangeSearch() {
+            console.log($('input.js-search').val());
+            if ($('input.js-search').val()) {
+                $('.js-search-clear').addClass("is-active");
+            } else {
+                $('.js-search-clear').removeClass("is-active");
+            }
         }
         function hideSearch(e) {
             $(".js-search").removeClass("is-active");
+            $('.js-search-clear').removeClass("is-active");
+        }
+        function clearSearch(e) {
+            $('input.js-search').val("");
+            $('.js-search-clear').removeClass("is-active");
         }
 
         function setUpContentHeight() {
