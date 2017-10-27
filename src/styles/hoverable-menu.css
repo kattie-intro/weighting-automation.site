@@ -8,7 +8,7 @@
 }
 .hoverable-menu-parent {
     position: relative;
-    
+    min-width: 100px;
 }
 
 .hoverable-menu-parent:hover .hoverable-menu-content {
