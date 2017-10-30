@@ -1,5 +1,6 @@
 .hoverable-menu-content-wrapper {
     position: absolute;
+    min-width: 100%;
 }
 
 .hoverable-menu-content {
@@ -8,14 +9,11 @@
 }
 .hoverable-menu-parent {
     position: relative;
-    min-width: 100px;
 }
 
 .hoverable-menu-parent:hover .hoverable-menu-content {
     display: block;
 }
-
-
 
 
 .sidebar .hoverable-menu-content-wrapper {

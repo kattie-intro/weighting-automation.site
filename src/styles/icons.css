@@ -14,16 +14,22 @@
     content: url("../images/ic_room_service_white_24px.svg");
 }
 .icon-phone-white::before {
-    content: url("../images/ic_phone_white_24px.svg");
+    content: url("../images/ic_phone_white_18px.svg");
 }
 .icon-email-white::before {
     content: url("../images/ic_email_white_24px.svg");
+}
+.icon-email-outline-white::before {
+    content: url("../images/ic_mail_outline_white_18px.svg");
 }
 .icon-contact-white::before {
     content: url("../images/ic_perm_phone_msg_white_24px.svg");
 }
 .icon-business-white::before {
     content: url("../images/ic_business_center_white_24px.svg");
+}
+.icon-skype-small::before {
+    content: url("../images/skype16.png");
 }
 .icon-notificaton2::before {
     content: url("../images/notification48_2.png");
