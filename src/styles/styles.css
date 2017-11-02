@@ -2,6 +2,9 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    line-height: 1.5em;
 }
 
 .wrapper {
@@ -61,6 +64,9 @@
     top: 0;
     padding: 20px;
 }
+.brand__header .brand__header-text {
+    font-family: 'Prosto One', Helvetica, cursive;
+}
 .brand__header-item {
     max-height: 160px;
 }
@@ -98,7 +104,7 @@
     font-size: 20px;
     letter-spacing: 1px;
     transition: 0.3s height;
-    font-family: 'Roboto Condensed', sans-serif;
+    font-family: 'Roboto Condensed', Helvetica, sans-serif;
 }
 .header.is-scrolled {
     box-shadow: 0 0 20px 0 #051d42;
@@ -133,7 +139,7 @@
     margin-right: 5%;
     text-align: left;
 }
-.header__item-nav-item {
+.header__item-nav .header__item-nav-item {
     /*border: 1px solid white;*/
     display: inline-block;
     font-family: inherit;
@@ -293,19 +299,15 @@
     padding: 15px 10%;
     z-index: 21;
 
-    font-family: Verdana,sans-serif;
     box-shadow: 0 0 20px 0 #222;
     background: #0d47a1; /*900*/
     background: #37474f; /*800*/
     background: #263238; /*900*/
     color: white;
 }
-
-
-.header a,
-.footer a {
+.footer * {
     white-space: nowrap;
-    /*предотвращение переноса строк*/
+    font-family: Verdana, sans-serif;
 }
 
 
@@ -504,7 +506,7 @@
         width: 100%;
         text-overflow: ellipsis;
         padding: 10px 30px 10px 62px;
-        font-family: Arial,sans-serif;
+        font-family: Arial, sans-serif;
         font-weight: 600;
     }
     .sidebar .menu-item:hover {
@@ -544,7 +546,7 @@
     .nav-item {
         margin: 0 10px;
         transition: 0.3s all;
-        font-family: Verdana,sans-serif;
+        font-family: Verdana, sans-serif;
         cursor: pointer;
     }
     .nav-item, .nav-item a {
@@ -627,12 +629,14 @@
     }
     .content-header-text {
         height: 100%;
+        font-family: 'Open Sans', sans-serif;
         font-weight: bold;
         font-size: 3em;
         display: inline-block;
         word-wrap: break-word;
     }
     .content-subheader {
+        font-family: 'Open Sans', sans-serif;
         font-weight: bold;
         font-size: 2em;
         margin: 10px 0;
@@ -674,7 +678,7 @@
         border-radius: 5px;
         border: 2px solid #1565c0; /*800*/
 
-        font: 400 16px Roboto,RobotoDraft,Helvetica,Arial,sans-serif;
+        font: 400 16px 'Ubuntu', Helvetica, Arial, sans-serif;
     }
     .action__form--contact.is-active {
         max-height: 200px;
@@ -895,7 +899,7 @@
         outline: none;
         border: 3px solid #1565c0; /*800*/
         color: #1565c0; /*800*/
-        font-family: Verdana,sans-serif;
+        font-family: Verdana, sans-serif;
         font-weight: bold;
         font-size: 20px;
         border-radius: 2px;
@@ -993,7 +997,7 @@
         color: white;
         font-size: 3em;
         margin-top: 100px;
-        font-family: Verdana,sans-serif;
+        font-family: Verdana, sans-serif;
         text-shadow: 0 2px 10px #000;
 
         -webkit-animation-delay: 1s;
@@ -1099,7 +1103,7 @@
     .sidenav__item a {
         color: #1565c0; /*800*/
         text-decoration: none;
-        opacity: .6;
+        opacity: .7;
     }
     .sidenav__item a:hover, .sidenav__item a:active {
         opacity: 1;
@@ -1353,6 +1357,64 @@
         }
     }
 /*------------------------------------------*/
+
+
+
+
+@font-face {
+    font-family: 'Comfortaa';
+    font-style: normal;
+    font-weight: 400;
+    src: url(../fonts/Comfortaa/Comfortaa-Regular.ttf);
+}
+@font-face {
+    font-family: 'Forum';
+    font-style: normal;
+    font-weight: 400;
+    src: url(../fonts/Forum/Forum-Regular.ttf);
+}
+@font-face {
+    font-family: 'Prosto One';
+    font-style: normal;
+    font-weight: 400;
+    src: url(../fonts/Prosto_One/ProstoOne-Regular.ttf);
+}
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    src: url(../fonts/Roboto/Roboto-Regular.ttf);
+}
+@font-face {
+    font-family: 'Roboto Condensed';
+    font-style: normal;
+    font-weight: 400;
+    src: url(../fonts/Roboto_Condensed/RobotoCondensed-Regular.ttf);
+}
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: url(../fonts/Open_Sans/OpenSans-Regular.ttf);
+}
+@font-face {
+    font-family: 'Source Sans Pro';
+    font-style: normal;
+    font-weight: 400;
+    src: url(../fonts/Source_Sans_Pro/SourceSansPro-Regular.ttf);
+}
+@font-face {
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 400;
+    src: url(../fonts/Ubuntu/Ubuntu-Regular.ttf);
+}
+@font-face {
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 400;
+    src: url(../fonts/Rubik/Rubik-Regular.ttf);
+}
 
 
 /*#e3f2fd; 50*/
