@@ -397,6 +397,12 @@
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+.down-white {
+    background-image: url(../images/ic_keyboard_arrow_down_white_24px.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 .up-black{
     background-image: url(../images/ic_keyboard_arrow_up_black_24px.svg);
     background-repeat: no-repeat;

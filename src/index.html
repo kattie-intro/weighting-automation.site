@@ -17,11 +17,16 @@
 	<title>Автоматизация взвешиваний</title>
 </head>
 <body>
-    <div class="splash fade-in" style="display: none">
-        <h1 class="splash-title fade-in">Автоматизация взвешиваний</h1>
+    <div class="splash fade-in">
+        <div class="splash-bg fade-in"></div>
+        <div class="splash-vertical-aligned">
+            <div class="splash-text splash-appear fade-in js-splash-appear">Мы занимаемся автоматизацией взешиваний</div>
+        </div>
+        <h1 class="splash-text splash-title fade-in">Автоматизация взвешиваний</h1>
         <a href="#" class="splash-arrow fade-in">
-            <img src="images/ic_keyboard_arrow_down_white_24px.svg" alt="" />
+            <div class="splash-arrow-icon down-white"></div>
         </a>
+        <div class="splash-text splash-brand fade-in">Имя компании</div>
     </div> 
 	<div class="wrapper">
         <header class="header">
@@ -48,7 +53,7 @@
                                     <a class="menu-text text-secondary js-menu-item-text" href="javascript:void(0)">блаа бла 2</a>
                                 </li>
                                 <li class="menu-item js-menu-item" onclick="onLinkClick(2)">
-                                    <a class="menu-text text-secondary js-menu-item-text" href="javascript:void(0)">бла блааааа 3</a>
+                                    <a class="menu-text text-secondary js-menu-item-text" href="javascript:void(0)">бла блааааа блааааа блааааа 3</a>
                                 </li>
                                 <li class="menu-item js-menu-item" onclick="onLinkClick(3)">
                                     <a class="menu-text text-secondary js-menu-item-text" href="javascript:void(0)">бла бла 4</a>
@@ -149,7 +154,7 @@
                     </li>
                     <li class="menu-item js-menu-item" onclick="onLinkClick(1)">
                         <span class="menu-icon icon-blue-globe-small js-menu-item-icon"></span>
-                        <a class="menu-text ripple-button js-menu-item-text" href="#">Другая страница</a>
+                        <a class="menu-text ripple-button js-menu-item-text" href="#">Другая страница страница страница страница</a>
                     </li>
                     <li class="menu-item js-menu-item" onclick="onLinkClick(2)">
                         <span class="menu-icon icon-blue-location-small js-menu-item-icon"></span>
@@ -174,24 +179,26 @@
                     <div class="brand__header-back">
                     </div>
                     <div class="brand__header-wrapper">
-                        <div>
-                            <span class="brand__header-item icon-weight-xlarge" style="vertical-align: middle;"></span>
-                            <span class="maininfo brand__header-text" style="vertical-align: middle; color: black; font-size: 3em; font-weight: bold; display: inline-block;">Имя компании</span>
+                        <div class="brand__header-item">
+                            <span class="brand__header-icon icon-weight-xlarge"></span>
+                            <span class="brand__header-text">Имя компании</span>
                         </div>
 
                         <div class="brand__header-presentation">
-                                <div class="content-subheader">Мы занимаемся автоматизацией взешивания</div>
+                                <div class="content-subheader">Мы занимаемся автоматизацией взешиваний</div>
                             <div class="content-subheader">Четко все делаем, и вообще офигенные</div>
                             <div class="content-subheader">А тут еще текст!</div>
-                            <p>А тут еще текст!<br>А тут еще текст!<br>А тут еще текст!<br>А тут еще текст!<br>А тут еще текст!<br>А тут еще текст!<br>А тут еще текст!А тут еще текст!<br>А тут еще текст!А тут еще текст!<br>А тут еще текст!А тут еще текст!<br></p>
+                            <p>А тут еще текст!<br>А тут еще текст!<br>А тут еще текст!<br>А тут еще текст!<br>А тут еще текст!</p>
                             <button class="transparent-button ripple-button">
                                 <span class="icon-download-black"></span>
-                                <span>Попробовать</span>
+                                <span class="complex-button-text">Попробовать</span>
                             </button>
                             <button class="transparent-button ripple-button">
                                 <span class="icon-download-black"></span>
-                                <span>Попробовать 2</span>
+                                <span class="complex-button-text">Попробовать 2</span>
                             </button>
+                            <p>А тут еще текст! А тут еще текст! А тут еще текст! А тут еще текст! А тут еще текст!<br>
+                            А тут еще текст! А тут еще текст!А тут еще текст! А тут еще текст!А тут еще текст! А тут еще текст!А тут еще текст! </p>
                         </div>
                     </div>
                 </div>
@@ -214,7 +221,7 @@
 
         <div class="action__container action__container--contact js-shifted">
             <div class="icon-button48-wrapper">
-                <button class="icon-button48 action__button email-white" onclick="onContactClick()"></button>
+                <button class="icon-button48 action__button shadow-button email-white" onclick="onContactClick()"></button>
             </div>
             <div class="action__form--contact js-contact">
                 <textarea class="action__form--contact-input"></textarea>
@@ -222,7 +229,7 @@
         </div>
         <div class="action__container action__container--up">
             <div class="icon-button48-wrapper">
-                <button id="upButton" class="icon-button48 action__button up-white" onclick="onUpClick()"></button>
+                <button id="upButton" class="icon-button48 action__button shadow-button up-white" onclick="onUpClick()"></button>
             </div>
         </div>
 
@@ -421,7 +428,7 @@
                         <span class="content-header-text">Автоматизация</span>
                     </div>
 
-                    <span class="content-subheader">Мы занимаемся автоматизацией взешивания</span>
+                    <span class="content-subheader">Мы занимаемся автоматизацией взешиваний</span>
                     <p>Content goes here</p>
 
                     <div class="image-block__wrapper">
@@ -754,7 +761,7 @@
                         <span class="content-header-icon icon-blue-globe-large"></span>
                         <span class="content-header-text">Другая страница</span>
                     </div>-->
-                    <span class="content-subheader">Мы занимаемся автоматизацией взешивания</span>
+                    <span class="content-subheader">Мы занимаемся автоматизацией взешиваний</span>
                     <p>Content goes here</p>
 
                     <p>Lorem eskhwerlhwrkti rg;.resotg weower-twre otf 'war' 3er q 'reelf mweljw;r qw ewk rfsgf hiowrguwrp'wa erpqwSRFEWR EWR EQREWRQWRQWEWQ    EW R87Y W3E40 1Alaek iwptq3 po3w[- 4[eq2]3- 2qpawerke;aljrd qiwe rulajrealkr hsj g,fxcjzs,gjs JIF;lfislkhksfjagh;pfkoetpi' ab j hjkhv lkh lkhkjxfsdil guposewf iku i oli ol  g lirep irw rew; ew ;woei ;oew t;oiwepr oe rlewli ;we eirew; rw rirpe rwrwprop4ri3p4r5849 258439053 3-590 904wt59e0wogjrio yuerop it;pu4poeto perh9 5y4 Lorem eskhwerlhwrkti rg;.resotg weower-twre otf 'war' 3er q 'reelf mweljw;r qw ewk rfsgf hiowrguwrp'wa erpqwSRFEWR EWR EQREWRQWRQWEWQ  EW R87Y W3E40 1Alaek iwptq3 po3w[- 4[eq2]3- 2qpawerke;aljrd qiwe rulajrealkr hsj g,fxcjzs,gjs JIF;lfislkhksfjagh;pfkoetpi' ab j hjkhv lkh lkhkjxfsdil guposewf iku i oli ol  g lirep irw rew; ew ;woei ;oew t;oiwepr oe rlewli ;we eirew; rw rirpe </p>
@@ -844,7 +851,7 @@
                         <span class="content-header-icon icon-blue-location-large"></span>
                         <span class="content-header-text">Третья страница!!!</span>
                     </div>-->
-                    <span class="content-subheader">Мы занимаемся автоматизацией взешивания</span>
+                    <span class="content-subheader">Мы занимаемся автоматизацией взешиваний</span>
                     <p>Content goes here</p>
 
                     Lorem eskhwerlhwrkti rg;.resotg weower-twre otf 'war' 3er q 'reelf mweljw;r qw ewk rfsgf hiowrguwrp'wa erpqwSRFEWR EWR EQREWRQWRQWEWQ    EW R87Y W3E40 1Alaek iwptq3 po3w[- 4[eq2]3- 2qpawerke;aljrd qiwe rulajrealkr hsj g,fxcjzs,gjs JIF;lfislkhksfjagh;pfkoetpi' ab j hjkhv lkh lkhkjxfsdil guposewf iku i oli ol  g lirep irw rew; ew ;woei ;oew t;oiwepr oe rlewli ;we 
@@ -860,7 +867,7 @@
                         <span class="content-header-icon icon-blue-lock-large"></span>
                         <span class="content-header-text">ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ</span>
                     </div>-->
-                    <span class="content-subheader">Мы занимаемся автоматизацией взешивания</span>
+                    <span class="content-subheader">Мы занимаемся автоматизацией взешиваний</span>
                     <p>Content goes here</p>
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
                     tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
@@ -938,7 +945,7 @@
                     <span class="content-header-icon icon-blue-globe-large"></span>
                     <span class="content-header-text">Другая страница</span>
                 </div>
-                <span class="content-subheader">Мы занимаемся автоматизацией взешивания</span>
+                <span class="content-subheader">Мы занимаемся автоматизацией взешиваний</span>
                 <p>Content goes here</p>
 
                 <p>Lorem eskhwerlhwrkti rg;.resotg weower-twre otf 'war' 3er q 'reelf mweljw;r qw ewk rfsgf hiowrguwrp'wa erpqwSRFEWR EWR EQREWRQWRQWEWQ    EW R87Y W3E40 1Alaek iwptq3 po3w[- 4[eq2]3- 2qpawerke;aljrd qiwe rulajrealkr hsj g,fxcjzs,gjs JIF;lfislkhksfjagh;pfkoetpi' ab j hjkhv lkh lkhkjxfsdil guposewf iku i oli ol  g lirep irw rew; ew ;woei ;oew t;oiwepr oe rlewli ;we eirew; rw rirpe rwrwprop4ri3p4r5849 258439053 3-590 904wt59e0wogjrio yuerop it;pu4poeto perh9 5y4 Lorem eskhwerlhwrkti rg;.resotg weower-twre otf 'war' 3er q 'reelf mweljw;r qw ewk rfsgf hiowrguwrp'wa erpqwSRFEWR EWR EQREWRQWRQWEWQ  EW R87Y W3E40 1Alaek iwptq3 po3w[- 4[eq2]3- 2qpawerke;aljrd qiwe rulajrealkr hsj g,fxcjzs,gjs JIF;lfislkhksfjagh;pfkoetpi' ab j hjkhv lkh lkhkjxfsdil guposewf iku i oli ol  g lirep irw rew; ew ;woei ;oew t;oiwepr oe rlewli ;we eirew; rw rirpe </p>
@@ -1030,7 +1037,7 @@
                     <span class="content-header-icon icon-blue-location-large"></span>
                     <span class="content-header-text">Третья страница!!!</span>
                 </div>
-                <span class="content-subheader">Мы занимаемся автоматизацией взешивания</span>
+                <span class="content-subheader">Мы занимаемся автоматизацией взешиваний</span>
                 <p>Content goes here</p>
 
                 Lorem eskhwerlhwrkti rg;.resotg weower-twre otf 'war' 3er q 'reelf mweljw;r qw ewk rfsgf hiowrguwrp'wa erpqwSRFEWR EWR EQREWRQWRQWEWQ    EW R87Y W3E40 1Alaek iwptq3 po3w[- 4[eq2]3- 2qpawerke;aljrd qiwe rulajrealkr hsj g,fxcjzs,gjs JIF;lfislkhksfjagh;pfkoetpi' ab j hjkhv lkh lkhkjxfsdil guposewf iku i oli ol  g lirep irw rew; ew ;woei ;oew t;oiwepr oe rlewli ;we 
@@ -1048,7 +1055,7 @@
                     <span class="content-header-icon icon-blue-mail-large"></span>
                     <span class="content-header-text">Четвертая...</span>
                 </div>
-                <span class="content-subheader">Мы занимаемся автоматизацией взешивания</span>
+                <span class="content-subheader">Мы занимаемся автоматизацией взешиваний</span>
                 <p>Content goes here</p>
 
                 Ut enim ad minim veniam,
@@ -1139,7 +1146,7 @@
                     <span class="content-header-icon icon-blue-phone-large"></span>
                     <span class="content-header-text">Это 5 страница</span>
                 </div>
-                <span class="content-subheader">Мы занимаемся автоматизацией взешивания</span>
+                <span class="content-subheader">Мы занимаемся автоматизацией взешиваний</span>
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
                 tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
                 quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
@@ -1177,7 +1184,7 @@
                     <span class="content-header-icon icon-blue-lock-large"></span>
                     <span class="content-header-text">ШЕСТАЯЯЯЯЯЯЯЯЯЯЯЯ</span>
                 </div>
-                <span class="content-subheader">Мы занимаемся автоматизацией взешивания</span>
+                <span class="content-subheader">Мы занимаемся автоматизацией взешиваний</span>
                 <p>Content goes here</p>
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
                 tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.<br>
@@ -1385,9 +1392,27 @@
         //toggleMenu();
         $(".js-year").text((new Date()).getFullYear());
 
-
-        /*if($(".splash").is(":visible")) {
+        if($(".splash").is(":visible")) {
             $(".wrapper").css({"opacity":"0"});
+            //$(".wrapper").delay(800).animate({"opacity":"0.3"},800);
+
+            var splashText = $(".js-splash-appear").text();
+            $(".js-splash-appear").text("");
+
+            setTimeout(function() {
+                $('.splash-appear').addClass("is-paused");
+                var index = 0;
+                var interval = setInterval(function() {
+                    $(".js-splash-appear")
+                        .text($(".js-splash-appear").text() + splashText[index++]);
+                    if (index === splashText.length) {
+                        window.clearInterval(interval);
+                        setTimeout(function() {
+                            $('.splash-appear').removeClass("is-paused");
+                        }, 1000);
+                    }
+                }, 70);
+            }, 6000); //2500 + 3500
         }
 
         $(".splash-arrow").click(function() {
@@ -1400,7 +1425,7 @@
             $(".splash").slideUp("800");
             $("html, body").animate({"scrollTop":"0px"},100);
             $(".wrapper").delay(100).animate({"opacity":"1.0"},800);
-        });*/
+        });
 
 
     </script>
